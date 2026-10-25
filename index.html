@@ -1,0 +1,3713 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>호흡기계 중환자간호 중간고사 핵심요약</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+:root{
+  --topbar-h:57px;
+  --ink:#16191d; --ink2:#3d454e; --muted:#6b7480; --line:#e3e7ec; --line2:#eef1f5;
+  --bg:#ffffff; --bg2:#f7f9fb; --bg3:#eef3f7;
+  --accent:#0f6a8f; --accent-bg:#e8f2f7;
+  --key:#0b7a5a;  --key-bg:#e7f5f0;
+  --warn:#b3261e; --warn-bg:#fdeceb;
+  --ev:#6d3fb5;   --ev-bg:#f1ecfb;
+  --exam:#a4650b; --exam-bg:#fdf3e3;
+  --dx:#1b4fa0;   --dx-bg:#eaf0fb;
+  --radius:10px;
+  --sans:"Pretendard","Pretendard Variable","Apple SD Gothic Neo",-apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",system-ui,sans-serif;
+  --sidebar:270px;
+}
+*{box-sizing:border-box}
+body{margin:0; background:var(--bg); color:var(--ink); font-family:var(--sans); font-size:16px; line-height:1.75;
+  -webkit-text-size-adjust:100%; word-break:keep-all; overflow-wrap:anywhere}
+a{color:var(--accent)}
+.topbar{position:sticky; top:0; z-index:60; display:flex; align-items:center; gap:10px; padding:10px 18px;
+  background:rgba(255,255,255,.94); backdrop-filter:saturate(180%) blur(12px); border-bottom:1px solid var(--line)}
+.topbar .brand{font-weight:800; font-size:15px; letter-spacing:-.02em; white-space:nowrap; color:var(--ink); text-decoration:none}
+.topbar .brand small{display:block; font-weight:500; font-size:11px; color:var(--muted)}
+.topbar .spacer{flex:1}
+.searchwrap{position:relative; flex:1; max-width:360px; min-width:0}
+.searchwrap input{width:100%; min-width:0; padding:8px 12px 8px 30px; font-family:inherit; font-size:14px;
+  border:1px solid var(--line); border-radius:8px; background:var(--bg2); color:var(--ink)}
+.searchwrap input:focus{outline:2px solid var(--accent); outline-offset:-1px; background:#fff}
+.searchwrap::before{content:"⌕"; position:absolute; left:10px; top:50%; transform:translateY(-50%); color:var(--muted)}
+.btn{display:inline-flex; align-items:center; gap:6px; padding:8px 13px; font-family:inherit; font-size:13.5px; font-weight:700;
+  border-radius:8px; border:1px solid var(--line); background:#fff; color:var(--ink2); cursor:pointer; white-space:nowrap; text-decoration:none}
+.btn:hover{background:var(--bg2)}
+.btn.primary{background:var(--accent); border-color:var(--accent); color:#fff}
+.btn.primary:hover{filter:brightness(1.08)}
+.layout{display:flex; align-items:flex-start}
+.sidebar{position:sticky; top:var(--topbar-h); width:var(--sidebar); flex:0 0 var(--sidebar); height:calc(100vh - var(--topbar-h));
+  overflow-y:auto; padding:16px 8px 60px 14px; border-right:1px solid var(--line); background:var(--bg2); font-size:13.5px}
+.sidebar h4{margin:16px 0 4px; font-size:11px; font-weight:800; letter-spacing:.06em; color:var(--muted)}
+.sidebar h4:first-child{margin-top:0}
+.sidebar a{display:block; padding:3px 10px; margin:1px 0; color:var(--ink2); text-decoration:none; border-radius:6px; line-height:1.5}
+.sidebar a:hover{background:var(--bg3); color:var(--accent)}
+.sidebar a.sub{padding-left:22px; font-size:12.5px; color:var(--muted)}
+main{flex:1; min-width:0; padding:26px 40px 120px; max-width:980px; margin:0 auto}
+.hero{border:1px solid var(--line); border-radius:14px; padding:24px 26px; background:linear-gradient(180deg,#f8fbfd,#fff); margin-bottom:22px}
+.hero h1{margin:0 0 6px; font-size:26px; letter-spacing:-.03em; line-height:1.3}
+.hero p.lede{margin:0 0 14px; color:var(--ink2); font-size:15px}
+.hero .stats{display:flex; flex-wrap:wrap; gap:10px; margin-bottom:14px}
+.stat{background:#fff; border:1px solid var(--line); border-radius:9px; padding:7px 13px; min-width:92px}
+.stat b{display:block; font-size:19px; color:var(--accent); line-height:1.2}
+.stat span{font-size:11.5px; color:var(--muted)}
+.hero .actions{display:flex; flex-wrap:wrap; gap:8px}
+.legend{display:flex; flex-wrap:wrap; gap:8px; margin-top:14px; font-size:12.5px; color:var(--muted)}
+.legend span{border-radius:6px; padding:2px 8px}
+.parttabs{display:flex; flex-wrap:wrap; gap:6px; margin:0 0 6px; position:sticky; top:var(--topbar-h); z-index:5; background:#fff; padding:8px 0}
+.ptab{font-family:inherit; font-size:13px; font-weight:700; padding:6px 13px; cursor:pointer; border:1px solid var(--line);
+  border-radius:20px; background:#fff; color:var(--ink2); line-height:1.3}
+.ptab:hover{background:var(--bg2)}
+.ptab.on{background:var(--ink); border-color:var(--ink); color:#fff}
+.part{margin:40px 0 16px; padding:14px 20px; border-radius:12px; background:var(--ink); color:#fff}
+.part .num{font-size:11.5px; font-weight:800; letter-spacing:.1em; opacity:.65}
+.part h2{margin:2px 0 0; font-size:21px; letter-spacing:-.02em; font-weight:800; line-height:1.35}
+.part .who{font-size:12.5px; opacity:.75}
+section.lec h2{font-size:19px; margin:34px 0 10px; padding-bottom:6px; border-bottom:2px solid var(--line); letter-spacing:-.02em; line-height:1.4}
+section.lec .part h2{margin:2px 0 0; padding:0; border:none; font-size:21px; color:#fff}
+section.lec h3{font-size:16.5px; margin:24px 0 8px; color:var(--accent); line-height:1.45}
+section.lec h4{font-size:15px; margin:18px 0 6px}
+section.lec p{margin:8px 0}
+section.lec ul, section.lec ol{padding-left:22px; margin:6px 0}
+section.lec li{margin:3px 0}
+section.lec li::marker{color:#9aa4ae}
+table{border-collapse:collapse; width:100%; margin:12px 0; font-size:14.5px; line-height:1.55; display:block; overflow-x:auto}
+th,td{border:1px solid var(--line); padding:7px 10px; vertical-align:top; text-align:left}
+th{background:var(--bg3); font-weight:700; white-space:nowrap}
+th:first-child, td:first-child{min-width:4.6em}
+tr:nth-child(even) td{background:#fbfcfd}
+strong{color:#0b2a3c}
+.star{color:#d08700; font-weight:900}
+blockquote{margin:12px 0; padding:10px 14px; border-left:4px solid var(--line); background:var(--bg2); border-radius:0 var(--radius) var(--radius) 0}
+blockquote p{margin:4px 0}
+blockquote.exam{border-color:var(--exam); background:var(--exam-bg)}
+blockquote.key{border-color:var(--key); background:var(--key-bg)}
+blockquote.warn{border-color:var(--warn); background:var(--warn-bg)}
+blockquote.ev{border-color:var(--ev); background:var(--ev-bg)}
+blockquote.dx{border-color:var(--dx); background:var(--dx-bg)}
+hr{border:none; border-top:1px solid var(--line); margin:18px 0}
+.glance{border:1px solid #cfe3ec; background:var(--accent-bg); border-radius:12px; padding:12px 18px 10px; margin:14px 0 6px}
+.glance .gt{font-weight:800; color:var(--accent); font-size:14px; letter-spacing:.02em; margin-bottom:2px}
+.glance ul{margin:4px 0}
+code{font-family:Consolas,monospace; font-size:.92em; background:var(--bg3); padding:1px 5px; border-radius:4px}
+mark{background:#fff1b8; padding:0 2px; border-radius:3px}
+.hit{background:#ffe066 !important}
+.foot{margin-top:60px; padding-top:16px; border-top:1px solid var(--line); font-size:12.5px; color:var(--muted)}
+@media screen{ .tab-hidden{display:none !important} }
+@media (max-width:900px){
+  .sidebar{display:none}
+  main{padding:18px 16px 100px}
+  .topbar .brand small{display:none}
+  .hero{padding:18px 16px}
+  .hero h1{font-size:22px}
+}
+@media (max-width:560px){
+  .searchwrap{display:none} .topbar{padding:8px 12px; gap:6px}
+  .topbar .brand{font-size:13px; min-width:0; flex:1 1 auto; overflow:hidden; text-overflow:ellipsis}
+  .topbar .spacer{display:none}
+  .topbar .btn{padding:7px 9px; font-size:12.5px}
+}
+</style></head><body><header class="topbar"><a class="brand" href="index.html">호흡기계 중환자간호 중간고사<small>2026-2 · 10/26 · 핵심요약 + 연습문제</small></a>
+<div class="searchwrap"><input id="q" type="search" placeholder="요약에서 찾기 (예: PEEP, LAMA)" autocomplete="off"></div><div class="spacer"></div><a class="btn primary" href="index.html">핵심요약</a><a class="btn" href="quiz.html">연습문제</a><a class="btn" href="resp-icu-midterm.pdf" download="호흡기계중환자간호_중간고사_핵심요약.pdf">PDF ⤓</a></header><div class="layout"><nav class="sidebar"><h4>약물</h4><a class="" href="#drug-1" data-lec="drug">1. 호흡곤란의 기전과 원인별 치료</a><a class="sub" href="#drug-2" data-lec="drug">1-1. 정의와 2대 기전 (p.2~3)</a><a class="sub" href="#drug-3" data-lec="drug">1-2. 원인별 약물 치료 방향 (p.4)</a><a class="sub" href="#drug-4" data-lec="drug">1-3. 치료 표적 3가지 (p.5) ★</a><a class="" href="#drug-5" data-lec="drug">2. 기관지확장제</a><a class="sub" href="#drug-6" data-lec="drug">2-1. β2 작용제 vs 항콜린제 (p.6, p.7, p.9) ★</a><a class="sub" href="#drug-7" data-lec="drug">2-2. 속효성 vs 지속성 (p.8) ★</a><a class="" href="#drug-8" data-lec="drug">3. 흡입 스테로이드(ICS)와 흡입기</a><a class="sub" href="#drug-9" data-lec="drug">3-1. ICS 기전 (p.10) ★</a><a class="sub" href="#drug-10" data-lec="drug">3-2. 천식 vs COPD 흡입치료 원칙 (p.11) ★</a><a class="sub" href="#drug-11" data-lec="drug">3-3. 흡입기 3종 (p.12) ★</a><a class="sub" href="#drug-12" data-lec="drug">3-4. ICS+LABA 복합 흡입기와 ICS 부작용 (p.13) ★</a><a class="" href="#drug-13" data-lec="drug">4. 객담·기침 약물</a><a class="sub" href="#drug-14" data-lec="drug">4-1. 객담 배출 3요소 (p.14)</a><a class="sub" href="#drug-15" data-lec="drug">4-2. 거담제와 객담용해제 (p.15) ★</a><a class="sub" href="#drug-16" data-lec="drug">4-3. 네뷸라이저 투여 순서 — &quot;What should we use first?&quot; (p.16) ★</a><a class="sub" href="#drug-17" data-lec="drug">4-4. 진해제 (p.17)</a><a class="" href="#drug-18" data-lec="drug">5. ARDS 약물</a><a class="sub" href="#drug-19" data-lec="drug">5-1. 사례와 약물 사용 목적 (p.18, p.20)</a><a class="sub" href="#drug-20" data-lec="drug">5-2. 전신 스테로이드 (p.21~22) ★</a><a class="sub" href="#drug-21" data-lec="drug">5-3. NMBA 권고 (p.23) ★</a><a class="sub" href="#drug-22" data-lec="drug">5-4. NMBA 기전과 3종 비교 (p.24~25) ★</a><a class="sub" href="#drug-23" data-lec="drug">5-5. 폐부종 관리와 수액 (p.26~28) ★</a><a class="sub" href="#drug-24" data-lec="drug">5-6. 사례 적용 (p.29)</a><h4>구조와 기능</h4><a class="" href="#struct-1" data-lec="struct">1. 호흡기계 구조</a><a class="sub" href="#struct-2" data-lec="struct">1-1. 전도부 vs 호흡부 ★</a><a class="sub" href="#struct-3" data-lec="struct">1-2. 점액섬모 청소 ★</a><a class="sub" href="#struct-4" data-lec="struct">1-3. 코·인두 ★</a><a class="sub" href="#struct-5" data-lec="struct">1-4. 후두(larynx) ★</a><a class="sub" href="#struct-6" data-lec="struct">1-5. 기관·기관지 ★</a><a class="sub" href="#struct-7" data-lec="struct">1-6. 세기관지 – 폐포 ★</a><a class="sub" href="#struct-8" data-lec="struct">1-7. 폐포 세포·호흡막 ★</a><a class="sub" href="#struct-9" data-lec="struct">1-8. 폐와 흉막 ★</a><a class="" href="#struct-10" data-lec="struct">2. 호흡과 환기</a><a class="sub" href="#struct-11" data-lec="struct">2-1. 외호흡 vs 내호흡 ★</a><a class="sub" href="#struct-12" data-lec="struct">2-2. 압력차와 호흡근 ★</a><a class="sub" href="#struct-13" data-lec="struct">2-3. 순응도(compliance)</a><a class="sub" href="#struct-14" data-lec="struct">2-4. 폐용적·폐용량 ★ (녹화에서 가장 길게, 약 7분)</a><a class="" href="#struct-15" data-lec="struct">3. 가스 확산과 운반</a><a class="sub" href="#struct-16" data-lec="struct">3-1. 분압 ★ (p.22, 교수 약 3분)</a><a class="sub" href="#struct-17" data-lec="struct">3-2. 산소 운반 ★</a><a class="sub" href="#struct-18" data-lec="struct">3-3. 이산화탄소 운반 ★ (녹화 없음, 슬라이드 기준)</a><a class="" href="#struct-19" data-lec="struct">4. 호흡 조절 (녹화 없음, 슬라이드 기준)</a><a class="sub" href="#struct-20" data-lec="struct">4-1. 국소 호흡 조절 (p.25)</a><a class="sub" href="#struct-21" data-lec="struct">4-2. 호흡중추 ★</a><a class="sub" href="#struct-22" data-lec="struct">4-3. 반사 조절</a><a class="sub" href="#struct-23" data-lec="struct">4-4. 상위중추·전체 경로 (p.34–35)</a><a class="" href="#struct-24" data-lec="struct">5. 출생 시 호흡 변화 (p.36)</a><a class="" href="#struct-25" data-lec="struct">6. 숫자 한 장 정리</a><h4>COPD</h4><a class="" href="#copd-1" data-lec="copd">1. 정의·역학·위험인자</a><a class="sub" href="#copd-2" data-lec="copd">1-1. 정의 ★</a><a class="sub" href="#copd-3" data-lec="copd">1-2. 역학 (교수가 짚은 숫자 = 3위 · 12.9%/30% · 2.8%/1.6%)</a><a class="sub" href="#copd-4" data-lec="copd">1-3. 위험인자 8가지 ★ (p.7)</a><a class="" href="#copd-5" data-lec="copd">2. 발병 기전·병태생리</a><a class="sub" href="#copd-6" data-lec="copd">2-1. 발병 기전 (p.9)</a><a class="sub" href="#copd-7" data-lec="copd">2-2. 병태생리·전신 영향 ★ (p.10)</a><a class="" href="#copd-8" data-lec="copd">3. 진단</a><a class="sub" href="#copd-9" data-lec="copd">3-1. 증상·문진 ★</a><a class="sub" href="#copd-10" data-lec="copd">3-2. mMRC 호흡곤란 점수 ★ (p.12)</a><a class="sub" href="#copd-11" data-lec="copd">3-3. 신체검사: Pink puffer vs Blue bloater (p.13, 그림만 있음)</a><a class="sub" href="#copd-12" data-lec="copd">3-4. 폐활량측정법(=폐활량검사, spirometry) ★</a><a class="" href="#copd-13" data-lec="copd">4. 질병 평가</a><a class="sub" href="#copd-14" data-lec="copd">4-1. 국내 2024 개정의 핵심 ★ (p.14)</a><a class="sub" href="#copd-15" data-lec="copd">4-2. mMRC vs CAT ★</a><a class="sub" href="#copd-16" data-lec="copd">4-3. 국내 2024 vs GOLD 2026 ★ (p.17)</a><a class="" href="#copd-17" data-lec="copd">5. 약물치료 (안정기)</a><a class="sub" href="#copd-18" data-lec="copd">5-1. 약제 분류 ★ (p.16)</a><a class="sub" href="#copd-19" data-lec="copd">5-2. 안정 시 단계치료 ★ (p.18)</a><a class="sub" href="#copd-20" data-lec="copd">5-3. 치료 중 악화가 생겼을 때의 단계치료 ★ (p.19)</a><a class="" href="#copd-21" data-lec="copd">6. 비약물치료</a><a class="sub" href="#copd-22" data-lec="copd">6-1. 4가지 축 (p.20)</a><a class="sub" href="#copd-23" data-lec="copd">6-2. 산소요법: 목표 SpO2 88–92% ★ (p.20)</a><a class="sub" href="#copd-24" data-lec="copd">6-3. 환자 교육·흡입기 ★ (p.21)</a><a class="sub" href="#copd-25" data-lec="copd">6-4. 금연: 5A ★ (p.22)</a><a class="sub" href="#copd-26" data-lec="copd">6-5. 호흡재활 ★ (p.23)</a><a class="sub" href="#copd-27" data-lec="copd">6-6. 수술요법 (p.20, 한 줄)</a><a class="" href="#copd-28" data-lec="copd">7. 급성악화</a><a class="sub" href="#copd-29" data-lec="copd">7-1. 정의와 중증도 ★ (p.24–25)</a><a class="sub" href="#copd-30" data-lec="copd">7-2. 의미·원인·입원 (p.26–27)</a><a class="sub" href="#copd-31" data-lec="copd">7-3. 급성악화 약물치료 ★ (p.28)</a><a class="sub" href="#copd-32" data-lec="copd">7-4. 호흡보조요법: 산소 → NIV → 침습적 환기 ★ (p.29–30)</a><a class="sub" href="#copd-33" data-lec="copd">7-5. 퇴원과 추적관찰 (p.31)</a><a class="" href="#copd-34" data-lec="copd">8. Take home: 천식 vs COPD ★ (p.32)</a><h4>천식</h4><a class="" href="#asthma-1" data-lec="asthma">1. 정의와 병태생리</a><a class="sub" href="#asthma-2" data-lec="asthma">1-1. 정의 (p.4)</a><a class="sub" href="#asthma-3" data-lec="asthma">1-2. 역학·원인 (p.5–8) — 숫자는 가볍게</a><a class="sub" href="#asthma-4" data-lec="asthma">1-3. 아스피린 천식 기전 ★ (p.9)</a><a class="sub" href="#asthma-5" data-lec="asthma">1-4. 기도개형·기도과민성 (p.10–11)</a><a class="sub" href="#asthma-6" data-lec="asthma">1-5. 표현형(phenotype) 5가지 ★ (p.12)</a><a class="" href="#asthma-7" data-lec="asthma">2. 진단</a><a class="sub" href="#asthma-8" data-lec="asthma">2-1. 폐활량검사(=폐활량측정법, spirometry) ★ [중요 슬라이드 13] (p.13–14, 보충 p.2)</a><a class="sub" href="#asthma-9" data-lec="asthma">2-2. 진단 ① 증상 병력 + 호기 기류제한 ★ [중요 슬라이드 15] (p.15, 보충 p.3)</a><a class="sub" href="#asthma-10" data-lec="asthma">2-3. 진단 ② 폐기능 변동을 증명하는 검사 6종 ★ [중요 슬라이드 16] (p.16, 보충 p.4)</a><a class="sub" href="#asthma-11" data-lec="asthma">2-4. 천식 vs COPD 감별 ★ (p.17–18)</a><a class="sub" href="#asthma-12" data-lec="asthma">2-5. 초기 평가 (p.19)</a><a class="" href="#asthma-13" data-lec="asthma">3. 약물치료</a><a class="sub" href="#asthma-14" data-lec="asthma">3-1. 약물 8종 (p.20–27)</a><a class="sub" href="#asthma-15" data-lec="asthma">3-2. 단계별 치료 1안·2안 ★ [중요 슬라이드 28] (p.28, 보충 p.5)</a><a class="sub" href="#asthma-16" data-lec="asthma">3-3. 단계를 올리기 전 확인할 5가지 (p.29)</a><a class="sub" href="#asthma-17" data-lec="asthma">3-4. 비약물 치료 (p.30–31)</a><a class="" href="#asthma-18" data-lec="asthma">4. 조절 평가·자가관리</a><a class="sub" href="#asthma-19" data-lec="asthma">4-1. 증상 조절 평가 — 지난 4주 ★ (p.32)</a><a class="sub" href="#asthma-20" data-lec="asthma">4-2. ACT·행동지침 (p.33–34)</a><a class="sub" href="#asthma-21" data-lec="asthma">4-3. 악화 정의·사망 위험인자 (p.35–36)</a><a class="" href="#asthma-22" data-lec="asthma">5. 급성악화와 중환자 관리</a><a class="sub" href="#asthma-23" data-lec="asthma">5-1. 초기 평가·중증도 분류 ★ [중요 슬라이드 37] (p.37, 보충 p.6)</a><a class="sub" href="#asthma-24" data-lec="asthma">5-2. 초기 치료와 재평가 ★ [중요 슬라이드 38] (p.38, 보충 p.7)</a><a class="sub" href="#asthma-25" data-lec="asthma">5-3. 중환자실 검사·해석: ABGA·흉부 X선 ★ [중요 슬라이드 39] (p.39, 보충 p.8)</a><a class="sub" href="#asthma-26" data-lec="asthma">5-4. NIV·중환자실 이행·기계환기 ★ (p.40)</a><a class="" href="#asthma-27" data-lec="asthma">6. 천식 적정성 평가 (심평원 10차, 2023) (p.41)</a><a class="" href="#asthma-28" data-lec="asthma">마지막 1분 숫자 체크</a><h4>ARDS</h4><a class="" href="#ards-1" data-lec="ards">1. 개념과 정의</a><a class="sub" href="#ards-2" data-lec="ards">1-1. ARDS 개념·특징 (p.2–4)</a><a class="sub" href="#ards-3" data-lec="ards">1-2. 정의의 변천 ★ (p.5–9)</a><a class="sub" href="#ards-4" data-lec="ards">1-3. 2024 New Global Definition ★ (p.10–13)</a><a class="" href="#ards-5" data-lec="ards">2. 역학·원인·감별·예방</a><a class="sub" href="#ards-6" data-lec="ards">2-1. 역학 — LUNG-SAFE (p.15)</a><a class="sub" href="#ards-7" data-lec="ards">2-2. 원인과 위험인자 ★ (p.16–17)</a><a class="sub" href="#ards-8" data-lec="ards">2-3. 감별진단과 ARDS mimics ★ (p.18)</a><a class="sub" href="#ards-9" data-lec="ards">2-4. 다중 타격 가설과 예방 ★ (p.19–21)</a><a class="sub" href="#ards-10" data-lec="ards">2-5. 조기 인지 (p.22)</a><a class="" href="#ards-11" data-lec="ards">3. 병태생리</a><a class="sub" href="#ards-12" data-lec="ards">3-1. 정상 폐포를 건조하게 유지하는 4기둥 (p.23–24)</a><a class="sub" href="#ards-13" data-lec="ards">3-2. 핵심 병태생리 5가지 ★ (p.25–29)</a><a class="sub" href="#ards-14" data-lec="ards">3-3. 시기별 진행 (p.30–31)</a><a class="sub" href="#ards-15" data-lec="ards">3-4. 침상 생리 — Baby lung·shunt·사강 (slide 32–34)</a><a class="" href="#ards-16" data-lec="ards">4. 이질성과 표현형 ★ (p.35–39)</a><a class="" href="#ards-17" data-lec="ards">5. 삽관 전 호흡 보조 ★ (p.40–45)</a><a class="sub" href="#ards-18" data-lec="ards">5-1. 득실과 적시 삽관 (p.40)</a><a class="sub" href="#ards-19" data-lec="ards">5-2. HFNO와 awake prone (p.41–42)</a><a class="sub" href="#ards-20" data-lec="ards">5-3. ROX index (HFNO) (p.43)</a><a class="sub" href="#ards-21" data-lec="ards">5-4. NIV: HACOR와 Vte (p.44–45)</a><a class="" href="#ards-22" data-lec="ards">6. 인공호흡 중 폐손상: VILI·P-SILI·구동압</a><a class="sub" href="#ards-23" data-lec="ards">6-1. VILI 기전 (p.46)</a><a class="sub" href="#ards-24" data-lec="ards">6-2. 폐 압력·mechanical power (slide 47–52, 57–59)</a><a class="sub" href="#ards-25" data-lec="ards">6-3. 해악을 줄이는 2대 전략과 P-SILI ★ (p.60–63)</a><a class="sub" href="#ards-26" data-lec="ards">6-4. 구동압 목표와 근거 (p.53–56)</a><a class="" href="#ards-27" data-lec="ards">7. 폐보호 환기: 저일회호흡량과 PEEP ★</a><a class="sub" href="#ards-28" data-lec="ards">7-1. 저일회호흡량·Pplat 제한 (p.64–66)</a><a class="sub" href="#ards-29" data-lec="ards">7-2. PEEP과 폐포 모집 (p.67–71) ★</a><a class="" href="#ards-30" data-lec="ards">8. 복와위(Prone positioning) ★ (p.72–79)</a><a class="" href="#ards-31" data-lec="ards">9. 신경근차단제(=신경근육차단제, NMBA) (p.80–83)</a><a class="" href="#ards-32" data-lec="ards">10. VV-ECMO (p.84–90)</a><a class="" href="#ards-33" data-lec="ards">11. ATS 2024 권고 한눈에 + 스테로이드 ★ (p.91)</a><a class="" href="#ards-34" data-lec="ards">12. PICS와 결론 (p.92–93)</a></nav><main><div class="hero"><h1>호흡기계 중환자간호 중간고사 핵심요약</h1>
+<p class="lede">강의 슬라이드 + 수업 녹화 전사본에서 교수님이 강조한 부분을 위주로 정리했습니다. 시험은 객관식 + 단답형.
+시간이 없으면 <b>D-1 벼락치기</b> 탭(맨 앞)과 각 강의의 <b>한눈에 보기</b>, 🎯 표시만 보세요.</p>
+<div class="stats"><div class="stat"><b>5</b><span>강의</span></div>
+<div class="stat"><b>78</b><span>🎯 교수 강조</span></div><div class="stat"><b>127</b><span>연습문제</span></div></div>
+<div class="actions"><a class="btn primary" href="quiz.html">연습문제 풀기 →</a><a class="btn" href="resp-icu-midterm.pdf" download="호흡기계중환자간호_중간고사_핵심요약.pdf">요약집 PDF 다운로드 ⤓</a></div>
+<div class="legend"><span style="background:var(--exam-bg);color:var(--exam)">🎯 교수 강조(수업 발언)</span>
+<span style="background:var(--key-bg);color:var(--key)">💡 암기 팁</span><span style="background:var(--warn-bg);color:var(--warn)">⚠️ 헷갈림 주의</span>
+<span style="background:var(--ev-bg);color:var(--ev)">📝 보충</span><span><span class="star">★</span> 핵심</span></div></div><div class="parttabs"><button class="ptab on" data-tab="all">전체</button><button class="ptab" data-tab="drug">약물</button><button class="ptab" data-tab="struct">구조와 기능</button><button class="ptab" data-tab="copd">COPD</button><button class="ptab" data-tab="asthma">천식</button><button class="ptab" data-tab="ards">ARDS</button></div><section class="lec" id="lec-drug" data-lec="drug">
+<div class="part"><div class="num">LECTURE 1</div><h2>호흡기계 약물요법</h2><div class="who">전보민 · 9/14</div></div>
+<div class="glance"><div class="gt">한눈에 보기</div><ul>
+<li>호흡곤란 = 중추의 <strong>호흡 구동</strong>과 실제 <strong>환기 능력</strong>이 맞지 않는 것. 유발 요인부터 빨리 판단해야 약이 정해짐.</li>
+<li>표적 3가지: 평활근 수축 → 기관지확장제(β2 작용제=베타작용제·항콜린제) / 점막 염증·부종 → ICS(흡입스테로이드) / 분비물 → 거담제·객담용해제</li>
+<li>네뷸라이저 순서: <mark>β2 작용제 → 항콜린제 → (객담 많으면) NAC+석션 → ICS</mark></li>
+<li>흡입기 교육: 흡입 전 숨 끝까지 내쉬기, ICS 후 입 헹구고 <strong>뱉기</strong>(구강 칸디다증·쉰 목소리 예방)</li>
+<li>ARDS: 스테로이드(조건부/중등도), NMBA(초기 중증, 조건부/낮음, 최대 48시간, cisatracurium 1선), 폐부종이 있어도 쇼크면 이뇨 보류</li>
+</ul></div>
+<h2 id="drug-1">1. 호흡곤란의 기전과 원인별 치료</h2>
+<h3 id="drug-2">1-1. 정의와 2대 기전 (p.2~3)</h3>
+<ul>
+<li>호흡곤란(dyspnea) = <strong>주관적 호흡 불편감</strong> (p.2)</li>
+<li><strong>호흡 구동 증가</strong>(increased respiratory drive): 더 숨 쉬어야 한다는 요구가 커짐 / <strong>환기역학 장애</strong>(impaired ventilatory mechanics): 호흡명령에 비해 실제 환기·폐 팽창이 부족 (p.2)</li>
+<li>공통 핵심 = <strong>구동-환기 불일치(mismatch)</strong> <span class="star">★</span> (교수가 질환마다 반복)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>질환</th>
+<th>기전 키워드 (p.3)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>천식·COPD</td>
+<td>기도저항↑ → 호흡근 부담, <strong>과팽창 → 흡기 여유 제한</strong>, 가스교환 장애 동반 시 구동↑</td>
+</tr>
+<tr>
+<td>간질성 폐질환</td>
+<td>폐 수용체 자극 → 구동↑ + 폐 팽창 제한·가스교환 장애 → <strong>구동-환기 불일치</strong></td>
+</tr>
+<tr>
+<td>흉수</td>
+<td><strong>압박성 무기폐</strong> + 폐 수용체 자극 → 구동↑, 흉곽·폐 팽창 제한</td>
+</tr>
+<tr>
+<td>폐색전증, 폐고혈압</td>
+<td>폐혈관 수용체 자극, 비효율적 환기(<strong>사강 증가</strong>)</td>
+</tr>
+<tr>
+<td>심부전, 폐울혈, 폐부종</td>
+<td>폐혈관 수용체 자극 + 가스교환 장애</td>
+</tr>
+<tr>
+<td>폐렴</td>
+<td>저산소혈증이 <strong>화학수용체</strong> 자극 → 환기 요구↑</td>
+</tr>
+<tr>
+<td>대사성 산증(신부전 등)</td>
+<td>산혈증 → <strong>보상성 환기</strong> 요구↑</td>
+</tr>
+<tr>
+<td>빈혈, 심박출량 감소</td>
+<td>조직 산소 전달이 수요를 못 따라감</td>
+</tr>
+<tr>
+<td>호흡근 약화(중증 근무력증, 척수손상)</td>
+<td>같은 운동명령으로 얻는 흉벽 움직임·환기↓ (교수: 명령은 오지만 말초 전달이 안 됨)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="drug-3">1-2. 원인별 약물 치료 방향 (p.4)</h3>
+<table>
+<thead>
+<tr>
+<th>원인</th>
+<th>약물</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>천식·COPD (기도 폐쇄·염증)</td>
+<td><strong>흡입 기관지확장제 + 코르티코스테로이드</strong> <span class="star">★</span></td>
+</tr>
+<tr>
+<td>심부전</td>
+<td>이뇨제, 후부하 감소 (해당 질환 진료지침)</td>
+</tr>
+<tr>
+<td>폐색전증, 폐고혈압</td>
+<td>항응고제, 혈전용해제, 폐혈관 확장제 (해당 질환 진료지침)</td>
+</tr>
+<tr>
+<td>폐렴</td>
+<td>항균제</td>
+</tr>
+<tr>
+<td>빈혈, 대사성 산증, 신경근육질환, 흉수</td>
+<td><strong>진단과 원인 치료 우선</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (9/14 00:07:14) 호흡곤란이 생기면 유발 요인(원인 질환·기전)을 먼저 빠르게 판단해야 약물과 치료 방향이 정해진다 — "유발되는 요인이 무엇인지 먼저 빠르게 판단하는 게 … 굉장히 중요한"</p>
+</blockquote>
+<h3 id="drug-4">1-3. 치료 표적 3가지 (p.5) <span class="star">★</span></h3>
+<table>
+<thead>
+<tr>
+<th>병태</th>
+<th>표적 치료</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>평활근 수축</td>
+<td>기관지확장제</td>
+</tr>
+<tr>
+<td>점막 염증·부종</td>
+<td>항염증 치료(ICS)</td>
+</tr>
+<tr>
+<td>분비물 축적</td>
+<td>객담 배출 관리</td>
+</tr>
+</tbody>
+</table>
+<blockquote class="warn">
+<p>⚠️ <strong>헷갈림 주의</strong> 기관지를 넓혀도 점막 염증·부종은 풀리지 않는다(쓰는 약이 다름).</p>
+</blockquote>
+<h2 id="drug-5">2. 기관지확장제</h2>
+<h3 id="drug-6">2-1. β2 작용제 vs 항콜린제 (p.6, p.7, p.9) <span class="star">★</span></h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>β2 작용제</th>
+<th>항콜린제(항무스카린제)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>작용</td>
+<td>β2 수용체 자극 → 평활근 <strong>이완</strong></td>
+<td>콜린성(무스카린) 수축신호 차단 → <strong>수축 억제</strong></td>
+</tr>
+<tr>
+<td>대표 약물</td>
+<td>salbutamol(Ventolin, 벤토린)</td>
+<td>ipratropium(Atrovent, 아트로벤트)</td>
+</tr>
+<tr>
+<td>주요 이상반응</td>
+<td>빈맥, 심계항진, 협심증, 부정맥, <strong>고혈당</strong> (천식 p.23: +진전)</td>
+<td><strong>구강건조, 요저류, 안압 증가</strong> (천식 p.25 LAMA: +쓴맛·복통·변비·발음 이상)</td>
+</tr>
+<tr>
+<td>주의 대상</td>
+<td>심부정맥, <strong>저칼륨혈증</strong>(β2가 K를 세포 안으로 [보충]), 조절 안 되는 당뇨</td>
+<td><strong>녹내장, 전립선 비대</strong></td>
+</tr>
+<tr>
+<td>재평가</td>
+<td>호흡곤란·호흡수·호흡음</td>
+<td>같음</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>기관지: 교감 = 확장, 부교감 = 수축, 평활근 아드레날린성 수용체는 주로 β2 (교수)</li>
+<li>p.7 도식: 부교감 Ach→<strong>[M]</strong>(파란 박스, 항콜린제 작용 부위) / 교감 NE→<strong>[α]·[β]</strong>(빨간 박스, β2 작용제 관련). 신경절은 둘 다 Ach→[N]</li>
+<li>병용: β2 작용제로 <strong>먼저 넓히고</strong>, 항콜린제로 <strong>다시 좁아지지 않게 유지</strong>(또는 섞어서).</li>
+</ul>
+<blockquote class="key">
+<p>💡 <strong>암기 팁</strong> 항콜린 = "입 마르고, 소변 막히고, 눈 압 오른다" → 녹내장·전립선 비대 주의. β2 = 심장(빈맥·부정맥) + 간(고혈당) + 칼륨.</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="ev">
+<p>📝 <strong>수업 설명(교수)</strong> β2 작용제는 심장 β 자극이 "가장 대표적인 부작용" → 호흡 재평가와 함께 <strong>심혈관계 이상반응</strong> 확인. 간 β → 고혈당(교수 용어 '포도당 신생합성', 설명은 글리코겐 분해). 항콜린제는 <strong>구강건조</strong>(분비샘 억제)·<strong>안압 증가</strong>(산동 → 방수 유출↓)가 "가장 큰" 문제, 요저류 → UTI 위험.</p>
+</blockquote>
+<h3 id="drug-7">2-2. 속효성 vs 지속성 (p.8) <span class="star">★</span></h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>SABA / SAMA</th>
+<th>LABA / LAMA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>역할</td>
+<td><strong>증상 완화제</strong>(reliever)</td>
+<td><strong>질병조절제</strong>(controller)</td>
+</tr>
+<tr>
+<td>사용</td>
+<td>지금 당장 호흡곤란이 있을 때, 5~10분 안에 확장</td>
+<td>만성 수축 장기 예방, <strong>매일 정해진 시간에 규칙적으로</strong></td>
+</tr>
+<tr>
+<td>예시</td>
+<td>salbutamol<span class="star">★</span>, terbutaline / ipratropium<span class="star">★</span></td>
+<td>tiotropium, umeclidinium (LAMA), tiotropium/olodaterol (LABA+LAMA 복합)</td>
+</tr>
+</tbody>
+</table>
+<blockquote class="warn">
+<p>⚠️ <strong>헷갈림 주의</strong> Ventolin·Atrovent는 <strong>둘 다 속효성</strong>(p.8 빨간 별표). 표에 LABA 단독 약물은 없고 "5~10분"은 교수 발언. <strong>예외</strong>: formoterol(LABA)은 발현이 빨라 천식 1안의 <strong>완화제</strong>(필요시 저용량 ICS-formoterol, 천식 p.28; p.13 심비코트가 그 약) → 「LABA = controller」는 p.8 분류 문항에서만.</p>
+</blockquote>
+<h2 id="drug-8">3. 흡입 스테로이드(ICS)와 흡입기</h2>
+<h3 id="drug-9">3-1. ICS 기전 (p.10) <span class="star">★</span></h3>
+<ul>
+<li>budesonide, fluticasone: <strong>기도 점막 염증·부종 조절</strong>, 목표 = 증상 조절·악화 예방 → 처방된 요법 지속, 반응 평가 (p.10)</li>
+<li>막 인지질 →(phospholipase A2)→ 아라키돈산 → lipoxygenase(5-LO) → 류코트리엔 / cyclooxygenase → 프로스타글란딘·트롬복산</li>
+<li><strong>스테로이드 = phospholipase A2 억제</strong>(COX보다 한 단계 위), NSAIDs(aspirin·ibuprofen·indomethacin) = COX 억제</li>
+<li><strong>ICS는 기관지를 직접 넓히지 않는다</strong> → 단독이 아니라 기관지확장제와 함께 쓴다 (2회 반복). 천식 강의는 거울상: LABA·SABA를 ICS 없이 쓰지 않음(p.23·28)</li>
+</ul>
+<blockquote class="warn">
+<p>⚠️ <strong>헷갈림 주의</strong> 교수가 LOX 산물에 프로스타글란딘·트롬복산까지 이어 말했지만 시험은 슬라이드(LOX → 류코트리엔). 천식 강의 p.9: 아스피린의 COX 억제 → 류코트리엔↑ = <strong>아스피린 과민성 천식</strong>(「NSAID = 항염」은 일반론).</p>
+</blockquote>
+<h3 id="drug-10">3-2. 천식 vs COPD 흡입치료 원칙 (p.11) <span class="star">★</span></h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>천식</th>
+<th>COPD</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>기류제한 원인</td>
+<td><strong>호산구성 과민반응</strong>(I형, 교수) 염증 (천식 p.12: 비알레르기형은 호중구성 등, ICS 반응↓)</td>
+<td><strong>미주신경 매개 부교감신경 긴장도</strong></td>
+</tr>
+<tr>
+<td>치료 중심</td>
+<td><strong>ICS 병용</strong>(스테로이드 거의 무조건)</td>
+<td><strong>LABA/LAMA 단독 또는 병용</strong></td>
+</tr>
+<tr>
+<td>급성악화</td>
+<td>SABA/SAMA</td>
+<td>SABA/SAMA</td>
+</tr>
+<tr>
+<td>공통 평가</td>
+<td>흡입기 사용법과 순응도</td>
+<td>흡입기 사용법과 순응도</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>COPD도 스테로이드를 쓸 때가 있다(상대적 차이, 교수).</li>
+</ul>
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (9/14 00:28:04) 흡입기와 약의 종류가 매우 다양하므로 흡입기 사용법 교육과 매일 쓰게 하는 순응도 향상이 가장 중요하다 — "… 매일매일 사용하도록 순응도를 높이는 게 중요한데요"</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="warn">
+<p>⚠️ <strong>헷갈림 주의</strong> <strong>약물 강의 기준</strong> 표. COPD 강의는 기류제한 = 소기도 질환+폐기종(p.4), 1차 = <strong>LABA+LAMA 병용</strong>(p.18·32) → 「부교감 긴장도·단독 또는 병용」은 약물 강의 문항에서만. 「SABA를 ICS 없이 쓰지 않음」(천식 p.28)은 유지·완화 전략, 급성악화 첫 약은 천식(p.37)·COPD(p.28) 모두 SABA.</p>
+</blockquote>
+<h3 id="drug-11">3-3. 흡입기 3종 (p.12) <span class="star">★</span></h3>
+<table>
+<thead>
+<tr>
+<th>종류</th>
+<th>분사 원리</th>
+<th>사용 요점</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MDI (정량식 분무 흡입기=정량흡입기)</td>
+<td><strong>추진제</strong></td>
+<td>사용 전 3~4회 흔들기, 분사와 천천히 깊은 흡기를 <strong>동시에</strong>. 어려우면(소아 등) <strong>스페이서</strong>(spacer, 교수)</td>
+</tr>
+<tr>
+<td>DPI (건조분말 흡입기)</td>
+<td><strong>환자의 흡입력</strong></td>
+<td>동조 불필요, <strong>빠르고 세게</strong> 흡입. 기기에 숨을 내쉬면 습기로 약이 굳음</td>
+</tr>
+<tr>
+<td>SMI (연무용 분무기)</td>
+<td><strong>스프링 탄성</strong>(추진체·흡입력 불필요)</td>
+<td>약물 장전·교체 과정 습득(교수: 한 달마다 교체)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="drug-12">3-4. ICS+LABA 복합 흡입기와 ICS 부작용 (p.13) <span class="star">★</span></h3>
+<ul>
+<li>세레타이드 디스커스(DPI, salmeterol/fluticasone [보충]): 돌려 열고 레버 딸깍 → 숨 끝까지 내쉼 → 흡입구 수평으로 물고 <strong>강하고 깊게</strong> 흡입 → 약 10초 숨 참기 → 입 헹군 뒤 뱉기</li>
+<li>심비코트 라피헬러(MDI, budesonide/formoterol [보충]): <strong>5초 흔들기</strong> → 숨 끝까지 내쉼 → <strong>천천히</strong> 들이마시며 누르기 → 5~10초 숨 참고 코로 내쉼 → 입 헹굼(헹군 물은 마시지 않음)</li>
+<li>구분 요령(교수): 설명서에 '흔들라'가 있으면 MDI, 돌려서 그냥 들이마시면 DPI</li>
+</ul>
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (9/14 00:32:00) 흡입기 종류와 관계없이 흡입 전에 숨을 끝까지 내쉬어야 최대로 흡입된다. 환자가 가장 많이 빠뜨리는 단계다 — "중요한 게 … 흡입하기 전에 숨을 끝까지 내쉬어야 되는데"</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (9/14 00:32:21) ICS 흡입 후에는 물로 입안을 헹구고 반드시 뱉는다. 삼키면 전신 흡수 가능성이 높아진다 — "물로 입안을 깨끗이 헹군 후 뱉어내야 된다"</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (9/14 00:33:39) ICS의 대표 부작용 2가지는 구강 칸디다증(=캔디다증)과 쉰 목소리(발성 변화=목소리 변화)이고, 이를 줄이는 교육을 강하게 설명할 수 있어야 한다 — "두 개가 대표적인 부작용이기 때문에 … 굉장히 강하게 설명을"</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="ev">
+<p>📝 <strong>수업 설명(교수)</strong> 스테로이드가 구강 점막에 침착 → 국소 면역↓ → 칸디다 감염. 발성 변화 = 성대 근육이 부어 쉰 목소리 지속.</p>
+</blockquote>
+<h2 id="drug-13">4. 객담·기침 약물</h2>
+<h3 id="drug-14">4-1. 객담 배출 3요소 (p.14)</h3>
+<table>
+<thead>
+<tr>
+<th>요소</th>
+<th>내용</th>
+<th>돕는 방법(교수)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>분비물 성상</td>
+<td>양·점도·끈적임. 점액 = <strong>95% 물 + 고분자 뮤신</strong>(배상세포 분비)</td>
+<td>거담제·객담용해제</td>
+</tr>
+<tr>
+<td>배출 기능</td>
+<td>섬모 운동과 기침. 흡연 등으로 섬모가 없어지면 점액 정체·염증</td>
+<td>기침·석션·흉부물리요법(체위배액·두드리기) + ambroxol(섬모 운동 활성화)</td>
+</tr>
+<tr>
+<td>기도 개방성</td>
+<td>COPD처럼 좁으면 같은 양도 기도를 막음</td>
+<td>기관지확장제</td>
+</tr>
+</tbody>
+</table>
+<h3 id="drug-15">4-2. 거담제와 객담용해제 (p.15) <span class="star">★</span></h3>
+<table>
+<thead>
+<tr>
+<th>약물</th>
+<th>분류</th>
+<th>핵심 작용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>guaifenesin</td>
+<td>거담제(점액분비촉진제)</td>
+<td>기관지 분비샘 <strong>수분 분비↑</strong> → 묽게</td>
+</tr>
+<tr>
+<td>N-acetylcysteine (뮤테란, 흡입제 뮤코미스트)</td>
+<td>점액용해제</td>
+<td>뮤신의 <strong>이황화결합(S–S)을 화학적으로 파괴</strong> → 점도 급감</td>
+</tr>
+<tr>
+<td>ambroxol</td>
+<td>점액조절제(점액활성제)</td>
+<td>II형 폐포상피세포(=ATII, 교수)의 <strong>표면활성제(=계면활성제) 분비↑</strong>(기도벽 접착력↓; ARDS p.27: ATII 손상 → 결핍), 다당류 사슬 분해·수분 공급, <strong>섬모 운동 활성화</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (9/14 00:41:11) 거담제·객담용해제는 가래를 직접 꺼내 주지 못하고 배출을 쉽게 할 뿐이므로 기침·석션·체위배액·두드리기로 물리적으로 빼내야 한다 — "이 약물들의 핵심은 뭐예요? 가래를 꺼내주진 못해요"</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="key">
+<p>💡 <strong>암기 팁</strong> guaifenesin = 물 붓기 / NAC = 끊기(S–S) / ambroxol = 미끄럽게(표면활성제) + 섬모 깨우기.</p>
+</blockquote>
+<h3 id="drug-16">4-3. 네뷸라이저 투여 순서 — "What should we use first?" (p.16) <span class="star">★</span></h3>
+<ul>
+<li>흔한 세트 처방(삽관 환자 루틴, 교수): Ventolin(salbutamol 2.5 mg), Aventro(ipratropium 500 mcg/2 mL), Budecort(budesonide 0.5 mg/2 mL), 하루 4회 정도 (p.16)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>순서</th>
+<th>약</th>
+<th>이유</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>①</td>
+<td>salbutamol (β2 작용제)</td>
+<td>먼저 기관지를 넓힘</td>
+</tr>
+<tr>
+<td>②</td>
+<td>ipratropium (항콜린제)</td>
+<td>다시 수축하지 않게 세팅 (①과 섞어 먼저 줘도 됨)</td>
+</tr>
+<tr>
+<td>③</td>
+<td>객담이 많으면 N-acetylcysteine(뮤코미스트) → <strong>석션</strong></td>
+<td>객담을 묽게 해 제거</td>
+</tr>
+<tr>
+<td>④</td>
+<td>budesonide (ICS)</td>
+<td>객담이 덮여 있으면 점막 흡수가 어려움 → 제거 후에 줘야 항염증 효과↑</td>
+</tr>
+</tbody>
+</table>
+<blockquote class="warn">
+<p>⚠️ <strong>헷갈림 주의</strong> 뮤코미스트(NAC)는 <strong>제일 처음에 쓰지 않는다.</strong> 역설적 기관지 경련을 일으켜, 이미 수축·부종된 기도가 악화될 수 있다. 순서는 기관지 경련 위험·분비물 폐쇄·배출 능력·처방에 따라 조정(p.16). EMR Aventro = Atrovent(ipratropium).</p>
+</blockquote>
+<h3 id="drug-17">4-4. 진해제 (p.17)</h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>작용</th>
+<th>대표 약물</th>
+<th>주의</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>중추성 마약성</td>
+<td>연수 기침중추 역치↑(다른 중추도 억제), <strong>강력한 기침 억제 + 통증 완화</strong></td>
+<td>codeine, hydrocodone</td>
+<td>졸음, 소화기 운동 저하, <strong>호흡억제</strong>, 의존성(교수)</td>
+</tr>
+<tr>
+<td>중추성 비마약성</td>
+<td>기침중추만 억제</td>
+<td>dextromethorphan</td>
+<td>약간의 졸음, <strong>과다복용 시 환각</strong></td>
+</tr>
+<tr>
+<td>말초성</td>
+<td>말초 기침 수용체의 <strong>구심성</strong>(중추로 가는) 신경 억제(<strong>C-fiber</strong>)</td>
+<td>levodropropizine</td>
+<td>졸음, 어지럼</td>
+</tr>
+</tbody>
+</table>
+<blockquote class="ev">
+<p>📝 <strong>수업 설명(교수)</strong> 기침은 객담·이물을 내보내는 보호 기능이라 중환자에서 억제할 일은 거의 없다. dextromethorphan은 감기약 대부분에 들어 있어 겹쳐 먹으면 과다복용 위험.</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (9/14 00:48:10) 호흡곤란 유발 요인별 약 정리(p.5 표적 3가지와 연결): 기관지 수축·염증 → 기관지확장제·ICS, 객담 → 거담제·객담용해제, 기침 → 진해제 — "가장 중요한 게 디스프니아를 유발하는 여러 가지 요인 중에 …"</p>
+</blockquote>
+<h2 id="drug-18">5. ARDS 약물</h2>
+<h3 id="drug-19">5-1. 사례와 약물 사용 목적 (p.18, p.20)</h3>
+<ul>
+<li>사례(초기 중증 ARDS, 가상): 발생 24시간째 삽관·폐보호환기, PaO2 60 mmHg / FiO2 0.80 → P/F 75, PEEP 10, 환기·진정 조정에도 심한 비동시성(=비동조)·저산소증, 누적 수분 균형 +3 L, 승압제 요구량 증가 (p.18)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>목적</th>
+<th>약물</th>
+<th>핵심 조건 (p.20)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>폐의 염증반응</td>
+<td>전신 스테로이드</td>
+<td>환자별 이득·위해 평가</td>
+</tr>
+<tr>
+<td>환기 비동시성, 과도한 환기 노력</td>
+<td>신경근육차단제(=신경근차단제, NMBA)</td>
+<td><strong>초기 중증 ARDS</strong>에서 선별</td>
+</tr>
+<tr>
+<td>체액 축적</td>
+<td>수액 조절, 이뇨제</td>
+<td>필요성 평가 (<mark>폐부종이 있어도 혈관 내 체액 과다라고 단정 불가</mark>)</td>
+</tr>
+</tbody>
+</table>
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (9/14 00:52:32) 체액 축적에서 이뇨제를 언제·어떻게 쓸지가 가장 중요한 포인트다. 모세혈관 투과성↑(패혈증 등)이면 폐부종이 있어도 순환 혈액량은 부족할 수 있어 이뇨제가 순환을 악화시킬 수 있다 — "언제 어떻게 조절할 것이냐 … 이게 가장 중요하게 생각해야 되는 포인트"</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="warn">
+<p>⚠️ <strong>헷갈림 주의</strong> ATS ARDS 지침 = 2023년 9월 승인(p.19), 2024년 1월 AJRCCM 게재 [보충] → 교수의 "2024년도에 발표", <strong>ARDS 강의 p.69·91의 'ATS 2024'와 같은 지침</strong>. p.19 초록 5개 권고(스테로이드·VV-ECMO·초기 중증 NMBA·RM 없는 높은 PEEP은 조건부, 장시간 RM은 강한 반대) = p.91 그림의 * 항목. 승인 연도는 2023. 대한중환자의학회 지침은 2016년판이 최신(교수).</p>
+</blockquote>
+<h3 id="drug-20">5-2. 전신 스테로이드 (p.21~22) <span class="star">★</span></h3>
+<ul>
+<li>ATS: <strong>전신 스테로이드 사용을 제안한다 — 조건부 권고 / 중등도 근거</strong>, 기관삽관 ARDS 연구 기반, 절대적으로 쓰라는 뜻은 아님 (p.21)</li>
+<li>작용: 염증매개물질 생성·작용 억제. 원인 질환, 감염·대사 합병증 위험을 함께 보고 <strong>개별화</strong> (p.21)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>결과</th>
+<th>통합분석 (p.21)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>사망률</td>
+<td>RR 0.84 (0.73–0.96), 감소</td>
+</tr>
+<tr>
+<td>기계환기 기간</td>
+<td>평균 약 4일 감소 → 단축 가능성</td>
+</tr>
+<tr>
+<td>중대한 고혈당</td>
+<td>RR 1.11 (1.01–1.23), 증가 → 혈당 추적·조정</td>
+</tr>
+<tr>
+<td>감염·근육 약화</td>
+<td>불확실 → 감시</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>대한중환자의학회: <strong>약물·용량·기간의 단일 표준 요법은 없다</strong> <span class="star">★</span> (p.22). 교수는 표 6-1 중 Meduri 2007만 짚음: methylprednisolone 부하 1 mg/kg → 1 mg/kg/d 1~14일 → 28일까지 감량</li>
+<li>ARDS 강의 보완: 초기 삼출기(늦어도 7일 이내)에 시작, 14일 이후 신규 시작 금물(p.30–31 노트) / NMBA와 고용량 병용 제한 = ICU-AW 예방(p.82)</li>
+</ul>
+<blockquote class="ev">
+<p>📝 <strong>수업 설명(교수)</strong> 스테로이드는 이화작용으로 지방·단백질을 쓰게 해 오래 누운 중환자에서 근육 약화가 우려되지만, 제대로 평가한 연구가 드물다.</p>
+</blockquote>
+<h3 id="drug-21">5-3. NMBA 권고 (p.23) <span class="star">★</span></h3>
+<ul>
+<li>ATS: <strong>초기 중증 ARDS에서 NMBA 사용을 제안한다 — 조건부 권고 / 낮은 근거</strong>(스테로이드 = 중등도보다 낮음)</li>
+<li><strong>초기 중증 = 발생 48시간 이내 + P/F ≤100 mmHg</strong></li>
+<li>대상: 이미 깊은 진정이 필요한 환자, 또는 환기 설정·진정 조절에도 심한 비동시성·임상 악화가 지속되는 환자</li>
+<li>기간: <strong>가능하면 최대 48시간</strong>, 빨리 호전되면 조기 중단(근육 소실·신경 손상 예방)</li>
+<li>결과: 깊은 진정 대조군 대비 사망률 RR 0.72(감소), 얕은 진정 대조군 대비 RR 0.99(감소 없음; 진정 깊이와 NMBA 조건이 섞여 해석 불확실). [보충] 깊은/얕은 진정 대조군 = ARDS p.80의 이전 RCT 3개/ROSE. <strong>압력손상은 감소</strong>(RR 0.55), <strong>ICU 획득 쇠약(ICU-AW)은 증가 가능성, 불확실</strong>(RR 1.16).</li>
+</ul>
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (9/14 00:59:03) 초기 중증 ARDS에서 NMBA는 가능하면 최대 48시간 이내로 쓰고, 빨리 호전되면 일찍 끊는다. ATS 권고에서 가장 중요한 부분이다 — "가능하면 최대 48시간 이내에 해야 된다 … 권고사항의 그게 가장 중요한 파트"</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="warn">
+<p>⚠️ <strong>헷갈림 주의</strong> 48시간이 두 번 나온다: '발생 48시간 이내'(초기의 정의) vs '사용 최대 48시간'(기간). 원 연구들은 P/F 150 미만으로 등록했지만 [보충] 시험은 슬라이드 ≤100 기준. ARDS p.82: 48시간은 절대 상한 아님(넘기면 12시간마다 재평가, P/F &gt;150이면 중단).</p>
+</blockquote>
+<h3 id="drug-22">5-4. NMBA 기전과 3종 비교 (p.24~25) <span class="star">★</span></h3>
+<ul>
+<li>기전: 운동신경 말단 ACh → 골격근 <strong>니코틴 수용체(Nm)</strong> → 수축. NMBA가 ACh와 경쟁해 Nm 차단 → 횡격막 포함 근육 이완 → 인공호흡기가 계획대로 보조, 과도한 압력·과팽창 손상 방지 (p.24)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>약물</th>
+<th>대사 경로</th>
+<th>특징 (p.25)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cisatracurium</td>
+<td><strong>Hofmann 제거</strong>(체온·생리적 pH에서 혈중 자발 분해)</td>
+<td>간·신부전에도 축적 없음 → <strong>1선 표준</strong>(교수: 중환자 대부분 다발성 장기부전)</td>
+</tr>
+<tr>
+<td>vecuronium</td>
+<td>간 대사 + 신장 배설</td>
+<td>간·신부전 시 반감기 연장·작용 지연</td>
+</tr>
+<tr>
+<td>atracurium</td>
+<td>Hofmann 제거 + 혈장 에스테라제</td>
+<td>축적 위험 낮음, <strong>용량 의존 히스타민 방출</strong>(기관지 연축·저혈압·홍조)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>체온·산염기 감시: <strong>저체온·심한 산증 → 분해 지연</strong>, <strong>고열·알칼리증 → 너무 빨리 분해</strong> (p.25)</li>
+<li>ARDS p.82: 비스테로이드계라 ICU-AW↓, vecuronium보다 MV·ICU 기간↓(노트). 「국내 미보유」(ARDS 교수)는 미확인</li>
+</ul>
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (9/14 01:06:22) Hofmann 제거 약물(cisatracurium·atracurium)을 쓸 때는 체온과 산염기 균형을 잘 유지해야 비동시성을 빨리 줄이고 효과를 높일 수 있다 — "산염기 불균형을 잘 유지하면서 … 효과적으로 이 약물을 쓰는 게 중요하다"</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="key">
+<p>💡 <strong>암기 팁</strong> Hofmann은 "따뜻하고 약알칼리"에서 일한다: 차갑고 산성이면 느려지고, 뜨겁고 알칼리면 빨라진다.</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="warn">
+<p>⚠️ <strong>헷갈림 주의</strong> 항콜린 기관지확장제의 표적 = 무스카린(M) 수용체 / NMBA의 표적 = 골격근 니코틴(Nm) 수용체.</p>
+</blockquote>
+<h3 id="drug-23">5-5. 폐부종 관리와 수액 (p.26~28) <span class="star">★</span></h3>
+<ul>
+<li>ARDS 폐포-모세혈관 장벽 손상(폐부종) + 패혈증 등의 전신 혈관 누출·확장 → <strong>순환 혈액량 부족</strong> (p.26)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>단계</th>
+<th>우선 판단</th>
+<th>치료 방향 (p.26)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>쇼크·저관류 지속</td>
+<td>추가 소생이 필요한가?</td>
+<td>승압제 요구가 늘면 <strong>적극적 이뇨 보류</strong> → <strong>쇼크 원인과 관류 회복</strong>을 먼저 평가</td>
+</tr>
+<tr>
+<td>소생 후 안정화</td>
+<td>체액 축적이 있는가?</td>
+<td>불필요한 수액 줄이기</td>
+</tr>
+<tr>
+<td>체액 제거</td>
+<td>제거를 견딜 수 있는가?</td>
+<td>혈압·소변량·신기능·전해질을 보며 프로토콜대로 이뇨제(furosemide)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>ESICM 2025(수액요법 지침 part 2, p.27) Q10: ARDS + 순환부전에서 제한적 vs 자유로운 수액 전략 → <strong>권고 없음, 근거 매우 낮음</strong>(소생 단계 RCT 없음). 제한적 = 체액 축적·폐부종 악화 감소, 자유로운 = 혈액량 부족 교정·장기 혈류 개선 (p.28). ≠ ESICM 2023(ARDS 지침·PEEP, ARDS p.69)</li>
+<li>ARDS 강의(p.21·26 노트·35): 소생 목표 달성 <strong>후</strong> 보존적 수액·이뇨가 예후 개선(FACTT) = 위 표 2·3단계 → 1단계 이뇨 보류와 충돌 아님</li>
+<li>패혈증·패혈성 쇼크 초기 소생: <strong>IV 결정질 최대 30 mL/kg</strong> 제안(조건부), 수액 반응성(심박출량↑ 여부)을 보며 추가, 혈역학 감시로 개별화 (p.28)</li>
+</ul>
+<blockquote class="ev">
+<p>📝 <strong>수업 설명(교수)</strong> 이뇨제는 신장에 작용하므로 신기능이 너무 나쁘면 쓰기 어렵고, 시점·용량에 절대 기준은 없다. 흔히 furosemide, spironolactone.</p>
+</blockquote>
+<h3 id="drug-24">5-6. 사례 적용 (p.29)</h3>
+<table>
+<thead>
+<tr>
+<th>약물</th>
+<th>이 사례에서</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>이뇨제</td>
+<td>+3 L이어도 승압제 요구 증가 → <strong>이뇨 보류</strong>, 관류·순환 혈액량부터. 안정 후 체액 과다가 남으면 이뇨제·수액 조절 (교수 설명)</td>
+</tr>
+<tr>
+<td>NMBA·스테로이드</td>
+<td>48시간 이내 + P/F 75 + 비동시성 지속 → NMBA 고려(최대 48시간) / 스테로이드 조건부 고려·개별화 (작성자 적용, p.21·23)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>ARDS + 순환부전: <strong>관류 회복과 폐부종 악화 위험을 함께 고려</strong>, 수액량에 <strong>ARDS 특이 권고 없음</strong> → 원인 질환·수액 반응성·반복 혈역학 평가로 개별화 (p.29)</li>
+</ul>
+<blockquote class="ev">
+<p>📝 <strong>수업 설명(교수)</strong> 가이드가 없는 부분은 계속 사정·판단해 노티하고, 지침이 바뀌면 달라진 점부터 확인한다.</p>
+</blockquote></section><section class="lec" id="lec-struct" data-lec="struct">
+<div class="part"><div class="num">LECTURE 2</div><h2>호흡기계 구조와 기능</h2><div class="who">장선주 · 5주차 녹화 강의(1~23쪽 녹화, 이후는 슬라이드 기준)</div></div>
+<div class="glance"><div class="gt">한눈에 보기</div><ul>
+<li>공기 길: 코 → 인두 → 후두 → 기관 → carina → 1·2·3차 기관지 → 세기관지(1 mm, 연골 없음) → <strong>종말세기관지 = 전도부 끝</strong> → 호흡세기관지(기체교환면으로 공기 운반) → 폐포관 → 폐포주머니 → 폐포</li>
+<li>교수가 가장 오래 다룬 곳: 폐용적·폐용량(약 7분, 직접 계산) · 분압 · 압력차와 호흡근 · O2 결합 결정요인(PO2·pH·온도)</li>
+<li>외울 숫자: VT 500 · ERV 1000 · IRV 남 3300/여 1900 · RV 남 1200/여 1100 → VC 남 4800/여 3400, TLC 남 6000/여 4500 / 분압 100/40 · 40/45 · 95/40 / O2 혈장 용해 1.5%</li>
+<li>교수가 슬라이드 밖에서 덧붙인 것: 해부학적 사강 150 mL · 여성 TLC 4500(4200 → 4500 정정) · 폐기종 순응도↑/RDS↓ · O2 유리 25% → 80% · 우측 주기관지로 이물질 · 흉막 = 장막</li>
+<li>무녹화 구간: CO2 운반 7/23/70%(형광), DRG(매 주기)·VRG(강제호흡만), 화학수용기는 PO2보다 PCO2에 민감, 동(sinus) = 압력·체(body) = 화학</li>
+</ul></div>
+<h2 id="struct-1">1. 호흡기계 구조</h2>
+<h3 id="struct-2">1-1. 전도부 vs 호흡부 <span class="star">★</span></h3>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>범위</th>
+<th>기능</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>전도부(conducting portion)</td>
+<td>코·인두·후두·기관·기관지·세기관지 – <strong>종말세기관지</strong></td>
+<td>공기 운반 + 여과(전사 추정)·가온·가습 → 이물질·병원체 대부분을 폐포 전에 제거</td>
+</tr>
+<tr>
+<td>호흡부(respiratory portion)</td>
+<td><strong>호흡세기관지</strong> → 폐포관 → 폐포주머니 → 폐포</td>
+<td>기체교환</td>
+</tr>
+</tbody>
+</table>
+<p>(p.2–3, p.9, p.11) 녹화에서 이 구분을 세 번, 종말/호흡세기관지 경계를 "다시 한번 정리하면"으로 두 번 반복했다.</p>
+<blockquote class="warn">
+<p>⚠️ <strong>헷갈림 주의</strong> p.2는 전도부 "nose – bronchiole", 호흡부 "bronchiole in lung"이라 둘 다 세기관지가 들어 있다. 경계는 <strong>종말세기관지(전도부 끝) / 호흡세기관지(기체교환면으로 공기 운반, p.11)</strong> 로 외운다.</p>
+</blockquote>
+<ul>
+<li>교수가 든 호흡기계 기능 5가지(슬라이드 없음): 기체교환 · 공기를 기체교환면으로 들이고 내보냄 · 기체교환면 보호(탈수·온도 변화·병원체) · 발성 · 후각</li>
+</ul>
+<h3 id="struct-3">1-2. 점액섬모 청소 <span class="star">★</span></h3>
+<ul>
+<li>호흡점막 = 호흡상피(섬모원주상피 + 술잔세포 goblet cell) + 고유판(lamina propria, 점액샘 발달) (p.4)</li>
+<li>흐름: 술잔세포·점액샘이 점액 분비 → 점액이 미생물과 결합 → <strong>섬모(cilia) 운동으로 한 방향(위, 인두 쪽)</strong> 운반 → 침·음식과 함께 삼킴 → 위산·소화효소로 분해 (p.4, 그림으로 약 3분 반복)</li>
+</ul>
+<h3 id="struct-4">1-3. 코·인두 <span class="star">★</span></h3>
+<ul>
+<li>코(p.5): 코안뜰(nasal vestibule) = 뻣뻣한 털로 이물질 차단 / 경구개(hard palate) = 코안의 바닥(입에서 보면 천장) / 연구개(soft palate) = 근육. 형광: 비갑개·코안뜰·바깥콧구멍·경구개·연구개</li>
+<li>인두(pharynx, p.6) = <strong>소화계통과 호흡계통의 공유 공간</strong>, 뒤콧구멍(choana) – 후두·식도 입구</li>
+</ul>
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (5주차 녹화 00:09:12) pharynx(인두)를 larynx(후두)와 헷갈리지 않게 "파(pha)링스 → 아임 파인(fine)의 '파인' → 인두"로 외운다 — "파링스는 인두, 이렇게 기억을 하시면 좋겠습니다"</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>인두 3구분</th>
+<th>범위(교수 설명)</th>
+<th>특징</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>비인두(nasopharynx)</td>
+<td>뒤콧구멍 – 연구개 끝</td>
+<td>전형적 호흡상피</td>
+</tr>
+<tr>
+<td>구인두(oropharynx) <span class="star">★</span></td>
+<td>연구개 – 혀뿌리</td>
+<td>음식물·공기 통과</td>
+</tr>
+<tr>
+<td>후두인두(laryngopharynx) <span class="star">★</span></td>
+<td>그 아래 – 식도 입구</td>
+<td>음식물·공기 공유</td>
+</tr>
+</tbody>
+</table>
+<p>음식물은 구인두 → 후두인두 → 소화관 (p.6). 교수는 그림 위에 경계를 다시 그려 두 번 설명했다.</p>
+<h3 id="struct-5">1-4. 후두(larynx) <span class="star">★</span></h3>
+<ul>
+<li>공기는 성문(glottis)으로 들어온다. <strong>인대로 연결된 연골 9개 + 골격근</strong> (p.7)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>구조</th>
+<th>핵심</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>후두덮개(epiglottis)</td>
+<td>성문 위를 덮음. 삼킬 때 후두가 위로 당겨지며 성문을 막아 음식물이 기도로 못 들어감. 삽관 때 자주 듣는 구조</td>
+</tr>
+<tr>
+<td>방패연골(thyroid cartilage)</td>
+<td>후두 앞면·양 가장자리 대부분, 앞 돌출 = <strong>Adam's apple</strong></td>
+</tr>
+<tr>
+<td>반지연골(cricoid cartilage)</td>
+<td>후두 아래쪽, <strong>기관과 연결</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="struct-6">1-5. 기관·기관지 <span class="star">★</span></h3>
+<ul>
+<li>기관(trachea, p.8): 반지연골에 이어져 시작(제6경추 C6 높이), 지름 약 2.5 cm·길이 약 11 cm, C자 연골 15–20개(수치는 교수 추가)</li>
+<li>C자 연골은 앞이 닫히고 뒤가 열림 → 연골 없는 뒷벽(탄력인대 + 민무늬근 = <strong>기관근 trachealis</strong>)이 식도와 맞닿아 큰 음식물이 내려갈 때 공간을 내준다. 연골은 압력이 변해도 기관 모양을 유지</li>
+<li>기관근은 자율신경 지배, <strong>교감신경 흥분 → 기관 지름↑</strong> (p.8)</li>
+</ul>
+<blockquote class="ev">
+<p>📝 <strong>교수 추가</strong> (00:17:08) 천식·COPD 환자에게 쓰는 네뷸라이저 벤토린(Ventolin)은 β2 agonist(교감신경 작용) → 기관·기관지 민무늬근 이완 → 기도 확장. [보충] 성분명은 살부타몰(salbutamol).</p>
+</blockquote>
+<ul>
+<li><strong>carina</strong>: 기관이 좌·우 1차 기관지(primary = main bronchus)로 갈리는 곳 = 삽관 튜브 위치 확인 기준점(교수)</li>
+<li>우측 1차 기관지는 좌측보다 <strong>굵고 수직에 가까움</strong> → 기관에 들어간 이물질은 <strong>우측</strong>으로 갈 확률이 높다(교수, 슬라이드 없음)</li>
+<li>기관지나무(bronchial tree, p.9): 1차(벽은 기관과 비슷, 섬모상피 + C자 연골) → 2차 → 3차 <span class="star">★</span>. 갈라질수록 지름·연골↓ → <strong>지름 약 1 mm에서 연골이 완전히 없어지면 세기관지</strong></li>
+</ul>
+<h3 id="struct-7">1-6. 세기관지 – 폐포 <span class="star">★</span></h3>
+<table>
+<thead>
+<tr>
+<th>구조</th>
+<th>핵심</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>세기관지(bronchiole)</td>
+<td>지름 약 1 mm, <strong>연골 없음</strong>, 자율신경 지배 민무늬근 많음 → 지름으로 공기 유속·방향 조절 (p.9)</td>
+</tr>
+<tr>
+<td>종말세기관지(terminal bronchiole) <span class="star">★</span></td>
+<td><strong>전도부의 마지막</strong>. 하나가 폐소엽(pulmonary lobule = 결합조직 중격으로 구분된 폐조직의 단위 구조) 하나에 공기 공급. 지름 0.3–0.5 mm(교수)</td>
+</tr>
+<tr>
+<td>호흡세기관지(respiratory bronchiole) <span class="star">★</span></td>
+<td>종말세기관지가 폐소엽 안에서 갈라진 것, <strong>기체교환면으로 공기 운반</strong> (p.11)</td>
+</tr>
+<tr>
+<td>폐포관 → 폐포주머니 → 폐포 <span class="star">★</span></td>
+<td>형광 강조 (p.11). 폐포는 한쪽 약 1억 5천만 개, 양쪽 표면적 약 140 m²(테니스코트 절반, 교수)</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>세기관지 민무늬근</th>
+<th>교감신경 흥분</th>
+<th>부교감신경 흥분</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>반응</td>
+<td>이완 → 기도 <strong>확장</strong></td>
+<td>수축 → 기도 <strong>좁아짐</strong></td>
+</tr>
+</tbody>
+</table>
+<p>슬라이드에는 교감만 있고 부교감은 교수가 덧붙였다. 기관지가 수축하고 알레르기·염증으로 기도가 좁아진 상태를 천식(asthma)으로 연결했다.</p>
+<h3 id="struct-8">1-7. 폐포 세포·호흡막 <span class="star">★</span></h3>
+<table>
+<thead>
+<tr>
+<th>세포</th>
+<th>기능 (p.13)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>폐포대식세포(alveolar macrophage) = <strong>먼지세포(dust cell)</strong></td>
+<td>폐포 상피 표면을 돌며 먼지·이물질 포식</td>
+</tr>
+<tr>
+<td>과립폐포세포(great alveolar cell, 그림 라벨 septal cell)</td>
+<td><strong>surfactant 분비 → 폐포 수분층을 덮어 표면장력↓</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote class="ev">
+<p>📝 <strong>교수 추가</strong> (00:25:31) 표면장력 = 물-공기 경계면에서 물 분자끼리 당기는 힘. surfactant가 없으면 폐포가 쪼그라들고 숨을 아주 세게 들이쉬어야 다시 펴진다 → 호흡곤란증후군(RDS). [보충] 과립폐포세포 = 제2형 폐포세포(type II pneumocyte).</p>
+</blockquote>
+<ul>
+<li><strong>호흡막(respiratory membrane)</strong> <span class="star">★</span> (녹화에서 두 번 설명 + 확산 때 재언급): 3층 = ① 폐포 편평상피세포 ② 모세혈관 내피세포 ③ 둘이 <strong>융합된 기저막</strong> / 두께 <strong>0.5 µm</strong> / O2·CO2는 <strong>지용성</strong>이라 쉽게 통과(세포막도 장벽이 못 됨) (p.14)</li>
+</ul>
+<blockquote class="warn">
+<p>⚠️ <strong>헷갈림 주의</strong> surfactant는 3층에 들지 않는다(그림에서 폐포 쪽 바깥, 형광 없음). 기저막은 두 장이 아니라 융합된 한 층이다. "수용성"은 오답.</p>
+</blockquote>
+<h3 id="struct-9">1-8. 폐와 흉막 <span class="star">★</span></h3>
+<ul>
+<li>폐(p.15): 우 3엽(상·중·하), 좌 2엽(상·하) + 심장패임(cardiac notch). 폐첨(apex) = 첫째 갈비뼈 위 목뿌리, 폐저(base) = 횡격막 위. 탄력섬유가 많아 부피 변화를 잘 견딘다</li>
+<li>흉막(pleura) = <strong>장막(serous membrane)</strong> 2층, 점막 아님(교수 "알고 계시면", 00:30:30) (p.16, 세 라벨 모두 형광):</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>구조</th>
+<th>위치·역할</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>벽측흉막(parietal pleura)</td>
+<td>흉벽 안쪽면·횡격막 윗면·종격 바깥</td>
+</tr>
+<tr>
+<td>장측흉막(visceral pleura)</td>
+<td>폐 표면을 직접 덮고 엽 사이로도 들어감</td>
+</tr>
+<tr>
+<td>흉막강(pleural cavity)</td>
+<td>두 층 사이, 소량의 액체 → 호흡 시 마찰↓</td>
+</tr>
+</tbody>
+</table>
+<blockquote class="ev">
+<p>📝 <strong>교수 추가</strong> (00:32:15) 흉막강에 액체가 차면 흉막삼출(pleural effusion)이고, 바늘로 빼는 것이 흉강천자(thoracentesis). 흉막이 찢어져 공기가 차면 기흉(pneumothorax), 혈액이 고이면 혈흉(hemothorax).</p>
+</blockquote>
+<h2 id="struct-10">2. 호흡과 환기</h2>
+<h3 id="struct-11">2-1. 외호흡 vs 내호흡 <span class="star">★</span></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>외호흡(external respiration)</th>
+<th>내호흡(internal respiration)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>정의</td>
+<td>세포외액(ECF) ↔ 대기의 O2·CO2 교환, 호흡계통에서</td>
+<td>세포 수준: 각 세포가 O2 흡수·CO2 배출</td>
+</tr>
+<tr>
+<td>단계</td>
+<td>① 폐환기 ② 기체확산(호흡막) ③ 기체운반(폐 모세혈관 ↔ 조직 모세혈관)</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>(p.17, 3단계는 녹화에서 두 번 나열) 이 과정에 이상이 생겨 간질액 O2가 낮아지고 세포 대사가 떨어지면 저산소증(hypoxia), O2가 전혀 없으면 무산소증(anoxia)이다(교수).</p>
+<h3 id="struct-12">2-2. 압력차와 호흡근 <span class="star">★</span></h3>
+<ul>
+<li>교수가 화면에 직접 쓴 원리: <strong>공기는 압력 높은 곳 → 낮은 곳</strong>(pressure gradient). 폐가 팽창하면 폐 안 압력↓, 쪼그라들면 압력↑ (p.18)</li>
+<li>슬라이드: <strong>흉강 압력(thoracic cavity pressure)을 바꾸는 주체 = 횡격막(diaphragm)·늑골(rib)</strong> (p.18). 폐 부피는 흉강 부피가 정한다(교수 표현은 "흉막강")</li>
+<li>흉강 부피: 횡격막 <strong>수축 = 평평하게 아래로 → 넓어짐</strong>, 이완 = 돔처럼 위로 → 좁아짐 / 갈비뼈 위로 → 넓어짐, 아래로 → 좁아짐. 호흡수 12–18회/분 (p.18)</li>
+</ul>
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (5주차 녹화 00:42:17) 흡기·호기 때 어떤 근육이 수축·이완하는지 알아 둔다(슬라이드 형광 근육 4개와 같다) — "어떠한 근육에 관여를 해서 이완과 수축이 나타나는지 이 정도까지는 선생님들이 알고 계시면 어떨까"</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>상태 (p.19)</th>
+<th>근육</th>
+<th>흉강 용적·압력</th>
+<th>기류</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>휴식기(at rest, 호흡 사이)</td>
+<td>늑골·횡격막 안 움직임</td>
+<td>안팎 같음</td>
+<td>없음, <strong>Po = Pi</strong> <span class="star">★</span></td>
+</tr>
+<tr>
+<td>흡기</td>
+<td><strong>흉쇄유돌근(SCM)·외늑간근</strong> 수축 → 늑골↑ + 횡격막 <strong>수축</strong> → 아래로</td>
+<td>용적↑ → 압력↓</td>
+<td>들어옴, <strong>Po &gt; Pi</strong> <span class="star">★</span></td>
+</tr>
+<tr>
+<td>호기</td>
+<td><strong>내늑간근·복직근</strong> 수축 → 늑골↓ + 횡격막 <strong>이완</strong> → 위로</td>
+<td>용적↓ → 압력↑</td>
+<td>나감, <strong>Po &lt; Pi</strong> <span class="star">★</span></td>
+</tr>
+</tbody>
+</table>
+<p>(Po = 바깥, Pi = 안. 그림의 사각근·소흉근·전거근(흡기), 흉횡근(호기)은 형광 없음)</p>
+<blockquote class="warn">
+<p>⚠️ <strong>헷갈림 주의</strong> p.19 표는 안정호흡과 강제호흡을 나누지 않는다. <strong>안정호흡</strong>: 흡기 = 횡격막·외늑간근(DRG, p.28), 호기 = 근육 수축 없이 <strong>수동적</strong>(p.28–29). <strong>호기근(내늑간근·복직근) 수축은 강제호흡 때</strong>(VRG 날숨중추 흥분 → 능동적 호기, p.28·p.30). [보충] SCM 같은 흡기 보조근도 강제 흡기 때 동원된다(어느 근육이 보조근인지는 슬라이드에 없음).</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="key">
+<p>💡 <strong>암기 팁</strong> 늑간근은 <strong>외 = 흡기, 내 = 호기</strong>. 흡기는 "바깥(Po)이 커서 들어온다". 횡격막은 흡기에 수축, 호기에 이완.</p>
+</blockquote>
+<h3 id="struct-13">2-3. 순응도(compliance)</h3>
+<ul>
+<li>폐의 탄력성·팽창능력. 낮을수록 공기를 넣고 빼는 데 에너지↑ (p.20). 평소 호흡근 에너지 = 기초 에너지의 <strong>3–5%</strong> → 순응도가 낮으면 숨쉬기만으로 지칠 만큼 늘어난다</li>
+<li>교수 예시(슬라이드 없음, 00:43:07): <strong>폐기종(emphysema) = 순응도↑</strong>(폐포 지지조직 파괴) / <strong>RDS = 순응도↓</strong>(surfactant 부족) / 늑골·척추 관절염 = 순응도↓(전사 복원 추정). 국문으로 <strong>유순도</strong>라고도 한다</li>
+</ul>
+<blockquote class="warn">
+<p>⚠️ <strong>헷갈림 주의</strong> 순응도가 높다고 정상은 아니다(폐기종). [보충] 엄밀히 compliance = 팽창능력(ΔV/ΔP)이고 탄력(elastance)은 그 역수지만, 시험은 슬라이드 표현 "탄력성, 팽창능력" 기준.</p>
+</blockquote>
+<h3 id="struct-14">2-4. 폐용적·폐용량 <span class="star">★</span> (녹화에서 가장 길게, 약 7분)</h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>정의</th>
+<th>슬라이드 수치(mL)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>일회호흡량(tidal volume, VT)</td>
+<td>한 번 호흡하는 양</td>
+<td>평균 <strong>500</strong></td>
+</tr>
+<tr>
+<td>호기예비량(ERV)</td>
+<td>편안히 내쉰 뒤 호기근을 더 수축해 더 내보내는 양</td>
+<td><strong>1000</strong> (남녀 구분 없음)</td>
+</tr>
+<tr>
+<td>흡기예비량(IRV)</td>
+<td>안정 흡기 후 더 들이쉬는 양</td>
+<td>남 <strong>3300</strong> / 여 <strong>1900</strong></td>
+</tr>
+<tr>
+<td>폐활량(vital capacity, VC)</td>
+<td>한 번 호흡으로 들어오거나 나갈 수 있는 최대량</td>
+<td>IRV + VT + ERV</td>
+</tr>
+<tr>
+<td>잔기량(residual volume, RV)</td>
+<td>최대 호기 후 남는 공기. 폐가 흉막강에 밀착해 크게 변하지 않음</td>
+<td>남 <strong>1200</strong> / 여 <strong>1100</strong></td>
+</tr>
+<tr>
+<td>최소량(minimal volume)</td>
+<td>기흉으로 폐가 쪼그라들어도 surfactant 덕분에 폐포에 남는 공기, <strong>RV 안에 포함</strong></td>
+<td><strong>30–120</strong> (그림)</td>
+</tr>
+<tr>
+<td>전폐용량(TLC)</td>
+<td>모든 용적의 합(교수 추가, 그림에는 형광 없음)</td>
+<td>VC + RV</td>
+</tr>
+</tbody>
+</table>
+<p><strong>VC = IRV + VT + ERV</strong> — 녹화에서 두 번 말하고 바로 계산에 썼다. 잔기량은 폐활량에 들지 않는다. 그래프에만 있는 흡기용량(IC)·기능적 잔기용량(FRC)은 형광·정의가 없다 [보충: IC = VT + IRV, FRC = ERV + RV].</p>
+<table>
+<thead>
+<tr>
+<th>교수 직접 계산 (00:50:02)</th>
+<th>폐활량(VC)</th>
+<th>전폐용량(TLC) = VC + RV</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>남</td>
+<td>3300 + 500 + 1000 = <strong>4800</strong></td>
+<td>4800 + 1200 = <strong>6000</strong> (6 L)</td>
+</tr>
+<tr>
+<td>여</td>
+<td>1900 + 500 + 1000 = <strong>3400</strong></td>
+<td>3400 + 1100 = <strong>4500</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote class="warn">
+<p>⚠️ <strong>헷갈림 주의</strong> 여성 TLC는 교수가 처음 "4200"이라 했다가 다시 더해 <strong>4500</strong>으로 고쳤다. [보충] 교과서(Martini)는 여성 ERV 700 → VC 3100·TLC 4200이라 숫자가 다르다. 계산 문제는 <strong>슬라이드 값과 교수 계산</strong> 기준. 잔기량(최대 호기 후 남는 양) ≠ 최소량(그 일부, 30–120 mL).</p>
+</blockquote>
+<ul>
+<li><span class="star">★</span> 해부학적 사강(anatomic dead space, 해부사강) — 교수 "제가 여기 쓰지는 않았지만"(00:47:51): 안정 호흡 약 500 mL 중 약 350 mL만 폐포에 닿고, <strong>약 150 mL는 기관·기관지에 머물러 기체교환을 못 한다</strong></li>
+</ul>
+<h2 id="struct-15">3. 가스 확산과 운반</h2>
+<h3 id="struct-16">3-1. 분압 <span class="star">★</span> (p.22, 교수 약 3분)</h3>
+<table>
+<thead>
+<tr>
+<th>위치</th>
+<th>PO2</th>
+<th>PCO2 (mmHg)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>폐동맥 → 폐포모세혈관에 들어오는 혈액</td>
+<td>40</td>
+<td>45</td>
+</tr>
+<tr>
+<td>폐포</td>
+<td>100</td>
+<td>40</td>
+</tr>
+<tr>
+<td>폐포모세혈관을 나가는 혈액</td>
+<td>100</td>
+<td>40</td>
+</tr>
+<tr>
+<td>전신모세혈관에 들어오는 동맥혈</td>
+<td><strong>95</strong></td>
+<td>40</td>
+</tr>
+<tr>
+<td>간질액</td>
+<td>40</td>
+<td>45</td>
+</tr>
+<tr>
+<td>조직을 떠나는 정맥혈</td>
+<td>40</td>
+<td>45</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>교환 장소 = 호흡막, 원리 = 기체 분압 차 + 기체·액체 사이 분자 확산. 외호흡(그림 a): O2 폐포 → 혈액, CO2 혈액 → 폐포 / 내호흡(그림 b): O2 혈액 → 조직, CO2 조직 → 혈액</li>
+<li>교수가 짚은 점: 조직을 떠난 40/45 혈액 = <strong>폐동맥으로 들어오는 혈액과 같다</strong></li>
+</ul>
+<blockquote class="key">
+<p>💡 <strong>암기 팁</strong> 동맥 쪽 <strong>100/40</strong>, 정맥·조직 쪽 <strong>40/45</strong>. 예외는 조직에 도착한 동맥혈 PO2 <strong>95</strong> 하나.</p>
+</blockquote>
+<h3 id="struct-17">3-2. 산소 운반 <span class="star">★</span></h3>
+<ul>
+<li>큰 그림: O2는 대부분 <strong>혈색소(Hb) 결합</strong>, CO2는 세 형태(탄산(중탄산)·Hb 결합·혈장 용해). 둘 다 혈장에는 조금만 녹아 대부분 적혈구가 운반한다</li>
+<li>동맥혈 O2의 <strong>약 1.5%만 혈장 용해</strong>, 나머지는 Hb 중앙의 Fe에 결합(교수: 정확히는 <strong>헴(heme)의 철</strong>). Hb + O2 ↔ HbO2 <strong>가역</strong> (p.23)</li>
+<li>Hb의 O2 결합량 결정요인 = <strong>PO2 · pH · 온도</strong> (녹화에서 세 번 반복)</li>
+<li>조직 PO2가 낮을수록 O2가 많이 떨어져 나온다(교수 수치, 슬라이드 없음, 00:56:02): 비활성 조직(PO2 약 40) → 결합 O2의 약 <strong>25%</strong> 유리 / 활성 조직(PO2 약 15–20) → 약 <strong>80%</strong> 유리 → 약 <strong>3배</strong> 공급 (운동 중 골격근은 80·90%까지)</li>
+<li><strong>골격근 수축(운동) 시: 온도↑ · 국소 pH↓ · PO2↓ → Hb의 O2 결합↓ → 골격근에 O2 충분히 공급</strong> (p.23). 교수: 활성이 늘어 산이 생기고 pH가 낮아지면 이를 "활성 증가" 신호로 받아 O2가 떨어져 나오며, 온도↑도 같은 방향</li>
+</ul>
+<blockquote class="ev">
+<p>📝 <strong>보충</strong> 이 방향이 산소해리곡선 우측이동(pH↓·PCO2↑·온도↑·2,3-DPG↑)이다. 녹화가 이 설명 도중(00:58:15) 끊겨 교수가 해리곡선·Bohr 효과를 말했는지는 확인할 수 없고, 슬라이드에도 이 용어는 없다.</p>
+</blockquote>
+<h3 id="struct-18">3-3. 이산화탄소 운반 <span class="star">★</span> (녹화 없음, 슬라이드 기준)</h3>
+<table>
+<thead>
+<tr>
+<th>경로</th>
+<th>비율</th>
+<th>핵심 (p.23)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>혈장 용해</td>
+<td>약 <strong>7%</strong> <span class="star">★</span></td>
+<td>CO2 그대로 녹음</td>
+</tr>
+<tr>
+<td>Hb 결합</td>
+<td>약 <strong>23%</strong> <span class="star">★</span></td>
+<td><strong>글로빈(globin)</strong> 과 결합 → 카바미노헤모글로빈(carbaminohemoglobin). O2 결합을 방해하지 않음 → O2·CO2 동시 운반</td>
+</tr>
+<tr>
+<td>탄산(→ 중탄산 이온 HCO3−)</td>
+<td>약 <strong>70%</strong> <span class="star">★</span></td>
+<td>CO2 + H2O ↔ H2CO3 ↔ H+ + HCO3−</td>
+</tr>
+</tbody>
+</table>
+<p>(<span class="star">★</span> = 그림 속 형광 박스 3개)</p>
+<ul>
+<li>그림 흐름: CO2의 <strong>93%가 적혈구 안으로</strong> → 탄산탈수효소(carbonic anhydrase)가 H2CO3로 → H+와 HCO3−로 해리 → <strong>H+는 완충제, 특히 Hb가 제거</strong> / <strong>HCO3−는 Cl−와 맞바꿔 혈장으로 = 염소이동(chloride shift)</strong>. 폐에서는 거꾸로 진행해 CO2를 내보낸다 (p.23–24)</li>
+<li>슬라이드 문장은 "혈장 안에서 bicarbonate 이온으로 변환되어 운반"이지만 같은 쪽 그림은 <strong>변환은 적혈구 안(탄산탈수효소), 운반은 혈장(chloride shift)</strong> 이다. 기전은 그림 기준으로 이해하되, 슬라이드 문장 그대로(혈장에서 bicarbonate 이온 형태로 운반) 나오면 <strong>맞는 진술</strong>로 본다</li>
+</ul>
+<blockquote class="key">
+<p>💡 <strong>암기 팁</strong> <strong>혈장 7 · Hb 23 · 탄산(중탄산) 70</strong>. O2는 Hb의 <strong>Fe</strong>, CO2는 <strong>globin</strong>에 붙어 자리가 달라 동시 운반이 된다.</p>
+</blockquote>
+<h2 id="struct-19">4. 호흡 조절 (녹화 없음, 슬라이드 기준)</h2>
+<h3 id="struct-20">4-1. 국소 호흡 조절 (p.25)</h3>
+<table>
+<thead>
+<tr>
+<th>부위</th>
+<th>자극</th>
+<th>반응</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>말초조직</td>
+<td>활성↑ → 간질액 PO2↓·PCO2↑</td>
+<td>간질액–혈액 분압차로 조직 O2 공급 + 세동맥 민무늬근 <strong>이완</strong> → 혈류↑</td>
+</tr>
+<tr>
+<td>폐포</td>
+<td>PO2 낮은 폐포</td>
+<td>모세혈관앞괄약근(= 모세혈관앞조임근, precapillary sphincter) <strong>수축</strong> → 폐동맥 혈액을 PO2 높은 폐포로</td>
+</tr>
+<tr>
+<td>세기관지</td>
+<td>PCO2↑</td>
+<td>세기관지 <strong>확장</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote class="warn">
+<p>⚠️ <strong>헷갈림 주의</strong> O2가 낮을 때 조직 세동맥은 <strong>이완</strong>, 폐 쪽은 <strong>수축</strong>으로 방향이 반대다. [보충] 폐 쪽 반응 = 저산소성 폐혈관수축(HPV).</p>
+</blockquote>
+<h3 id="struct-21">4-2. 호흡중추 <span class="star">★</span></h3>
+<ul>
+<li>수의 조절 = 대뇌피질(cerebral cortex) → 호흡근 운동신경 / 불수의 조절 = 연수(medulla oblongata)·교뇌(pons), 폐·기도 감각정보의 영향을 받음 (p.26)</li>
+<li>호흡중추 = 연수·교뇌 <strong>망상체(reticular formation)의 세 쌍 신경핵</strong> (p.27)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>배측호흡군(DRG)</th>
+<th>복측호흡군(VRG)</th>
+<th>교뇌</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>위치·명칭</td>
+<td>연수 호흡리듬중추, 흡기중추</td>
+<td>연수 호흡리듬중추, 호기중추</td>
+<td>교뇌</td>
+</tr>
+<tr>
+<td>작동</td>
+<td><strong>매 호흡주기마다</strong> 출력, 감각·상위중추 없이 자율 반복</td>
+<td><strong>강제호흡 때만</strong></td>
+<td>감각자극·정서상태에 따라 호흡수·깊이 조절</td>
+</tr>
+<tr>
+<td>근육</td>
+<td>외늑간근·횡격막</td>
+<td>보조호흡근</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>(p.27–28)</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>안정호흡(quiet breathing)</th>
+<th>강제호흡(forced breathing)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>흡기</td>
+<td>DRG 흥분 → 들숨근 수축 (<strong>2초</strong>)</td>
+<td>VRG 들숨중추 + DRG 흥분, VRG 날숨중추 억제 → 들숨근 수축 + 날숨근 이완</td>
+</tr>
+<tr>
+<td>호기</td>
+<td>DRG 억제 → 들숨근 이완 → <strong>수동적</strong> (<strong>3초</strong>)</td>
+<td>VRG 들숨중추·DRG 억제, <strong>VRG 날숨중추 흥분</strong> → 들숨근 이완 + 날숨근 수축 → <strong>능동적</strong></td>
+</tr>
+</tbody>
+</table>
+<p>(p.28–30)</p>
+<blockquote class="key">
+<p>💡 <strong>암기 팁</strong> <strong>D</strong>RG = <strong>들</strong>숨 기본 리듬(매 호흡주기마다 작동: 2초 흥분 / 3초 휴지), <strong>V</strong>RG = 보조근 지원군(강제호흡 때만). 강제호흡에서 들숨근과 날숨근은 늘 반대로 움직인다.</p>
+</blockquote>
+<ul>
+<li>p.27은 VRG = 호기중추라 적었지만 p.30 흐름도에는 "VRG의 들숨중추"와 "VRG의 날숨중추"가 함께 나온다. "VRG = 보조근, 강제호흡 때만"을 축으로 기억한다</li>
+</ul>
+<h3 id="struct-22">4-3. 반사 조절</h3>
+<ul>
+<li><strong>신장수용기(stretch receptor, 기계수용기)</strong>: 팽창반사(inflation reflex) = <strong>강제호흡 시 폐의 과다팽창을 막음</strong>. 팽창·수축반사 모두 <strong>안정호흡 때는 일어나지 않고 강제 흡기·호기에서 중요</strong> (p.31)</li>
+</ul>
+<blockquote class="warn">
+<p>⚠️ <strong>헷갈림 주의</strong> 수축반사(deflation reflex)를 슬라이드는 "폐가 수축할 때 흡기중추 억제, 호기중추 자극"으로 적었다. [보충] 교과서는 반대(흡기 자극, 폐 허탈 방지). 시험은 슬라이드 기준이지만 상충 구간이라 이 문장으로는 연습문제를 내지 않는다.</p>
+</blockquote>
+<ul>
+<li><strong>압력수용기(baroreceptor, 기계수용기)</strong> (p.32): 압력 변화를 감지해 자율신경계통 기능 조절. 대동맥동(aortic sinus)·경동맥동(carotid sinus) = <strong>혈압</strong> → 순환·호흡중추 / 폐 = <strong>팽창 정도</strong> → 호흡리듬중추 → 호흡수 조절</li>
+<li><strong>화학수용기(chemoreceptor)</strong> <span class="star">★</span> (p.33): 혈액·CSF의 화학조성 변화 → 호흡수·깊이 조절</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>화학수용기</th>
+<th>대동맥체(aortic body)·경동맥체(carotid body) [보충: 말초]</th>
+<th>연수(medulla oblongata) [보충: 중추]</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>감지</td>
+<td>동맥혈 <strong>pH · PCO2 · PO2</strong></td>
+<td><strong>CSF</strong>의 <strong>pH · PCO2</strong> (PO2 없음)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>PO2보다 PCO2에 더 민감</strong> <span class="star">★</span>: 동맥혈 PCO2가 조금만 변해도 CO2 수용기가 자극되지만, 산소수용기를 자극할 만큼 PO2가 떨어지는 일은 거의 없다 (p.33)</li>
+</ul>
+<blockquote class="key">
+<p>💡 <strong>암기 팁</strong> <strong>동(sinus) = 압력, 체(body) = 화학</strong> (p.32–33). 연수는 O2를 못 보므로 PO2를 감지하는 것은 대동맥체·경동맥체(body)뿐이다.</p>
+</blockquote>
+<h3 id="struct-23">4-4. 상위중추·전체 경로 (p.34–35)</h3>
+<ul>
+<li>상위중추(higher center) = 대뇌피질·변연계(limbic system)·시상하부(hypothalamus) → 교뇌 호흡중추에 직접 영향 + 호흡근 직접 조절</li>
+<li>입력: CSF 화학수용기 → 연수 / 경동맥·대동맥 부위 화학·압력수용기 → <strong>설인신경(N IX)·미주신경(N X)</strong> / 폐 신장수용기 → <strong>미주신경(N X)</strong></li>
+<li>출력: DRG·VRG → 척수 → <strong>횡격신경(phrenic nerve)</strong> → 횡격막 / 기타 운동신경 → 기타 호흡근</li>
+<li>p.35 그림 라벨은 화학수용기도 "carotid and aortic sinuses"로 묶어 적었다 → 위치 문제는 p.33 텍스트(체, body) 기준</li>
+</ul>
+<h2 id="struct-24">5. 출생 시 호흡 변화 (p.36)</h2>
+<ul>
+<li>출생 전: 폐혈관이 수축해 동맥 저항↑, 폐·기도에는 공기 대신 소량의 액체</li>
+<li>출생 시: 횡격막·외늑간근 강한 수축 → 첫 흡기 → 공기가 액체를 밀어냄 → 세기관지·폐포 팽창</li>
+</ul>
+<h2 id="struct-25">6. 숫자 한 장 정리</h2>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>기관(교수)</td>
+<td>지름 2.5 cm · 길이 11 cm · C자 연골 15–20개 · C6 높이</td>
+</tr>
+<tr>
+<td>세기관지 / 종말세기관지</td>
+<td>약 1 mm·연골 없음 (p.9) / 0.3–0.5 mm (교수)</td>
+</tr>
+<tr>
+<td>폐포(교수)</td>
+<td>한쪽 약 1억 5천만 개, 양쪽 약 140 m²</td>
+</tr>
+<tr>
+<td>후두 연골 / 폐엽 / 호흡막</td>
+<td>9개 / 우 3·좌 2 / 3층·0.5 µm</td>
+</tr>
+<tr>
+<td>호흡수 / 호흡 에너지</td>
+<td>12–18회/분 / 기초 에너지의 3–5%</td>
+</tr>
+<tr>
+<td>폐용적(mL)</td>
+<td>VT 500 · ERV 1000 · IRV 남 3300/여 1900 · RV 남 1200/여 1100 · 최소량 30–120 · 사강 150</td>
+</tr>
+<tr>
+<td>폐용량(교수 계산)</td>
+<td>VC 남 4800/여 3400 · TLC 남 6000/여 4500</td>
+</tr>
+<tr>
+<td>분압(mmHg)</td>
+<td>동맥 쪽 100/40 · 정맥·조직 쪽 40/45 · 조직 도착 동맥혈 95/40</td>
+</tr>
+<tr>
+<td>O2 운반</td>
+<td>혈장 1.5% · O2 유리 비활성 25% vs 활성 80%(교수)</td>
+</tr>
+<tr>
+<td>CO2 운반</td>
+<td>혈장 7 · Hb 23 · 탄산(중탄산) 70% · 적혈구 안으로 93%</td>
+</tr>
+<tr>
+<td>호흡중추</td>
+<td>망상체 세 쌍, 안정호흡 흡기 2초 / 호기 3초</td>
+</tr>
+</tbody>
+</table></section><section class="lec" id="lec-copd" data-lec="copd">
+<div class="part"><div class="num">LECTURE 3</div><h2>COPD의 병태생리와 치료</h2><div class="who">오진경 · 10/12</div></div>
+<div class="glance"><div class="gt">한눈에 보기</div><ul>
+<li>진단은 기관지확장제 투여 후 <strong>FEV1/FVC &lt; 0.70</strong> (국내·국제 동일). 40세 이상 + 위험인자/증상이면 폐활량측정법 <span class="star">★</span></li>
+<li>국내 2024 개정: 가·나·다군 폐지 → <strong>지난 1년 급성악화력</strong>으로 고/저위험군. 혈중 호산구가 평가 항목에 추가 <span class="star">★</span></li>
+<li>약물: <mark>LABA+LAMA가 1차, 고위험군 + 호산구 ≥ 300이면 ICS+LABA+LAMA 3제</mark>. 치료 중 악화가 생기면 호산구 100·300으로 나눔 <span class="star">★</span></li>
+<li>급성악화: <mark>목표 SpO2 88–92%</mark>, SABA ± SAMA 먼저, 프레드니솔론 40 mg × 5일, 메틸잔틴 IV 비권고, NIV 효과 좋음 <span class="star">★</span></li>
+<li>실무는 국내 지침(2024) 위주로, 최신 근거는 GOLD 2026으로 보완</li>
+</ul></div>
+<hr>
+<h2 id="copd-1">1. 정의·역학·위험인자</h2>
+<h3 id="copd-2">1-1. 정의 <span class="star">★</span></h3>
+<ul>
+<li>기도·폐포 이상(기관지염, 세기관지염, 폐기종) → 기류제한 → 만성 호흡기 증상(숨참, 기침, 가래). 기류제한은 <strong>지속적이고 진행할 수 있음</strong> (p.4)</li>
+<li><strong>기류제한 = 소기도 질환 + 폐실질 파괴(폐기종)의 복합 작용</strong> <span class="star">★</span> (p.4, 32)</li>
+<li>국내는 폐결핵 유병률이 높아 <strong>감염(결핵)에 의한 COPD</strong>가 임상적으로 중요 (p.4)</li>
+</ul>
+<blockquote class="ev">
+<p>📝 <strong>보충</strong> 2024 개정에서 정의의 원인이 흡연 중심에서 다양한 원인으로 넓어졌고, 원인별 분류인 병인형(etiotype)이 도입됨(전사, 슬라이드엔 없음). 폐기종이나 만성기관지염이 있다고 모두 COPD는 아님.</p>
+</blockquote>
+<h3 id="copd-3">1-2. 역학 (교수가 짚은 숫자 = 3위 · 12.9%/30% · 2.8%/1.6%)</h3>
+<ul>
+<li>세계 사망원인 1990년 6위 → 2019년 <strong>3위</strong>("3위면은 되게 높잖아요"), 연간 약 300만 명 사망. 국내 2015년 7위, 80세 이상 5위 (p.5)</li>
+<li>국내 유병률 <strong>40세 이상 12.9%, 70세 이상 약 30%</strong>("생각보다 많이"). 이유는 높은 흡연율·결핵·대기오염(바이오매스 연소) (p.6)</li>
+<li>진단 사각지대: 2015년 진단받은 사람 <strong>2.8%</strong>, 치료받은 사람 <strong>1.6%</strong> (p.6)</li>
+<li>비용: 2015년 직·간접비용 중 간호비 39%가 가장 큼 (p.5)</li>
+<li>조기진단: 일반인 전체 선별검사는 사망률 감소·비용효과 이득 없음 → <strong>40세 이상 + 흡연력 등 위험인자 + 기침·가래·호흡곤란</strong> 고위험군을 <strong>정도관리된 폐활량측정법</strong>으로 진단 (p.6)</li>
+</ul>
+<h3 id="copd-4">1-3. 위험인자 8가지 <span class="star">★</span> (p.7)</h3>
+<ol>
+<li>유전적 인자: <strong>선천성 알파-1 항트립신 결핍증(AATD)</strong>, 가족력(추가 연구 필요)</li>
+<li>나이와 성별: 고령, 남성(추가 연구 필요)</li>
+<li>폐 성장 이상 — 세부(p.11·교수 설명): 출생 시 저체중, 소아기 호흡기 감염 → 젊을 때 FEV1 낮음</li>
+<li>외부 유해물질: 흡연, 직업성 분진·화학물질, 실내외 대기오염</li>
+<li>사회경제적 수준: 빈곤</li>
+<li>천식과 기도과민성</li>
+<li>만성기관지염</li>
+<li>호흡기 감염: <strong>국내에서는 결핵 과거력 = 비흡연 COPD의 가장 중요한 인자</strong> <span class="star">★</span></li>
+</ol>
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/12 01:13:11) 국내 지침의 특징 = 결핵. 정의(01:10:21)·위험인자(01:13:11)·Take home(01:43:07)에서 3번 반복 — "특별히 강조하는 게 결핵이 있는 거고요"</p>
+</blockquote>
+<ul>
+<li>FEV1 궤적 (p.8): 급속한 FEV1 감소가 없어도 <strong>젊을 때 FEV1이 낮으면(시작점이 낮으면) COPD로 진행할 수 있음</strong> → 고위험군으로 관찰</li>
+</ul>
+<blockquote class="warn">
+<p>⚠️ <strong>헷갈림 주의</strong> 교수는 그래프 아래쪽 두 선을 모두 "COPD로 간다"고 설명했으나 슬라이드에서 TR2는 'Small lungs but no COPD'. COPD로 가는 선은 TR3(정상 시작 + 급속 감소)과 TR4(작은 폐 → COPD). 시험은 슬라이드 기준. AATD는 '유전적 인자', 폐 성장 이상은 별도 항목.</p>
+</blockquote>
+<hr>
+<h2 id="copd-5">2. 발병 기전·병태생리</h2>
+<h3 id="copd-6">2-1. 발병 기전 (p.9)</h3>
+<ul>
+<li>담배 연기 같은 <strong>만성 자극 → 호흡기계 이상 염증반응</strong>. <strong>금연 후에도 염증 지속</strong>(교수 설명: 남아 있는 유해물질 때문)</li>
+<li>산화 스트레스(대식세포·호중구 활성화, 항산화물질 감소) + <strong>단백분해효소 증가 → 엘라스틴 파괴 → 폐기종</strong></li>
+<li>염증세포(대식세포·중성구·림프구)가 말초기도·폐실질·폐혈관에서 증가 + 염증매개물질(화학주성인자·염증성 사이토카인·성장인자) 분비</li>
+<li>기관지 주변·사이질 <strong>섬유화 → 소기도 장애·폐쇄에 기여</strong> (교수 설명: 섬유화가 기도벽을 두껍게 해 악순환)</li>
+</ul>
+<h3 id="copd-7">2-2. 병태생리·전신 영향 <span class="star">★</span> (p.10)</h3>
+<ul>
+<li>소기도: 만성염증 → 섬유화 → 말초기도 협착</li>
+<li>폐실질 파괴(폐기종) → 탄성 감소 → 호기 때 기도가 열려 있지 못함 (교수 설명: 폐포 자리를 공기주머니가 차지해 가스교환 저하)</li>
+<li>슬라이드: <strong>기류제한과 폐과다팽창은 심장기능에 영향</strong> (교수 설명: 흉곽내압 상승 → 심박출량 감소)</li>
+<li>혈중 염증매개물질 → 동반질환: 허혈성 심질환, 심부전, 골다공증, 빈혈, 당뇨, 대사증후군</li>
+</ul>
+<hr>
+<h2 id="copd-8">3. 진단</h2>
+<h3 id="copd-9">3-1. 증상·문진 <span class="star">★</span></h3>
+<ul>
+<li>40세 이상 + 아래 지표 → COPD 의심 → <strong>폐활량측정법</strong>. 지표가 많을수록 가능성 ↑ (p.11)</li>
+<li>가장 특징적 증상 = <strong>만성 호흡곤란, 운동 시 심해짐(DOE)</strong>. 기류제한보다 수년 먼저 생길 수 있음. 기침·가래는 있기도 없기도 함</li>
+<li>문진 지표: <strong>현재 또는 과거 흡연력</strong>, 분진·가스 노출(직업, 취사·난방 연기), COPD 가족력(특히 형제), 소아기 병력(저체중 출생, 호흡기 감염)</li>
+</ul>
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/12 01:16:36) 간호정보조사에서 현재 흡연 여부만 묻지 말고 과거 흡연력까지 함께 물어야 고위험군을 찾을 수 있음 — "꼭 과거력까지 같이 물어보셔야 되겠고"</p>
+</blockquote>
+<h3 id="copd-10">3-2. mMRC 호흡곤란 점수 <span class="star">★</span> (p.12)</h3>
+<table>
+<thead>
+<tr>
+<th>점수</th>
+<th>기준</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>힘든 운동을 할 때만 숨참</td>
+</tr>
+<tr>
+<td>1</td>
+<td><strong>평지를 빨리 걷거나</strong> 약간 오르막에서 숨참</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>평지에서</strong> 숨이 차 동년배보다 천천히 걷거나, 자기 속도로 걸어도 멈춰 쉬어야 함</td>
+</tr>
+<tr>
+<td>3</td>
+<td>평지를 <strong>약 100 m 또는 몇 분</strong> 걸으면 멈춰 쉬어야 함</td>
+</tr>
+<tr>
+<td>4</td>
+<td>숨이 차서 집을 나설 수 없거나 <strong>옷 입고 벗을 때도</strong> 숨참</td>
+</tr>
+</tbody>
+</table>
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/12 01:17:24) 헷갈리는 1·2·3점 구분이 중요. 1과 2는 '평지를 걸을 때 숨이 차는가'로 나눔 — "중요한 거는, 좀 헷갈리는 거는 1, 2, 3이죠"</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="key">
+<p>💡 <strong>암기 팁</strong> 1 = 빨리 걷거나 오르막 / 2 = 평지 보통 속도도 힘듦(버스 한 정거장 정도는 걸음) / 3 = 평지 약 100 m(몇 분) 걸으면 멈춰 쉼(버스 한 정거장도 어려움) / 4 = 집 밖·옷 갈아입기도 못 함.</p>
+</blockquote>
+<h3 id="copd-11">3-3. 신체검사: Pink puffer vs Blue bloater (p.13, 그림만 있음)</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Pink puffer</th>
+<th>Blue bloater</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>우세 병변</td>
+<td><strong>폐기종</strong> 우세</td>
+<td><strong>기도 염증</strong> 우세([보충] 만성기관지염형)</td>
+</tr>
+<tr>
+<td>양상</td>
+<td>빠르고 얕은 호흡, 앞으로 숙인 자세, 폐음이 거의 안 들림</td>
+<td><strong>청색증</strong>, 기침·가래 많음, crackle</td>
+</tr>
+</tbody>
+</table>
+<blockquote class="ev">
+<p>📝 <strong>보충</strong> 교수 구두 설명, 가볍게 보라고 함. 실제 치료 결정은 <strong>악화력과 혈중 호산구</strong>로 함.</p>
+</blockquote>
+<h3 id="copd-12">3-4. 폐활량측정법(=폐활량검사, spirometry) <span class="star">★</span></h3>
+<ul>
+<li>FVC, FEV1 측정 → <strong>기관지확장제 투여 후 FEV1/FVC &lt; 0.70이면 기류제한 확진</strong> (p.13). 국내·국제 동일, 강의에서 3번 반복</li>
+<li>고정값 0.70의 한계: <strong>젊은 성인은 과소진단, 노인은 과진단</strong> (p.13). 논란은 있지만 간단하고 널리 쓰여 유효한 기준으로 받아들여짐</li>
+</ul>
+<blockquote class="warn">
+<p>⚠️ <strong>헷갈림 주의</strong> 천식은 FEV1/FVC <strong>&lt; 0.75~0.80 + 심한 폐기능 변동</strong>(가변적 기류제한), COPD는 <strong>&lt; 0.70</strong>(비가역적 기류제한) (p.32).</p>
+</blockquote>
+<hr>
+<h2 id="copd-13">4. 질병 평가</h2>
+<h3 id="copd-14">4-1. 국내 2024 개정의 핵심 <span class="star">★</span> (p.14)</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>개정 전</th>
+<th>2024 개정 후</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>분류</td>
+<td>가·나·다군</td>
+<td><strong>고위험군 / 저위험군 2분류</strong></td>
+</tr>
+<tr>
+<td>분류 기준</td>
+<td>증상(mMRC·CAT) 포함</td>
+<td><strong>급성악화력 중심</strong></td>
+</tr>
+<tr>
+<td>mMRC·CAT</td>
+<td>군 분류에 사용</td>
+<td><strong>증상 평가 도구로만</strong> 사용</td>
+</tr>
+<tr>
+<td>혈중 호산구</td>
+<td>—</td>
+<td><strong>평가 항목으로 새로 포함</strong>(호산구로 약을 고르기 때문)</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>위험군 (p.14, 17)</th>
+<th>지난 1년간 급성악화력</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>저위험군</td>
+<td>악화가 없었거나 <strong>1회</strong></td>
+</tr>
+<tr>
+<td>고위험군</td>
+<td><strong>2회 이상</strong> 또는 <strong>입원할 정도의 악화 1회 이상</strong></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>여기서 '악화' = 항생제나 전신 스테로이드를 추가해야 할 정도로 호흡기 증상이 나빠진 급성 상태</li>
+<li>평가 7항목: 증상(mMRC·CAT), 폐활량측정, 악화 위험, <strong>혈액 호산구</strong>, 동반질환, 종합평가, 추가검사(영상, 폐용적·확산능, ABGA, 운동능력, BODE)</li>
+<li>BODE = BMI·Obstruction(기류제한)·Dyspnea(호흡곤란)·Exercise(운동능력). 합치면 생존율 예측이 좋음</li>
+</ul>
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/12 01:20:03) 개정 핵심 = 가·나·다군 폐지 → 급성악화력 중심 2분류, mMRC·CAT은 분류에서 빠지고 증상평가로만, 혈중 호산구 추가 — "그럼 개정의 핵심 변화는 뭐냐"</p>
+</blockquote>
+<h3 id="copd-15">4-2. mMRC vs CAT <span class="star">★</span></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>mMRC</th>
+<th>CAT(COPD 평가검사)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>평가</td>
+<td><strong>호흡곤란만</strong></td>
+<td>삶의 질 전반: 기침, 가래, 가슴 답답함, 계단 숨참, 활동 제약, <strong>외출 자신감, 수면, 기운</strong></td>
+</tr>
+<tr>
+<td>형식</td>
+<td>0~4점</td>
+<td><strong>8문항 × 0~5점</strong>, 높을수록 나쁨</td>
+</tr>
+<tr>
+<td>용도</td>
+<td>호흡곤란 객관화</td>
+<td>초기 진단보다 <strong>질병 경과 판단</strong></td>
+</tr>
+<tr>
+<td>기준</td>
+<td>GOLD: 0–1 vs ≥ 2</td>
+<td>국내 p.15: <strong>10점보다 높으면 증상이 심함</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote class="warn">
+<p>⚠️ <strong>헷갈림 주의</strong> CAT 10점 경계: p.15(국내) "10점보다 높으면(&gt; 10) 증상 심함" vs p.17(GOLD) "A군 &lt; 10, B군 ≥ 10" → 출처별로 기억. GOLD 그림의 'CAAT'는 CAT과 문항이 같고 대상만 만성 기도질환으로 넓힌 이름.</p>
+</blockquote>
+<h3 id="copd-16">4-3. 국내 2024 vs GOLD 2026 <span class="star">★</span> (p.17)</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>국내 2024</th>
+<th>GOLD 2026</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>진단</td>
+<td>기관지확장제 후 FEV1/FVC &lt; 0.70</td>
+<td>동일</td>
+</tr>
+<tr>
+<td>폐기능 등급</td>
+<td>없음</td>
+<td>GOLD 1 ≥ 80 / 2 50–79 / 3 30–49 / 4 &lt; 30 (FEV1 %예측치)</td>
+</tr>
+<tr>
+<td>분류</td>
+<td>고위험(≥ 2회 또는 입원 ≥ 1회) / 저위험(0–1회)</td>
+<td>중등증·중증 악화 <strong>≥ 1회 → E군</strong>(증상 무관) / 0회 → 증상으로 A·B</td>
+</tr>
+<tr>
+<td>A·B 구분</td>
+<td>—</td>
+<td>A: mMRC 0–1, CAT &lt; 10 / B: mMRC ≥ 2, CAT ≥ 10</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>GOLD 평가 흐름(p.17): 폐활량측정으로 진단 확인 → 기류폐쇄 정도(FEV1 등급) 평가 → 증상·악화 위험 평가</li>
+</ul>
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/12 01:27:24) '중요한 슬라이드'로 국내 2024와 GOLD 2026 분류 기준을 비교함 — "중요한 슬라이드로 약물 치료하는 것들 한번 보여드렸고"</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="warn">
+<p>⚠️ <strong>헷갈림 주의</strong> 같은 환자도 분류가 갈림. <strong>지난 1년 악화 1회(입원 없음) = 국내 저위험군, GOLD 2026 E군.</strong> 교수는 GOLD의 '1회 이상 = E군'을 올해 개정된 업데이트로 설명함(예전엔 2회 이상). 국내 고위험 기준(2회 또는 입원 1회)과 섞지 말 것.</p>
+</blockquote>
+<hr>
+<h2 id="copd-17">5. 약물치료 (안정기)</h2>
+<h3 id="copd-18">5-1. 약제 분류 <span class="star">★</span> (p.16)</h3>
+<ol>
+<li><strong>기관지확장제 = 주된 치료</strong>: β2 작용제(=베타작용제), 항콜린제, 메틸잔틴, 병합요법</li>
+<li>스테로이드: ICS, ICS+LABA, 경구 스테로이드</li>
+<li>PDE4 억제제: 로플루밀라스트(닥사스) 0.5 mg 정</li>
+<li>생물학적 제제: dupilumab, mepolizumab</li>
+<li>기타: 예방접종·항생제, 점액용해제, 항산화제, 진해제 등</li>
+</ol>
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/12 01:22:27) COPD는 비가역적 기류제한이라 1차는 기관지확장제. 천식과 달리 스테로이드 비중은 낮고, 호산구가 높거나 악화를 여러 번 겪은 환자에게 ICS 권장(처음부터 계속 쓰는 것 아님) — "천식에서 스테로이드가 제일 중요하다고 강조를 드렸지만". 단, 안정 시 단계치료의 규칙은 '고위험군 <strong>그리고</strong> 호산구 ≥ 300'(5-2)</p>
+</blockquote>
+<ul>
+<li><strong>로플루밀라스트(닥사스)</strong>: 기관지확장제가 아니라 <strong>경구 항염 유지요법제</strong>. 적응증 = 악화 병력 + 만성기관지염을 동반한 중증 COPD에서 기관지확장제의 부가요법 (p.16). 악화 증상 조절용 아님</li>
+</ul>
+<blockquote class="warn">
+<p>⚠️ <strong>헷갈림 주의</strong> PDE4 기전 발언은 전사가 불명확함. 슬라이드 표현 '선택적 PDE-4 억제제'로 기억. [보충] PDE4를 억제하면 cAMP 분해가 줄어(cAMP 증가) 항염 효과.</p>
+</blockquote>
+<h3 id="copd-19">5-2. 안정 시 단계치료 <span class="star">★</span> (p.18)</h3>
+<table>
+<thead>
+<tr>
+<th>위험군</th>
+<th>호산구 &lt; 300/mm³</th>
+<th>호산구 ≥ 300/mm³</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>저위험군</td>
+<td>LABA+LAMA</td>
+<td>LABA+LAMA</td>
+</tr>
+<tr>
+<td>고위험군</td>
+<td>LABA+LAMA</td>
+<td><strong>ICS+LABA+LAMA (3제)</strong></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>처음부터 <strong>LABA+LAMA 병용</strong>이 1차: 병합요법이 단일요법보다 결과가 좋고 부작용도 적었음(선행연구 종합). 약물 강의 p.11은 「LABA/LAMA 단독 또는 병용」·원인 「부교감 긴장도」로 서술 → COPD 강의 문항은 병용 1차·소기도 질환+폐기종(p.4)</li>
+</ul>
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/12 01:28:23) 호산구 300이 COPD 약물치료의 중요한 컷오프. 고위험군 + 호산구 ≥ 300이면 처음부터 ICS 포함 3제 — "호산구가 높은 환자는 ICS가 들어가…추가된다라는 걸로 기억"</p>
+</blockquote>
+<h3 id="copd-20">5-3. 치료 중 악화가 생겼을 때의 단계치료 <span class="star">★</span> (p.19)</h3>
+<table>
+<thead>
+<tr>
+<th>위험군</th>
+<th>호산구 &lt; 100</th>
+<th>100 ≤ 호산구 &lt; 300</th>
+<th>호산구 ≥ 300</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>고위험군 악화</td>
+<td>LABA+LAMA ± PDE4i ± 마크롤라이드</td>
+<td>ICS+LABA+LAMA ± PDE4i ± 마크롤라이드</td>
+<td>ICS+LABA+LAMA <strong>+ Anti-IL-4R(dupilumab)</strong> ± PDE4i ± 마크롤라이드</td>
+</tr>
+<tr>
+<td>저위험군 악화</td>
+<td>LABA+LAMA ± PDE4i ± 마크롤라이드 (&lt; 300 전체)</td>
+<td>(같음)</td>
+<td>ICS+LABA+LAMA</td>
+</tr>
+</tbody>
+</table>
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/12 01:29:45) 호산구 &lt; 100에서는 ICS 이득이 거의 없음(대규모 연구). 호산구 수치 하나로 치료가 달라짐 — "호산구 100 미만에서는…효과가 거의 없다라는 걸 기억해 주시면"</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="warn">
+<p>⚠️ <strong>헷갈림 주의</strong> p.19는 <strong>유지치료 중 악화가 생겼을 때 유지 약제를 바꾸는 후속 단계</strong>(교수 설명). 급성악화 당시의 응급 약물치료(p.28: SABA, 프레드니솔론 등)와 다른 개념. 고위험군은 3구간(100·300), 저위험군은 2구간(300).</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="key">
+<p>💡 <strong>암기 팁</strong> 호산구 숫자: <strong>&lt; 100 = ICS 효과 거의 없음 / ICS 문턱 = 안정 시·저위험 악화는 300, 고위험 악화는 100 / 고위험 + 악화 + ≥ 300 = 3제 + dupilumab</strong>. 생물학적 제제는 이 한 칸에만 나옴.</p>
+</blockquote>
+<hr>
+<h2 id="copd-21">6. 비약물치료</h2>
+<h3 id="copd-22">6-1. 4가지 축 (p.20)</h3>
+<p>1) 위험요소 제거(교육, 금연, 직업·대기오염) 2) 호흡재활 3) 산소요법·NIV 4) 수술요법</p>
+<blockquote class="ev">
+<p>📝 <strong>보충</strong> 예방접종(교수 구두): 인플루엔자는 모든 COPD 환자, 폐렴구균은 65세 이상에 권장.</p>
+</blockquote>
+<h3 id="copd-23">6-2. 산소요법: 목표 SpO2 88–92% <span class="star">★</span> (p.20)</h3>
+<ul>
+<li><strong>급성악화 시 목표 SpO2 88–92%</strong> = 가장 안전한 최적점. 근거: Austin et al.(2010) RCT (p.20) — 교수 설명: 이 범위로 맞춘 군이 고농도 산소군보다 사망률이 약 58% 낮음</li>
+<li>천식 급성악화 93–95%(천식 p.38)·ARDS 삽관 직후 92~95%(ARDS p.22)보다 낮다는 점에 주의</li>
+</ul>
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/12 01:30:20) COPD 급성악화 산소요법에서 반드시 짚을 것은 목표 SpO2 88–92% — "산소요법에서 꼭 짚고 넘어갈 게 목표 산소포화도죠"</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="ev">
+<p>📝 <strong>보충</strong> 고농도 산소 시 CO2 저류 기전(V/Q 불균형 &gt; Haldane 효과 &gt; hypoxic drive)은 "시험 문제 나오진 않아요"라고 함.</p>
+</blockquote>
+<h3 id="copd-24">6-3. 환자 교육·흡입기 <span class="star">★</span> (p.21)</h3>
+<ul>
+<li>일방적 지식 전달만으로는 자가관리 기술 향상이 부족 → 지속적 관리·감독</li>
+<li>교육 주제: 금연, 질병 기본정보·병태생리, 치료, 호흡곤란 감소법, 의료진 방문 시기, 악화 대비 자가치료, <strong>임종 관련 내용</strong>(임종 시 치료 방향 결정에 도움)</li>
+<li>흡입기 순응도↓ → 증상조절 실패, 악화↑, 삶의 질↓, <strong>사망 위험↑</strong></li>
+</ul>
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/12 01:34:10) 흡입기는 교육으로 끝내지 말고 환자가 꾸준히, 제대로 쓰는지 확인하는 것이 중요 — "환자가 진짜 꾸준히 제대로 사용하는지 확인하는 게 중요하다"</p>
+</blockquote>
+<h3 id="copd-25">6-4. 금연: 5A <span class="star">★</span> (p.22)</h3>
+<ul>
+<li>의료진의 <strong>3분 정도 짧은 금연 권고</strong>만으로도 금연율 ↑</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>단계</th>
+<th>내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ask</td>
+<td>방문 때마다 흡연 상태를 묻고 기록</td>
+</tr>
+<tr>
+<td>Advise</td>
+<td>명료하고 강하게 금연 권고</td>
+</tr>
+<tr>
+<td>Assess</td>
+<td>금연 의지 확인, <strong>금연 시점(기한) 정하기</strong></td>
+</tr>
+<tr>
+<td>Assist</td>
+<td>상담·행동요법·약물(니코틴 패치 등)로 도움</td>
+</tr>
+<tr>
+<td>Arrange</td>
+<td>추적관찰 일정 잡기</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>그 외 위험요소 제거(p.22): 직업성 분진·화학물질·가스 회피, 실내외 공기오염 → 효과적 환기시설, 공기오염 적은 요리시설</li>
+</ul>
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/12 01:34:25) COPD 환자는 추가 손상을 막기 위해 금연이 무조건 필요, 5A 순서로 접근 — "특히 COPD 환자는 금연을 무조건 해야 됩니다"</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="key">
+<p>💡 <strong>암기 팁</strong> 5A = <strong>묻고(Ask) → 권하고(Advise) → 의지·기한 보고(Assess) → 돕고(Assist) → 약속 잡기(Arrange)</strong>. Assess(사정)와 Assist(도움) 순서 혼동 주의. 녹취의 3단계 "어시스트"(01:34:44)는 Assess를 말한 것(순서는 슬라이드).</p>
+</blockquote>
+<h3 id="copd-26">6-5. 호흡재활 <span class="star">★</span> (p.23)</h3>
+<ul>
+<li><strong>모든 병기</strong>의 COPD 환자에서 운동능력↑, 호흡곤란·피로↓, <strong>생존율 증가</strong></li>
+<li>(교수 설명 01:35:23) 흡입 기관지확장제·스테로이드는 생존율 증가가 밝혀진 아웃컴이 없지만 운동(호흡재활)은 있음. [보충] GOLD 최신판은 악화가 잦은 환자에서 ICS 포함 3제의 사망률 감소 근거를 언급 → 시험 답은 슬라이드(p.23 '생존율 증가')와 교수 설명 기준</li>
+<li>환자 선택: 운동능력, 호흡곤란 정도, 동기, 흡연 여부를 고려해 개별 결정</li>
+<li>운동훈련: <strong>유산소운동이 가장 중요</strong>, 최대운동능력 <strong>60% 이상, 20~60분, 주 3~5회</strong>. 그 외 금연, 교육, 영양상담(과체중·저체중 모두 문제). 시행 전후 효과 정량화</li>
+</ul>
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/12 01:35:40) 호흡재활은 생존율을 높이는 몇 안 되는 치료이고, 그중 가장 중요한 것은 유산소 운동 — "제일 중요한 건 유산소 운동이고"</p>
+</blockquote>
+<h3 id="copd-27">6-6. 수술요법 (p.20, 한 줄)</h3>
+<ul>
+<li>폐용적축소술(LVRS), <strong>기관지내시경 폐용적축소술(BLVR: 일방향 밸브로 공기 배출만 허용 → 과팽창 부위 허탈)</strong>, 폐이식, 기포절제술(bullectomy)</li>
+</ul>
+<hr>
+<h2 id="copd-28">7. 급성악화</h2>
+<h3 id="copd-29">7-1. 정의와 중증도 <span class="star">★</span> (p.24–25)</h3>
+<ul>
+<li>정의: 기본 호흡기 증상이 <strong>매일의 변동 범위를 넘어 치료제 추가가 필요할 정도로</strong> 급격히 악화</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>기존 분류(치료 결과로 사후 분류)</th>
+<th>로마 제안(Rome proposal, 객관 지표)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>경증</td>
+<td>속효성 기관지확장제만(교수 예: 벤토린)</td>
+<td>지표가 기준 미만([보충] 중등증 기준 3개에 못 미치면 경증)</td>
+</tr>
+<tr>
+<td>중등증</td>
+<td>+ 항생제 또는 경구 스테로이드</td>
+<td><strong>5개 지표 중 3개 충족</strong>, ABGA상 저산소·고탄산혈증은 있을 수 있으나 <strong>산증 없음(pH &gt; 7.35)</strong></td>
+</tr>
+<tr>
+<td>중증</td>
+<td>응급실 방문·입원, 급성 호흡부전 동반 가능</td>
+<td>중등증 기준 + <strong>ABGA 고탄산혈증과 산증(PaCO2 &gt; 45 &amp; pH &lt; 7.35)</strong></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>로마 5지표 경계: 호흡곤란 <strong>VAS 5</strong>, 호흡수 <strong>24회/분</strong>, 맥박 <strong>95회/분</strong>, SpO2 <strong>92%</strong>(또는 기저보다 3% 초과 변화), CRP <strong>10 mg/L</strong></li>
+<li>순서: 중증도 평가와 <strong>감별진단(심부전, 폐렴, 폐색전증)을 동시에</strong> → 맞는 검사·치료 → 마지막에 <strong>원인 규명</strong>(바이러스 검사, 객담 배양 등)</li>
+</ul>
+<blockquote class="ev">
+<p>📝 <strong>보충</strong> 기존 분류는 이미 쓴 치료로 거꾸로 나눠 의사결정에 한계 → 로마 제안은 ICU에서 매시간 재는 활력징후·SpO2가 곧 분류 기준이 됨(교수 설명).</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="key">
+<p>💡 <strong>암기 팁</strong> 로마 숫자는 "<strong>5 · 24 · 95 · 92 · 10</strong>"(VAS · RR · HR · SpO2 · CRP). 중등증과 중증을 가르는 것은 <strong>ABGA 산증 유무</strong>.</p>
+</blockquote>
+<h3 id="copd-30">7-2. 의미·원인·입원 (p.26–27)</h3>
+<ul>
+<li>의미: 삶의 질↓, 증상·폐기능 악화(<strong>회복에 수주</strong>), 폐기능 감소 가속, <strong>사망률 유의하게 증가</strong> → 예방과 초기 치료가 중요</li>
+<li><strong>주된 원인 = 기도감염</strong>(바이러스·세균, 코로나 포함)</li>
+<li><strong>'잦은 악화자(frequent exacerbator)'</strong>: 악화를 겪은 환자는 다음에도 악화되기 쉬움 → <strong>향후 악화를 예측하는 가장 중요한 인자</strong> <span class="star">★</span></li>
+</ul>
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/12 01:39:16) 지난 1년 급성악화 횟수가 다음 악화를 예측하는 중요한 인자이며, GOLD 2026은 1회 이상만 있어도 E군(p.17 연계) — "올해 개정된 업데이트된 점이다라는 걸 기억해 주시면 되겠습니다"</p>
+</blockquote>
+<ul>
+<li>입원 적응증: 매우 심한 증상(급격한 안정 시 호흡곤란, 의식 변화), 급성 호흡부전, 새 청색증·부종, 초기치료 불응, 심각한 동반질환(특히 심혈관), 돌봐줄 사람이 없음 (p.27)</li>
+</ul>
+<h3 id="copd-31">7-3. 급성악화 약물치료 <span class="star">★</span> (p.28)</h3>
+<table>
+<thead>
+<tr>
+<th>약물</th>
+<th>핵심</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>기관지확장제</td>
+<td><strong>SABA 단독 또는 SAMA와 함께 가장 먼저</strong>(평소 유지는 LABA+LAMA지만 악화 땐 SABA). <strong>네뷸라이저 = MDI</strong>(FEV1 개선 차이 없음, 위중할 땐 네뷸라이저가 다소 유리할 수 있음)</td>
+</tr>
+<tr>
+<td>메틸잔틴</td>
+<td><strong>테오필린·아미노필린 정맥투여 권고하지 않음</strong>(치료역이 좁고 부작용 심각)</td>
+</tr>
+<tr>
+<td>스테로이드</td>
+<td><strong>프레드니솔론 40 mg/일 × 5일</strong>, <strong>경구 = 주사</strong> 동등. 악화 재발 감소. 장기 투여는 폐렴·사망률↑ → 명확한 악화에만</td>
+</tr>
+<tr>
+<td>항생제</td>
+<td>많은 경우 바이러스 → 적응증 선별. <strong>화농성 객담 증가 = 세균감염 징후</strong></td>
+</tr>
+<tr>
+<td>보조</td>
+<td>수액 균형, 필요 시 이뇨제, 항응고제, 동반질환 치료, 영양. 입원할 정도의 중증 악화는 <strong>PE·DVT 위험 → 예방 필요</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/12 01:40:17) 급성악화에서 메틸잔틴계(테오필린, 아미노필린) 정맥투여는 권고하지 않음 — "급성 악화에서는 메틸잔틴계 권고하지 않는다라는 거 기억해"</p>
+</blockquote>
+<h3 id="copd-32">7-4. 호흡보조요법: 산소 → NIV → 침습적 환기 <span class="star">★</span> (p.29–30)</h3>
+<ul>
+<li>CO2 저류가 많아 산소 보조와 함께 NIV·인공호흡기로 환기를 도움. 심한 호흡곤란, 의식 변화, 여러 치료에도 계속 악화되면 <strong>빨리 기관삽관</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>적응증 (슬라이드 원문 기준)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ICU 치료 (p.29)</td>
+<td>초기 응급처치에 반응 없는 심한 호흡곤란 / 의식 변화(혼란·기면·혼수) / 산소+NIV에도 <strong>PaO2 &lt; 40 mmHg 또는 pH &lt; 7.25</strong> 지속·악화 / 침습적 환기 필요 / 승압제 필요</td>
+</tr>
+<tr>
+<td>NIV (p.29)</td>
+<td><strong>다음 중 한 가지</strong>: 호흡산증(<strong>pH ≤ 7.35 또는 PaCO2 ≥ 45 mmHg</strong>) / 보조근 사용·역설적 복부운동·늑간 함몰이 보일 정도의 호흡곤란 / 산소치료에도 저산소혈증 지속</td>
+</tr>
+<tr>
+<td>침습적 환기 (p.30)</td>
+<td><strong>NIV 실패·불내성</strong>, 호흡·심정지, 의식 저하·진정제로 조절 안 되는 초조, 다량 흡인·지속 구토, 객담 배출 불가, 수액·승압제에도 호전 없는 심한 혈류역학 장애, 중증 심실성 부정맥, NIV를 못 견디는 환자의 치명적 저산소증</td>
+</tr>
+</tbody>
+</table>
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/12 01:41:49) 천식은 NIV 효과가 명확하지 않지만 COPD는 NIV 효과 근거가 잘 확립되어 많이 씀(p.32 요약에서도 반복) — "COPD는 NIV 되게 효과 좋다"</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="warn">
+<p>⚠️ <strong>헷갈림 주의</strong> NIV 호흡산증 기준이 슬라이드는 "<strong>또는</strong>"(pH ≤ 7.35 또는 PaCO2 ≥ 45)이지만, [보충] GOLD 원문은 "그리고"(호흡성 산증). → 슬라이드 기준, 경계 숫자보다 'COPD = NIV 효과적'을 우선. ABGA 기준 3종 혼동 주의: 로마 중증 PaCO2 &gt; 45 &amp; pH &lt; 7.35 / NIV pH ≤ 7.35 또는 PaCO2 ≥ 45 / ICU PaO2 &lt; 40 또는 pH &lt; 7.25.</p>
+</blockquote>
+<h3 id="copd-33">7-5. 퇴원과 추적관찰 (p.31)</h3>
+<ul>
+<li>체크리스트: 임상·검사 결과 검토, 유지치료·질병 이해도 확인, <strong>흡입기 사용 숙련도 재평가</strong>, 급성기 약물(스테로이드·항생제) 중지 확인, <strong>장기 산소치료 필요성 검토</strong>, 동반질환·추적 정보 제공</li>
+<li>추적관찰: <strong>빠르면 4주, 늦어도 12주 이내</strong></li>
+</ul>
+<blockquote class="ev">
+<p>📝 <strong>보충</strong> 퇴원 시점은 환자가 '치료가 부족해 입원했다'는 것을 가장 절실하게 느끼는 때 → 교육과 치료 검토(흡입기 재평가 등)의 적기(교수 설명).</p>
+</blockquote>
+<hr>
+<h2 id="copd-34">8. Take home: 천식 vs COPD <span class="star">★</span> (p.32)</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>천식</th>
+<th>COPD</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>정의</td>
+<td>만성 기도염증, <strong>가변적</strong> 호기 기류제한</td>
+<td>장기간 <strong>비가역적</strong> 기류제한, 소기도 질환 + 폐실질 파괴(폐기종)</td>
+</tr>
+<tr>
+<td>원인</td>
+<td><strong>항원</strong>(직업·흡연·대기오염·약물(교수: NSAID)), 비만</td>
+<td><strong>흡연</strong>, 실내외 대기오염, 직업성 노출, <strong>폐 성장 이상</strong> (+ 교수 구두: 국내 결핵 병력)</td>
+</tr>
+<tr>
+<td>진단</td>
+<td>호흡기 증상 2개 이상 + FEV1/FVC <strong>&lt; 0.75~0.80</strong> + 심한 폐기능 변동</td>
+<td>증상·병력·신체검진 + FEV1/FVC <strong>&lt; 0.70</strong></td>
+</tr>
+<tr>
+<td>분류</td>
+<td><strong>증상 빈도</strong> 등으로 5단계</td>
+<td><strong>지난 1년 급성악화력</strong>으로 고/저위험군(증상은 CAT·mMRC)</td>
+</tr>
+<tr>
+<td>주약제</td>
+<td><strong>ICS</strong> 또는 ICS+LABA</td>
+<td><strong>LABA+LAMA 1차</strong>, 고위험 + 호산구 ≥ 300이면 ICS 포함 3제</td>
+</tr>
+<tr>
+<td>치료</td>
+<td>흡입기 사용법·순응도 점검, 항원 제거, 인플루엔자 접종, 행동지침</td>
+<td><strong>금연, 호흡재활</strong>, 예방접종, 기도감염 시 항생제, <strong>NIV 효과적</strong></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>두 질환은 증상이 비슷해 감별이 필요하고, 한 사람에게 함께 있을 수 있음(예전 명칭 '오버랩')</li>
+</ul>
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/12 01:44:31) 실무에서는 국내 지침(2024) 위주로 판단하고 최신 근거는 국제 지침(GOLD 2026)으로 보완 — "국내 지침 위주로 판단을 하시되 최신 근거는 국제 지침으로 보완을"</p>
+</blockquote></section><section class="lec" id="lec-asthma" data-lec="asthma">
+<div class="part"><div class="num">LECTURE 4</div><h2>천식(Asthma)의 병태생리와 치료</h2><div class="who">오진경 · 10/12</div></div>
+<p>근거 지침: 2022 대한결핵및호흡기학회 천식진료지침(5차) + GINA 2026 (p.3). GINA Track 1·2는 국내 1안·2안과 같은 것.
+표기: <span class="star">★</span> 시험 유력 · <strong>[중요 슬라이드 N]</strong> = 교수가 10/13 따로 배포한 '중요 표시' 7장(13·15·16·28·37·38·39) · (p.N) 배포 강의안 쪽 · (보충 p.N) 보충자료 쪽</p>
+<div class="glance"><div class="gt">한눈에 보기</div><ul>
+<li>진단 = <strong>가변적 증상 병력 + 가변적 호기 기류제한의 객관적 확인, 둘 다</strong>. 기류제한 = FEV1/FVC &lt;0.75–0.80, 가역성 = FEV1 <mark>12% 초과 그리고 200 mL 초과</mark> <span class="star">★</span></li>
+<li>치료의 중심은 <strong>ICS</strong>. LABA는 항상 ICS와 함께, SABA도 <strong>ICS 없이 단독 치료하지 않음</strong>(2안 완화제는 SABA지만 1단계부터 ICS 병용). GINA는 1안(완화제 = 필요시 저용량 ICS-formoterol)을 선호 <span class="star">★</span></li>
+<li>급성악화: <strong>ABC → 졸림·혼미·호흡음 감소?</strong> 있으면 중증도 분류 없이 즉시 SABA+산소, ICU 의뢰, 삽관 고려. 중증 = RR &gt;30, HR &gt;120, SpO2 &lt;90%, PEF ≤50% <span class="star">★</span></li>
+<li>악화 중 PaCO2는 보통 &lt;40 → <strong>PaCO2가 '정상'이면 악화 신호</strong>. 기계환기는 호기 시간 연장·auto-PEEP 감시·깊은 진정 회피 <span class="star">★</span></li>
+</ul></div>
+<hr>
+<h2 id="asthma-1">1. 정의와 병태생리</h2>
+<h3 id="asthma-2">1-1. 정의 (p.4)</h3>
+<ul>
+<li><strong>이질적(heterogeneous) 질환</strong>이고 대개 <strong>만성 기도염증</strong>이 특징. 두 요소는 ① 시간과 강도가 <strong>변하는 호흡기 증상</strong>(천명·호흡곤란·가슴답답함·기침)의 병력, ② <strong>가변적 호기 기류제한</strong>. 기류제한은 나중에 고정될 수 있음 (p.4)</li>
+<li>기도과민성·기도염증은 흔히 동반되지만 진단에 <strong>필수조건도 충분조건도 아님</strong>. 주관적 증상과 객관적 기류제한을 모두 확인해야 진단 (p.4)</li>
+</ul>
+<h3 id="asthma-3">1-2. 역학·원인 (p.5–8) — 숫자는 가볍게</h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>핵심</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>역학</td>
+<td>세계 약 3억 명, 하루 약 1,000명 사망, 대부분 <strong>예방 가능한 죽음</strong>. 국내 유병률 3.2–4.7% (p.5)</td>
+</tr>
+<tr>
+<td>숙주</td>
+<td><strong>가족력</strong>(환자의 25–80%) · 비만(발생 1.9–2.3배, 지방조직의 <strong>렙틴</strong>) · 성별(14세 이전 남아 2배 → 성인은 <strong>여자</strong>↑) (p.6)</td>
+</tr>
+<tr>
+<td>환경</td>
+<td>집먼지진드기·바퀴벌레, 감염(<strong>위생가설</strong>: 출생 초기 감염 노출 → 면역이 비알레르기성 경로로 발달), 직업성(성인 천식의 5–20%), 흡연(ICS·전신 스테로이드 <strong>효과 감소</strong>), 대기오염, <strong>아스피린·NSAID</strong> (p.7–8)</td>
+</tr>
+</tbody>
+</table>
+<blockquote class="ev">
+<p>📝 <strong>보충</strong> 숙주인자(유전)는 주로 발병에, 환경인자는 주로 악화에 관여. NSAID 복용 후 기관지 수축은 일반 성인 약 0.3%, 천식 환자 10–20% → 천식 환자에게 진통제를 줄 때 과민반응 이력부터 확인</p>
+</blockquote>
+<h3 id="asthma-4">1-3. 아스피린 천식 기전 <span class="star">★</span> (p.9)</h3>
+<ul>
+<li>막 인지질 →(phospholipase A2)→ 아라키돈산 → 두 갈래: <strong>COX-1/2 경로</strong> → PGD2·PGF2α(<strong>염증성</strong>) / <strong>PGE2(항염)</strong> · <strong>5-LO(lipoxygenase) 경로</strong> → LTA4 → LTC4·D4·E4 류코트리엔(<strong>염증성</strong>). 약물 p.10: 스테로이드는 그 위 PLA2를 억제</li>
+<li><strong>아스피린이 COX를 막음</strong> → 아라키돈산이 5-LO 경로로 몰림 → <strong>류코트리엔↑</strong>, PGE2↓ → 그림의 시소가 <strong>pro-inflammatory 쪽으로 기울어</strong> 기도과민성·염증↑ (p.9)</li>
+<li>그래서 <strong>류코트리엔 조절제(LTRA)가 아스피린 과민성 천식에 특히 도움</strong> (p.24)</li>
+</ul>
+<h3 id="asthma-5">1-4. 기도개형·기도과민성 (p.10–11)</h3>
+<ul>
+<li><strong>기도개형(airway remodeling)</strong>: 만성 염증과 함께 생기는 기도 구조 변화. 중증도와 연관되고 <strong>비가역적 협착</strong>을 남길 수 있음 (p.10)</li>
+<li>기도과민성 기전 4가지: ① 평활근 비대·과수축 ② 흥분-수축결합 이상: 정상 기도의 <strong>'수축의 최대 편평기(plateau)'가 사라져</strong> 끝없이 좁아짐 ③ 기도벽이 두꺼워져 협착 증폭 ④ 민감해진 <strong>감각신경</strong>이 작은 자극에도 과장된 수축 (p.11)</li>
+</ul>
+<h3 id="asthma-6">1-5. 표현형(phenotype) 5가지 <span class="star">★</span> (p.12)</h3>
+<table>
+<thead>
+<tr>
+<th>표현형</th>
+<th>특징</th>
+<th>ICS 반응</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>알레르기천식</td>
+<td>유년기 시작, 습진·비염 등 아토피력·가족력, <strong>호산구성</strong></td>
+<td><strong>잘 반응</strong></td>
+</tr>
+<tr>
+<td>비알레르기천식</td>
+<td>알레르기 무관, 호중구성/호산구성/비과립구성</td>
+<td><strong>잘 반응 안 함</strong></td>
+</tr>
+<tr>
+<td>성인발병(후기발병)</td>
+<td><strong>여성</strong>, 대부분 비알레르기, 고용량 ICS 필요, <strong>직업성 천식 감별</strong> 필요</td>
+<td>불량</td>
+</tr>
+<tr>
+<td>지속적 기류제한 동반</td>
+<td>기도개형으로 가역성이 불완전</td>
+<td>—</td>
+</tr>
+<tr>
+<td>비만 동반</td>
+<td>증상은 심한데 <strong>호산구성 염증은 적음</strong></td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/12 00:10:42) 표현형마다 ICS 반응이 다르다는 점(알레르기 = 잘 반응, 비알레르기 = 잘 반응 안 함, 성인발병 = 여성·직업성 감별)을 기억할 것 — "표현형에 따라서 스테로이드 치료에 대한 반응이 (다르다는 걸) 기억해 주시면 됩니다"</p>
+</blockquote>
+<h2 id="asthma-7">2. 진단</h2>
+<h3 id="asthma-8">2-1. 폐활량검사(=폐활량측정법, spirometry) <span class="star">★</span> [중요 슬라이드 13] (p.13–14, 보충 p.2)</h3>
+<ul>
+<li>폐활량검사 = 기류제한과 기도가역성을 확인하는 <strong>일차 검사</strong>, 지침이 천식 환자에게 <strong>가장 먼저</strong> 권하는 검사 (보충 p.2 구두 보충, COPD에서도 반복)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>정의</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FVC</td>
+<td><strong>노력폐활량</strong> [보충: 최대 흡기 후 힘껏 끝까지 내쉰 양]</td>
+</tr>
+<tr>
+<td>FEV1(1초 노력호기량)</td>
+<td>FVC 측정 중 <strong>처음 1초간</strong> 내쉰 양</td>
+</tr>
+<tr>
+<td>RV(잔기량)</td>
+<td>최대한 내쉰 상태에서도 폐에 남는 공기 (배포본에서 가려짐, 보충 p.2 공개)</td>
+</tr>
+<tr>
+<td><strong>TLC(총폐용량)</strong></td>
+<td><strong>= RV + FVC</strong> <span class="star">★</span> (배포본에서 가려짐, 보충 p.2 공개)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>① <strong>FEV1/FVC &gt;0.75–0.80</strong> = 건강한 성인. 이보다 낮으면 <strong>호기 기류제한</strong> (2022 국내) (p.13, 보충 p.2)</li>
+<li>② <strong>기관지확장제 반응</strong>: FEV1이 기저치 대비 <strong>12% 초과 그리고 200 mL 초과</strong> 증가. <strong>두 조건을 모두</strong> 만족해야 양성 <span class="star">★</span> (p.13, 보충 p.2)</li>
+<li>③ 슬라이드 라벨은 <strong>"FVC의 백분율(%)"</strong> = 교수 설명상 <strong>정상 예측치 대비 %(%Ref)</strong>. 정상치가 성별·나이·인종·신장에 따라 달라 예측치 대비 위치를 같이 봄 (p.13, 보충 p.2)</li>
+<li>RV·TLC는 폐활량검사로 <strong>측정할 수 없어 폐용적 검사</strong>를 따로 함. <strong>제한성 환기장애 확진은 FVC가 아니라 TLC</strong> <span class="star">★</span> (보충 p.2 구두 보충)</li>
+<li>결과지 읽기(p.14): Ref(예측치)·Meas(실측)·%Ref. <strong>FEV1/FVC부터 봄</strong> → 예시 43%(기류제한) + FEV1 65%pred = 폐쇄성. flow-volume 곡선은 호기 쪽이 오목하게 꺼짐</li>
+</ul>
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/12 00:11:54) FEV1은 호기 초기에 얼마나 빨리 내쉬는지를 보여 주는 폐쇄성 폐질환 진단의 핵심 지표 — "폐쇄성 폐질환을 진단할 때 중요한 지표가 되기 때문에 잘 보셔야"</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/12 00:21:03) 폐활량검사 슬라이드에 직접 '중요' 표시: FVC·FEV1·RV·TLC(=RV+FVC) 정의, FEV1/FVC 기준, 12%+200 mL — "이 슬라이드 위에 중요 표시를 해놨는데… 스피로메트리랑 진단"</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="warn">
+<p>⚠️ <strong>헷갈림 주의</strong> 천식의 기류제한 = FEV1/FVC <strong>&lt;0.75–0.80</strong>, COPD = 기관지확장제 후 <strong>&lt;0.70</strong> (p.17). COPD 수업에서 교수가 "천식은 0.70~0.80"이라고 한 대목은 말실수로 보임 → 시험은 슬라이드 기준 0.75–0.80. [보충] ATS/ERS 2022는 가역성 기준을 '예측치 대비 &gt;10%'로 바꿨지만, 시험은 슬라이드 기준(12% &amp; 200 mL)</p>
+</blockquote>
+<h3 id="asthma-9">2-2. 진단 ① 증상 병력 + 호기 기류제한 <span class="star">★</span> [중요 슬라이드 15] (p.15, 보충 p.3)</h3>
+<ul>
+<li><strong>1. 증상 병력</strong>: 천명·호흡곤란·가슴답답함·기침 중 <strong>2가지 이상</strong>, 시간에 따라 변함, <strong>밤·기상 직후</strong> 악화, 운동·웃음·알레르겐·찬 공기·바이러스 감염으로 유발 (p.15)</li>
+<li><span class="star">★</span> <strong>성인에서 다른 증상 없이 기침만 있으면 천식은 드묾</strong> — 기침만으로 온 환자를 천식으로 몰지 말라는 지침의 단서 (보충 p.3)</li>
+<li><strong>2. 가변적 호기 기류제한</strong>: 2.1 FEV1이 낮을 때 <strong>최소 한 번 이상</strong> FEV1/FVC 감소(&lt;0.75–0.8) 확인 <strong>그리고</strong> 2.2 심한 폐기능 변동(p.16 검사 중 1개 이상). 처음 음성이면 <strong>증상 있을 때·이른 아침</strong>에 재검 (p.15)</li>
+<li>진단은 <strong>1번과 2번을 동시에</strong> 확인해야 함 (보충 p.3)</li>
+</ul>
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/12 00:21:13) 진단 슬라이드(p.15–16)에도 '중요' 표시: 증상 병력 + 기류제한 확인, 폐기능 변동 검사 6종 — "스피로메트리랑 진단, 제가 중요 표시 해놨고"</p>
+</blockquote>
+<h3 id="asthma-10">2-3. 진단 ② 폐기능 변동을 증명하는 검사 6종 <span class="star">★</span> [중요 슬라이드 16] (p.16, 보충 p.4)</h3>
+<table>
+<thead>
+<tr>
+<th>검사</th>
+<th>양성 기준</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>기관지확장제 가역반응</strong> (가장 많이 씀)</td>
+<td>salbutamol 200–400 mcg 흡입 <strong>10–15분 후</strong> FEV1 <strong>&gt;12% &amp; &gt;200 mL</strong> 증가 (&gt;15% &amp; &gt;400 mL면 더 신뢰)</td>
+</tr>
+<tr>
+<td>2주 이상 PEF 변동</td>
+<td>평균 일중 PEF 변동 <strong>&gt;10%</strong> (하루 2회 측정)</td>
+</tr>
+<tr>
+<td>4주 이상 항염증 치료 후</td>
+<td>FEV1 &gt;12% &amp; &gt;200 mL 증가, 또는 <strong>PEF &gt;20%</strong> 증가 (단 호흡기 감염이 없는 경우)</td>
+</tr>
+<tr>
+<td>운동 유발검사</td>
+<td>운동 후 FEV1 <strong>&gt;10% &amp; &gt;200 mL 감소</strong></td>
+</tr>
+<tr>
+<td>기관지유발검사</td>
+<td><strong>메타콜린</strong> 후 FEV1 <strong>≥20% 감소</strong> / 과호흡·고장성 식염수·<strong>만니톨</strong> 후 <strong>≥15% 감소</strong></td>
+</tr>
+<tr>
+<td>방문 간 변동</td>
+<td>FEV1 &gt;12% &amp; &gt;200 mL 변동(단 호흡기 감염이 없는 경우). <strong>특이도는 좋고 민감도는 낮음</strong></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><span class="star">★</span> <strong>검사 전 약물 중단</strong>: <strong>SABA ≥4시간</strong>, <strong>1일 2회 LABA ≥24시간</strong>, <strong>1일 1회 LABA ≥36시간</strong> (p.16)</li>
+<li>유발검사는 <strong>기류제한이 없어(평소 정상이라) 진단이 어려울 때</strong> 시행 (보충 p.4)</li>
+<li><strong>반응이 12% 미만이라고 천식을 배제할 수 없음</strong>. 오래된/중증 천식은 가역성이 안 나올 수 있고, 증상 없을 때 검사하면 정상 → <strong>반복해서, 가급적 증상 있을 때</strong> 검사 (보충 p.4)</li>
+</ul>
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/12 00:19:20) 검사 전 SABA 4시간·1일 2회 LABA 24시간·1일 1회 LABA 36시간 중단. 검사 오더가 나면 흡입제 투약 스케줄을 꼭 확인하는 것이 간호 실무 포인트 — "벤토린 주고 그대로 하면 (가역성을) 알 수 없기 때문에 꼭 오더 스케줄을 확인"</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="key">
+<p>💡 <strong>암기 팁</strong> 중단 시간 <strong>"4 · 24 · 36"</strong>(SABA → 하루 2번 LABA → 하루 1번 LABA, 오래가는 약일수록 길게). 감소 기준 <strong>"메타 20 · 만니톨 15 · 운동 10"</strong>, 증가 기준은 거의 다 <strong>"12 &amp; 200"</strong>(PEF만 일중 변동 10, 4주 치료 후 20)</p>
+</blockquote>
+<h3 id="asthma-11">2-4. 천식 vs COPD 감별 <span class="star">★</span> (p.17–18)</h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>천식에 가까움</th>
+<th>COPD에 가까움</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>발생</td>
+<td><strong>20세 전</strong></td>
+<td><strong>40세 이후</strong></td>
+</tr>
+<tr>
+<td>증상</td>
+<td>분·시·날마다 변함, 밤·새벽 악화, 운동·감정·알레르겐으로 유발</td>
+<td>치료해도 지속, 매일 증상·운동성 호흡곤란</td>
+</tr>
+<tr>
+<td>폐기능</td>
+<td><strong>가변적</strong> 기류제한</td>
+<td><strong>지속적</strong>(BD 후 FEV1/FVC &lt;0.7)</td>
+</tr>
+<tr>
+<td>증상 사이 폐기능</td>
+<td><strong>정상</strong></td>
+<td>비정상</td>
+</tr>
+<tr>
+<td>과거력</td>
+<td>알레르기·천식 가족력</td>
+<td>흡연·생체연료 노출</td>
+</tr>
+<tr>
+<td>경과</td>
+<td>저절로 또는 기관지확장제·ICS로 <strong>수주에 호전</strong></td>
+<td>수년에 걸쳐 서서히 악화, 호전 제한</td>
+</tr>
+<tr>
+<td>흉부 X선</td>
+<td>정상</td>
+<td><strong>심한 과팽창</strong></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>사용법: 한쪽에 <strong>3가지 이상</strong> 해당하면 그 진단을 시사, <strong>양쪽 수가 비슷하면 ACO 고려</strong> (p.18)</li>
+<li>표 3-10 나머지 행(p.18): 전형적 <strong>기도 염증</strong> = 천식 호산구 및/또는 호중구 / COPD 객담 호중구 ± 호산구·기도 림프구·전신 염증 / ACO 객담 호산구 및/또는 호중구. <strong>급성악화</strong> = 천식은 치료로 위험이 상당히 감소 / ACO는 COPD보다 더 흔할 수 있음</li>
+</ul>
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/12 00:22:09) 감별의 핵심 = 발생 시기, 증상 변동, 폐기능(천식은 증상 없을 때 정상 / COPD는 BD 후에도 기류제한 지속), 과거력, 경과, 흉부 X선 — "감별이 어려우니까 감별의 핵심을 조금 짚어볼 때"</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="warn">
+<p>⚠️ <strong>헷갈림 주의</strong> ACO(asthma–COPD overlap)는 2022 국내 표에 별도 질환처럼 나오지만, 최근에는 별도 질환이 아니라 <strong>'asthma + COPD'(두 질환이 같이 있는 상태)</strong>로 기술함 (10/12 00:21:30). 10갑년 초과 흡연자는 COPD 동반 여부를 평가 (p.30)</p>
+</blockquote>
+<h3 id="asthma-12">2-5. 초기 평가 (p.19)</h3>
+<ul>
+<li>동반질환: 부비동염·비염·GERD·폐쇄성 수면무호흡증·ABPA. 같이 치료해야 악화와 약 사용이 줄어듦</li>
+<li><strong>악화·사망 예측인자</strong>: 폐기능 저하, <strong>최근 1년 2회 이상 응급실 방문 또는 입원</strong>, <strong>최근 5년 이내 ICU 치료</strong>, 정신사회적 요소, 낮은 순응도, 여성, 현재 흡연 (p.19, 교수는 앞의 셋만 짚음)</li>
+</ul>
+<h2 id="asthma-13">3. 약물치료</h2>
+<h3 id="asthma-14">3-1. 약물 8종 (p.20–27)</h3>
+<table>
+<thead>
+<tr>
+<th>약물</th>
+<th>핵심</th>
+<th>부작용·간호</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ICS(흡입스테로이드)</strong> <span class="star">★</span></td>
+<td>지속성 천식에 <strong>가장 효과적인 항염증약</strong>. 증상·과민성·악화·<strong>사망</strong> 감소. <strong>ICS 용량과 중증 급성악화 예방 사이에 명확한 상관성</strong>. <strong>완치는 못 함</strong>(끊으면 수주~수개월 내 재악화) (p.21)</td>
+<td>구인두 캔디다증(=칸디다증)·목소리 변화(=발성 변화)·기침 → <strong>흡입 후 가글</strong>, MDI(정량흡입기)엔 <strong>spacer</strong>(스페이서) (p.22)</td>
+</tr>
+<tr>
+<td><strong>ICS+LABA</strong> <span class="star">★</span></td>
+<td><strong>ICS + LABA = Inhaled CorticoSteroid + Long-Acting Beta Agonist</strong>(약어로 출제 예고, 00:24:56). ICS 단독보다 증상·SABA 사용·악화·입원 감소. <strong>LABA는 ICS·경구스테로이드를 대체 못 함 → 항상 ICS와 함께</strong></td>
+<td>심혈관 자극, 진전, <strong>저칼륨혈증</strong>(경구 β작용제(=β2 작용제)보다는 적음) (p.23; 약물 p.9: 빈맥·고혈당도)</td>
+</tr>
+<tr>
+<td>LTRA(montelukast)</td>
+<td>경증에서 ICS 대신 쓸 수 있으나 저용량 ICS보다 약함. <strong>아스피린 과민성 천식에 도움</strong> (p.24). 이미 생긴 발작엔 효과 없음(강의)</td>
+<td><strong>자살충동·환각</strong> 등 정신건강 부작용 (p.24) → 복용 환자에게 설명(FDA 2020 경고)</td>
+</tr>
+<tr>
+<td>전신(경구)스테로이드</td>
+<td>조절 불량·잦은 악화 시 저용량 추가. 효과적이지만 <strong>부작용이 큼</strong> (p.24). 저용량 = 프레드니솔론 하루 7.5 mg(강의 00:29:42, 전사 '7.5mm'에서 추정)</td>
+<td>골다공증·고혈압·당뇨·HPA축 억제·백내장·녹내장·비만·<strong>피부 얇아짐</strong>·근력 약화·불면 → 미리 설명 (p.24)</td>
+</tr>
+<tr>
+<td>메틸잔틴(theophylline, aminophylline)</td>
+<td>약한 기관지확장 + 저용량에서 항염. 서방형 테오필린의 조절 효과는 <strong>ICS보다 약함</strong> (p.25) → <strong>추가 약</strong></td>
+<td>구역·구토·무른 변·<strong>부정맥·경련</strong> (p.25). 치료역이 좁아 혈중농도 감시(강의 00:30:37)</td>
+</tr>
+<tr>
+<td>LAMA: tiotropium(스피리바)</td>
+<td><strong>β작용제로 부정맥·진전</strong>이 있는 환자의 대체 기관지확장제. <strong>추가 약</strong></td>
+<td>구강건조·쓴맛·복통·변비·발음 이상 (p.25; 약물 p.9: 요저류·안압↑도)</td>
+</tr>
+<tr>
+<td>생물학적 치료제</td>
+<td>항IgE omalizumab / 항IL-5 mepolizumab·reslizumab / 항IL-5R benralizumab / 항IL-4R dupilumab(듀피젠트). 이름이 <strong>-mab</strong>(단클론항체), 프리필드 시린지(강의). 2–4주마다 피하·정맥. <strong>고비용 → 표현형·IgE·호산구 수로 판단</strong>. 항IgE: 중증 악화↓, 삶의 질↑, <strong>경구스테로이드 40–50% 경감</strong> (p.26)</td>
+<td>국소 피부반응. 항IgE 아나필락시스 약 0.2%(대부분 <strong>2시간 이내</strong>) (p.26) → 투여 후 2시간 관찰(강의, 전사 추정)</td>
+</tr>
+<tr>
+<td>항원특이 면역치료</td>
+<td>원인 항원을 <strong>소량부터 단계적으로 증량</strong> → 과민반응 감소. 피하(SCIT)·설하(SLIT)</td>
+<td>교수는 정의만 짚음 (p.27)</td>
+</tr>
+</tbody>
+</table>
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/12 00:25:02 · 00:28:04, 두 번) 천식 약물 중 가장 많이 쓰고 가장 중요한 약은 ICS, 그다음이 ICS+LABA 복합제. LABA는 ICS를 대체할 수 없어 항상 ICS와 함께 — "제일 중요한 약물은 흡입스테로이드다" / "가장 중요한 약물은 천식에서는 ICS다"</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="ev">
+<p>📝 <strong>보충</strong> MDI는 분사 순간에 맞춰 들이쉬어야 해서 어린이·노인은 약이 입안에 남아 국소 부작용이 커짐. spacer는 약을 챔버에 머물게 했다가 들이쉴 때 밸브로 내보냄. LTRA·테오필린·LAMA는 모두 <strong>'ICS나 ICS+LABA로 조절 안 될 때 추가하는 약'</strong>이라고 세 번 반복</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="warn">
+<p>⚠️ <strong>헷갈림 주의</strong> ipratropium(아트로벤트) = <strong>SAMA</strong>(속효성, 응급실 네뷸라이저) / tiotropium(스피리바) = <strong>LAMA</strong>(지속성, 천식 조절에 추천). 약물 강의 p.10은 거울상 규칙(ICS는 기관지를 안 넓히니 기관지확장제와 함께) → 2안 2단계(ICS 유지 + 필요시 SABA)와 모순 아님</p>
+</blockquote>
+<h3 id="asthma-15">3-2. 단계별 치료 1안·2안 <span class="star">★</span> [중요 슬라이드 28] (p.28, 보충 p.5)</h3>
+<ul>
+<li>단계를 고르기 전 왼쪽 <strong>'평가' 상자부터</strong>: 진단 확인, 증상 조절·위험인자, 동반질환, <strong>흡입기 사용 기술·순응도</strong>, 환자 선호도 (보충 p.5)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>단계</th>
+<th>1안 (진입 기준 → 조절제)</th>
+<th>2안 (진입 기준 → 조절제)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>1–2단계 합쳐서: 증상 <strong>주 4–5일 미만</strong> → <strong>필요시 저용량 ICS-formoterol</strong> (매일 쓰는 조절제 없음)</td>
+<td>증상 <strong>월 2회 미만</strong> → <strong>SABA 쓸 때마다 저용량 ICS</strong></td>
+</tr>
+<tr>
+<td>2</td>
+<td>(위와 같음)</td>
+<td>월 2회 이상~주 4–5일 미만 → <strong>저용량 ICS 유지</strong></td>
+</tr>
+<tr>
+<td>3</td>
+<td>거의 매일 증상 또는 <strong>주 1회 이상 야간증상</strong> → <strong>저용량 ICS-formoterol 유지 = MART</strong></td>
+<td>같은 기준 → 저용량 ICS-LABA 유지</td>
+</tr>
+<tr>
+<td>4</td>
+<td>3단계 기준 <strong>+ 폐기능 저하</strong> → 중간용량 ICS-formoterol 유지</td>
+<td>같은 기준 → 중간/고용량 ICS-LABA 유지</td>
+</tr>
+<tr>
+<td>5</td>
+<td>고용량 ICS-formoterol, 또는 <strong>LAMA 추가</strong>, 또는 <strong>표현형 치료</strong>(anti-IgE·IL5/5R·IL4R)</td>
+<td>고용량 ICS-LABA, 또는 LAMA 추가, 또는 표현형 치료</td>
+</tr>
+<tr>
+<td><strong>완화제</strong></td>
+<td><strong>필요시 저용량 ICS-formoterol</strong> (전 단계 통일)</td>
+<td><strong>필요시 SABA</strong></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>MART</strong>(Maintenance And Reliever Therapy, 유지 및 완화 요법. 문헌에선 SMART라고도 함) = 1안 3단계부터. 저용량 ICS-formoterol을 매일 쓰면서 필요할 때도 <strong>같은 흡입기</strong>를 씀 (보충 p.5)</li>
+<li>단계가 오르면 같은 약의 <strong>용량만 저→중→고</strong>. 어느 트랙이든 조절이 안 되면 <strong>단기간 경구스테로이드</strong>를 추가할 수 있음 (보충 p.5)</li>
+<li><strong>GINA는 1안을 더 추천</strong>: SABA 단독은 위험하고 outcome도 1안이 좋았음. <strong>국내 지침은 1안 2단계에 단서</strong>(순응도 저하·경과 관찰 어려움): 필요할 때만 흡입하면 약이 반년을 가서 병원에 안 옴 → 폐기능검사·흡입기 확인을 못 함 (보충 p.5, p.41)</li>
+</ul>
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/12 00:33:38) 진단(p.13–16)에 이어 단계별 치료 1안·2안에도 '중요' 태그를 걸었다고 직접 말함 — "스파이로메트리 진단에 '중요' 태그… 치료에 또 '중요'로 태그를 걸었고요"</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/12 00:37:44) 2안 1단계(증상 월 2회 미만)는 SABA를 쓸 때마다 저용량 ICS를 같이 흡입함. SABA를 단독으로 쓰지 않는 것이 핵심 — "벤토린만 단독으로 쓰진 않는다는 게 핵심이고"</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="key">
+<p>💡 <strong>암기 팁</strong> 1안 = <strong>"흡입기 하나(ICS-formoterol)로 완화+조절"</strong>, 2안 = <strong>"완화는 벤토린, 그래도 ICS는 꼭 같이"</strong>. 진입 기준 사다리: <strong>월 2회 → 주 4–5일 → 거의 매일·주 1회 야간 → + 폐기능 저하</strong></p>
+</blockquote>
+<!-- -->
+
+<blockquote class="warn">
+<p>⚠️ <strong>헷갈림 주의</strong> formoterol은 LABA이지만 <strong>작용이 빨라</strong> 완화제로 쓸 수 있음(약물 p.8의 「LABA = controller」 분류와 다름). 국내 지침의 1안 2단계 단서는 <strong>금지가 아님</strong>. 추적관찰이 어려울 수 있다는 점을 알고 처방하라는 뜻(질의응답)</p>
+</blockquote>
+<h3 id="asthma-16">3-3. 단계를 올리기 전 확인할 5가지 (p.29)</h3>
+<ul>
+<li>2–3개월 치료에도 증상이 지속되거나 악화되면: ① <strong>잘못된 흡입 방법</strong> ② <strong>낮은 순응도</strong>(①②는 파란 글씨, 교수 "압도적으로 흔합니다") ③ 위험인자의 지속적 노출 ④ 호흡기계 증상과 동반질환 ⑤ 잘못된 진단. 모두 문제없으면 step-up (p.29)</li>
+</ul>
+<h3 id="asthma-17">3-4. 비약물 치료 (p.30–31)</h3>
+<ul>
+<li>금연·간접흡연 회피. <strong>10갑년 초과 흡연력 → COPD 동반 평가</strong> (p.30)</li>
+<li>직업성: 원인 노출을 그대로 두면 약을 바꿔도 안 나음 → 조기 발견·제거·재노출 차단 (p.31)</li>
+<li><strong>NSAID</strong>는 처방 전 천식·이전 반응 확인, 복용 후 악화되면 중단. <strong>이전에 악화가 없었으면 일반적으로 금기 아님</strong>. <strong>베타차단제</strong>(경구·점안)는 전문가 관리하에 시작, 급성관상동맥질환이 있으면 <strong>심장선택적 β차단제는 절대 금기 아님</strong> (p.31)</li>
+</ul>
+<h2 id="asthma-18">4. 조절 평가·자가관리</h2>
+<h3 id="asthma-19">4-1. 증상 조절 평가 — 지난 4주 <span class="star">★</span> (p.32)</h3>
+<p>① 주간 증상 <strong>주 3회 이상</strong> ② 천식으로 <strong>야간수면 방해</strong> ③ SABA <strong>주 3회 이상</strong> 사용 ④ 천식으로 <strong>활동 제한</strong></p>
+<table>
+<thead>
+<tr>
+<th>해당 개수</th>
+<th>0개(4항목 모두 없음)</th>
+<th>1–2개</th>
+<th>3–4개</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>판정(슬라이드 용어)</td>
+<td><strong>조절 천식</strong></td>
+<td><strong>일부 조절 천식</strong>(=부분 조절)</td>
+<td><strong>조절되지 않는 천식</strong></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>조절되면 약을 유지하거나 줄임</li>
+</ul>
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/12 00:43:02) 천식 조절 평가 4항목과 판정(0개 = 조절 / 1–2개 = 일부 조절 / 3–4개 = 조절되지 않음) — "천식이 잘 조절됐는지는 뭐로 평가하냐, 중요한 항목이고요"</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/12 00:43:39) 예외: 1안처럼 ICS-formoterol을 완화제로 쓰는 환자는 SABA를 안 쓰므로 ③을 빼고 <strong>나머지 3항목으로만</strong> 판단(슬라이드엔 없고 지침 각주) — "나머지 세 항목으로만… 이렇게 기억해 주시면 될 것 같아요"</p>
+</blockquote>
+<h3 id="asthma-20">4-2. ACT·행동지침 (p.33–34)</h3>
+<ul>
+<li><strong>ACT = Asthma Control Test</strong>(activated clotting time 아님). 환자가 직접 작성, 지난 4주 5문항 × 1–5점, 25점 = 완벽 조절. 교수는 <strong>20점 미만이면 조절이 잘 안 되는 것</strong>이라 함(전사 '20점 1층'). 컷오프는 슬라이드에 없음 (p.33). [보충] 표준 ACT: <strong>≥20 = 조절, ≤19(=20점 미만) = 잘 조절 안 됨</strong> → 교수 발언을 '20점 미만'으로 읽으면 표준과 일치</li>
+<li>행동지침: <strong>녹색</strong>(완화제 주 2번 이하) 유지, 운동 후 악화 소견이 있으면 <strong>운동 15분 전 완화제 흡입</strong> / <strong>황색</strong>(밤에 깸, 완화제 <strong>주 3번 이상</strong>) 완화제 추가, 호전 없으면 적색 행동 / <strong>적색</strong>(말을 못 함, 청색증) <strong>경구 스테로이드 시작 + 즉시 응급실(119)</strong>. 자가 치료 후 1–2주 안에 진료 (p.34)</li>
+<li>부적절한 치료와 악화 시 치료 지연이 사망의 주원인 → 행동지침 교육만으로도 <strong>예방 가능한 사망</strong>을 줄임</li>
+</ul>
+<h3 id="asthma-21">4-3. 악화 정의·사망 위험인자 (p.35–36)</h3>
+<ul>
+<li>악화 = 증상이 계속 나빠지고 폐기능이 계속 떨어져 <strong>치료의 변화가 필요한</strong> 상황. <strong>천식의 첫 발현</strong>일 수도 있음 (p.35). 유발인자(표 5-1: 바이러스 감염·항원·대기오염·ICS 비순응 등)는 짧게만 언급</li>
+<li><strong>사망 위험인자</strong>(표 5-2): <strong>삽관·인공호흡이 필요했던 치명적 천식 병력</strong>, 지난 1년 천식으로 입원·응급실, <strong>스테로이드 사용 중이거나 최근 중단</strong>, <strong>ICS 미사용</strong>, <strong>SABA 과다(한 달에 벤토린 1통 이상)</strong>, 정신·심리사회 문제, 순응도 저하, <strong>음식 알레르기</strong> (p.36)</li>
+</ul>
+<blockquote class="warn">
+<p>⚠️ <strong>헷갈림 주의</strong> p.19 악화·사망 <strong>예측인자</strong>는 "최근 1년 <strong>2회 이상</strong> 응급실/입원 + 최근 <strong>5년 이내 ICU</strong>", p.36 <strong>사망 위험인자</strong>는 "지난 1년 입원·응급실(횟수 없음) + <strong>삽관·인공호흡 병력</strong>"</p>
+</blockquote>
+<h2 id="asthma-22">5. 급성악화와 중환자 관리</h2>
+<h3 id="asthma-23">5-1. 초기 평가·중증도 분류 <span class="star">★</span> [중요 슬라이드 37] (p.37, 보충 p.6)</h3>
+<ul>
+<li>순서: <strong>ABC(기도·호흡·순환)</strong> → "<strong>졸림·혼미·호흡음 감소</strong>가 있는가?"</li>
+<li><strong>있음</strong> → <mark>중증도 분류 없이 즉시 SABA + 산소, 중환자실 의뢰, 기관삽관 고려</mark> <span class="star">★</span></li>
+<li>없음 → 임상 양상으로 경증·중등증 / 중증 분류</li>
+<li>위험한 이유: 의식 저하 = <strong>저산소증·고탄산혈증이 이미 진행됨</strong>. 호흡음 감소(<strong>silent chest</strong>) = 기도가 너무 좁아 <strong>공기 흐름 자체가 없음</strong> → <strong>천명이 줄면 좋아진 것 같아도 가장 위험한 신호</strong>일 수 있음 (보충 p.6)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>경증·중등증</th>
+<th>중증</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>말</td>
+<td><strong>문장</strong></td>
+<td><strong>단어</strong>만</td>
+</tr>
+<tr>
+<td>자세</td>
+<td>앉아 있는 것 선호</td>
+<td>앉아 있기 어려움</td>
+</tr>
+<tr>
+<td>불안</td>
+<td>없음</td>
+<td><strong>불안(agitation)</strong></td>
+</tr>
+<tr>
+<td>호흡수</td>
+<td>증가</td>
+<td><strong>&gt;30회/분</strong></td>
+</tr>
+<tr>
+<td>호흡보조근</td>
+<td>미사용</td>
+<td>사용</td>
+</tr>
+<tr>
+<td>맥박</td>
+<td><strong>100–120회/분</strong></td>
+<td><strong>&gt;120회/분</strong></td>
+</tr>
+<tr>
+<td>SpO2(대기)</td>
+<td><strong>90–95%</strong></td>
+<td><strong>&lt;90%</strong></td>
+</tr>
+<tr>
+<td>PEF</td>
+<td><strong>&gt;50%</strong></td>
+<td><strong>≤50%</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote class="key">
+<p>💡 <strong>암기 팁</strong> 중증 숫자 <strong>"30 · 120 · 90 · 50"</strong>(RR &gt;30, HR &gt;120, SpO2 &lt;90, PEF ≤50). 순서는 <strong>"ABC → 졸·혼·호 → 분류"</strong></p>
+</blockquote>
+<h3 id="asthma-24">5-2. 초기 치료와 재평가 <span class="star">★</span> [중요 슬라이드 38] (p.38, 보충 p.7)</h3>
+<table>
+<thead>
+<tr>
+<th>경증·중등증</th>
+<th>중증</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SABA 흡입</td>
+<td><strong>SABA + SAMA</strong>(흡입속효성항콜린제)</td>
+</tr>
+<tr>
+<td>ipratropium(SAMA) 사용 <strong>고려</strong></td>
+<td>전신 스테로이드</td>
+</tr>
+<tr>
+<td>경구 스테로이드</td>
+<td><strong>정주 마그네슘(IV Mg) 고려</strong> <span class="star">★</span></td>
+</tr>
+<tr>
+<td>SpO2 <strong>93–95%</strong> 유지</td>
+<td>SpO2 <strong>93–95%</strong> 유지, <strong>고용량 ICS 고려</strong></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>경증·중등증 치료 중 <strong>악화가 지속되면 중증으로 분류해 치료 + ICU 치료 재평가</strong> (p.38)</li>
+<li><strong>초기 치료 1시간 이내</strong>에 모든 환자의 임상 양상을 재평가하고 폐기능 측정(악화는 빨리 변하므로)</li>
+<li>FEV1 또는 PEF <strong>60–80% &amp; 증상 호전 → 퇴원 계획 고려</strong></li>
+<li><strong>&lt;60% 또는 호전 없음 → 치료 지속·재평가</strong> (p.38)</li>
+<li><span class="star">★</span> <strong>IV 마그네슘 = 중증 악화에서 추가로 쓰는 카드</strong>. 기전: 평활근이 수축하려면 세포 내 <strong>칼슘</strong>이 올라가야 하는데, Mg는 생리적 <strong>칼슘 길항제</strong> → 흡입제와 <strong>다른 경로</strong>로 평활근 이완 (보충 p.7)</li>
+</ul>
+<blockquote class="warn">
+<p>⚠️ <strong>헷갈림 주의</strong> 산소 목표: 국내 <strong>93–95% 유지</strong>, GINA는 <strong>SpO2 &lt;92%일 때 시작하고 상한 95%</strong>. 목표 범위가 다른 게 아니라 <strong>언제 시작하느냐</strong>의 차이이고, GINA도 중증 악화에서 93–95%가 100% 산소보다 낫다고 봄 → <strong>시험은 93–95%</strong> (보충 p.7). COPD 급성악화 88–92%(COPD p.20)·ARDS 삽관 직후 92~95%(ARDS p.22)와 혼동 주의. [보충] IV MgSO₄ 용량(GINA 2 g, 20분)은 슬라이드에 없음</p>
+</blockquote>
+<h3 id="asthma-25">5-3. 중환자실 검사·해석: ABGA·흉부 X선 <span class="star">★</span> [중요 슬라이드 39] (p.39, 보충 p.8)</h3>
+<ul>
+<li><strong>ABGA는 일상적으로 필요 없음</strong>. <strong>PEF·FEV1 &lt;예측치 50%</strong>이거나 <strong>초기 치료에 반응 없음·악화</strong>일 때 고려</li>
+<li>악화 중 <strong>PaCO2는 대개 정상 이하(&lt;40 mmHg)</strong></li>
+<li><strong>피로·졸림 = PaCO2 상승 + 기도 중재 필요</strong>를 시사</li>
+<li><strong>PaO2 &lt;60 mmHg + PaCO2 정상 또는 상승(특히 &gt;45 mmHg) = 호흡부전</strong></li>
+<li>흉부 X선은 일상적 권고 아님. <strong>기흉·폐렴</strong> 등이 의심될 때만 (p.39)</li>
+</ul>
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/12 00:50:48) 악화 중 PaCO2는 보통 &lt;40이므로 <strong>PaCO2가 '정상'이면 안심할 일이 아니라 악화(환기 부전) 신호</strong>. 피로·졸림이 같이 있으면 CO₂가 쌓이는 중이니 기도 중재를 준비 — "선생님들께서 좀 기억하실 건, 급성악화일 때 PaCO2가 정상보다 낮은…"</p>
+</blockquote>
+<h3 id="asthma-26">5-4. NIV·중환자실 이행·기계환기 <span class="star">★</span> (p.40)</h3>
+<ul>
+<li><strong>NIV</strong>: 근거가 약해 <strong>GINA는 권고를 제시하지 않음</strong>(찬반 권고 없음, 교수 구두 "권고는 안 된다"). 시도한다면 밀착 감시(근거 D). <strong>초조(agitated)한 환자엔 시도하지 않고</strong>, <strong>NIV를 적용하려고 진정하지 않음</strong>. 천식에서 진정은 호흡을 억제하므로 피해야 할 처치 (p.40)</li>
+<li><strong>ICU 이행</strong>(국내 2022): 졸림·혼미·호흡음 감소 → 분류 없이 즉시 SABA·산소, ICU 의뢰·삽관 고려 (p.37과 같음) (p.40)</li>
+<li><strong>기계환기</strong>: 국내·GINA 모두 구체적 권고 없음(두 지침 다 외래 관리 중심) → <strong>일반원칙 3가지</strong> (p.40)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>원칙</th>
+<th>이유(교수 구두)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>① <strong>호기 시간 연장</strong></td>
+<td>천식은 공기가 빠져나갈 호기 시간이 부족한 질환</td>
+</tr>
+<tr>
+<td>② <strong>auto-PEEP 감시</strong></td>
+<td>다 못 나간 공기가 쌓임</td>
+</tr>
+<tr>
+<td>③ <strong>깊은 진정 회피</strong></td>
+<td>대개 <strong>1–2일 내 급격히 호전</strong>됨</td>
+</tr>
+</tbody>
+</table>
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/12 00:52:21) 천식 ICU 기계환기는 지침 권고가 없으니 일반원칙 3가지(호기 시간 연장, auto-PEEP 감시, 깊은 진정 회피)를 기억할 것 — "일반적인 원칙에 준해서 세 가지 정도만 기억해 주신다면"</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/12 00:52:42) 대개 1–2일 내 호전되므로 깊은 진정을 피하는 것이 중요(무엇을 늦추는지는 전사가 깨져 불명) — "(깊은 진정) 그 부분을 회피해야 하는 것이 중요하겠다"</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="ev">
+<p>📝 <strong>보충</strong> [보충] auto-PEEP(내인성 PEEP) = 다 못 내쉰 공기(air trapping·동적 과팽창) 때문에 호기말 폐포에 남는 양압. 참고문헌(Leatherman 2015, Demoule 2020) 원칙: 낮은 호흡수·낮은 일회호흡량·높은 흡기유량으로 호기 시간 확보, 호기말 정지(expiratory hold)로 측정. 슬라이드엔 수치 없음</p>
+</blockquote>
+<h2 id="asthma-27">6. 천식 적정성 평가 (심평원 10차, 2023) (p.41)</h2>
+<ul>
+<li>지표 3가지: <strong>폐기능검사 시행률 41.5%</strong>(10명 중 4명), <strong>지속방문 환자비율 74.4%</strong>, <strong>흡입약제(ICS) 처방 51.8%</strong>. 9차(40.1/77.2/54.2)보다 지속방문·ICS는 하락</li>
+<li>COPD(9차, 동일 지표): 폐기능검사 80.3% · 지속방문 80.2% · <strong>흡입기관지확장제</strong> 처방 91.5% → 천식이 훨씬 낮음</li>
+<li>교수 해석: 지침은 모든 천식 환자에게 ICS를 권하는데 실제 처방은 절반 수준 → 과제는 새 약이 아니라 <strong>이미 확립된 치료가 현장에서 잘 이행되지 않는 것</strong>. 국내 지침의 1안 2단계 단서도 이 평가에 미칠 부정적 영향 때문 (p.41)</li>
+</ul>
+<hr>
+<h2 id="asthma-28">마지막 1분 숫자 체크</h2>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>숫자</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>정상 FEV1/FVC</td>
+<td>&gt;0.75–0.80 (COPD는 BD 후 &lt;0.70)</td>
+</tr>
+<tr>
+<td>BD 가역성</td>
+<td>&gt;12% <strong>그리고</strong> &gt;200 mL / salbutamol 200–400 mcg → 10–15분 후</td>
+</tr>
+<tr>
+<td>검사 전 중단</td>
+<td>SABA 4h / 1일 2회 LABA 24h / 1일 1회 LABA 36h</td>
+</tr>
+<tr>
+<td>PEF 일중 변동</td>
+<td>&gt;10% (2주)</td>
+</tr>
+<tr>
+<td>메타콜린 / 만니톨 / 운동</td>
+<td>≥20% / ≥15% / &gt;10% &amp; 200 mL 감소</td>
+</tr>
+<tr>
+<td>조절 평가</td>
+<td>지난 4주, 0 / 1–2 / 3–4개 = 조절 / 일부 조절 / 조절되지 않음 (1안 사용자는 SABA 항목 빼고 3항목)</td>
+</tr>
+<tr>
+<td>중증 악화</td>
+<td>RR &gt;30, HR &gt;120, SpO2 &lt;90%, PEF ≤50%</td>
+</tr>
+<tr>
+<td>산소 목표</td>
+<td>93–95%</td>
+</tr>
+<tr>
+<td>재평가</td>
+<td>1시간 이내, 60–80% &amp; 호전 → 퇴원 고려</td>
+</tr>
+<tr>
+<td>ABGA</td>
+<td>PEF·FEV1 &lt;50%일 때. PaCO2 보통 &lt;40, PaO2 &lt;60 + PaCO2 &gt;45 = 호흡부전</td>
+</tr>
+<tr>
+<td>기계환기</td>
+<td>대개 1–2일 내 호전 → 깊은 진정 회피</td>
+</tr>
+</tbody>
+</table></section><section class="lec" id="lec-ards" data-lec="ards">
+<div class="part"><div class="num">LECTURE 5</div><h2>ARDS의 병태생리와 치료</h2><div class="who">이홍열 · 10/19</div></div>
+<div class="glance"><div class="gt">한눈에 보기</div><ul>
+<li>정의: <mark>2024 Global Definition = 비삽관(HFNO ≥30 L/min 또는 NIV/CPAP ≥5) · 삽관(PEEP ≥5) · 자원 제한(S/F ≤315만)의 3범주</mark>. S/F(SpO2 ≤97%일 때)와 폐초음파를 허용하고, 1주 이내·양측 침윤은 그대로 <span class="star">★</span></li>
+<li>원인·예방: 직접(폐렴 1위, 흡인 2위) vs 간접(비폐성 패혈증 1위). 배제 진단이라 ARDS mimics를 꼭 확인. 2차 타격(고VT·수액 과부하·P-SILI·수혈/흡인·감염원 조절 지연)은 막을 수 있다 <span class="star">★</span></li>
+<li>병태생리: 장벽 투과성↑ → 단백질 풍부 부종 + 계면활성제 소실 + 무기폐, 면역혈전 → 사강↑. 표현형 = 과염증형(30%, 사망↑) vs 저염증형 <span class="star">★</span></li>
+<li>삽관 전: HFNO는 고유량, ROX ≥4.88을 추이로, HACOR &gt;5(NIV 1시간), Vte ≥9.5 mL/kg → <strong>삽관 지연 금지</strong> <span class="star">★</span></li>
+<li>치료: 사망률 감소가 입증된 것 = <mark>저일회호흡량(6 mL/kg PBW, Pplat ≤30)과 복와위(하루 &gt;12시간)</mark> = ATS 초록. 장시간 RM·HFOV는 빨강(하지 마라). NMBA·VV-ECMO는 중증, 높은 PEEP은 P/F ≤200, 스테로이드는 조건부 <span class="star">★</span></li>
+</ul></div>
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/19 01:55:13~01:55:51) 시험 안내: physiology(생리) 부분은 출제하지 않고, 이 강의는 <strong>객관식</strong>으로 낸다(문항 수 발언은 의미 불명확) — "피지올로지에서는 시험 안 낼게요", "객관식으로 낼 테니까 동료분들한테 알려주세요"</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="warn">
+<p>⚠️ <strong>헷갈림 주의</strong> '생리' 범위는 <strong>불명확</strong>(학생 추정 = slide 47–59 폐 압력·mechanical power, 단 23–34 병태생리나 73–77 복와위 생리일 수도). 계산·공식은 가볍게, <strong>교수가 "중요하다"고 한 결론(baby lung = 작은 폐, 저산소혈증 1차 기전 = shunt, ΔP 영향이 RR의 4배 → RR 먼저)은 외운다.</strong></p>
+</blockquote>
+<hr>
+<h2 id="ards-1">1. 개념과 정의</h2>
+<h3 id="ards-2">1-1. ARDS 개념·특징 (p.2–4)</h3>
+<ul>
+<li><strong>급성 선행 위험인자</strong>(감염·패혈증·외상·흡인)가 유발한 <strong>급성 미만성 염증성 폐손상</strong>. 단일 질병이 아니라 <strong>증후군</strong> (p.3)</li>
+<li>핵심 기전 = <strong>폐포-모세혈관 장벽 투과성 증가</strong> → ① 비심인성 단백질 풍부 폐부종 ② 계면활성제(=표면활성제, surfactant) 고갈 ③ 중력 의존성 무기폐 (p.3)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>특징 (p.4)</th>
+<th>내용</th>
+<th>원인</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>가스교환</td>
+<td><strong>불응성 저산소혈증</strong></td>
+<td>폐내 단락(shunt)</td>
+</tr>
+<tr>
+<td>가스교환</td>
+<td><strong>고탄산혈증</strong></td>
+<td>폐포 사강(dead space)↑ (미세혈전)</td>
+</tr>
+<tr>
+<td>역학</td>
+<td>폐 유순도(compliance)↓</td>
+<td>환기되는 폐조직(aerated lung)↓</td>
+</tr>
+<tr>
+<td>영상</td>
+<td>양측성 폐 침윤</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>개념 모델 업데이트: 임상 양상은 <strong>치료 개입(자세·진정·수액·PEEP)에 따라 달라진다</strong> (p.4)</li>
+<li>패러다임 전환: 획일적 프로토콜 → <strong>표현형(생물학적·영상학적·생리학적) 기반 맞춤 치료</strong> (p.2)</li>
+</ul>
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/19 00:01:50) 가이드라인을 바탕으로 하되 표현형에 맞추고 환자 개개인의 치료 반응을 보며 맞춤 치료를 한다 — "환자 개개인의 치료 리스폰스를 보면서 맞춤형 치료를 하는 것이 중요"</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="warn">
+<p>⚠️ <strong>헷갈림 주의</strong> 유순도 감소 ≠ 폐 전체가 딱딱해짐. 폐포에 부종·염증물질이 차서 <strong>환기되는 폐 용적이 줄어든 것</strong>이다(교수 00:04:36, Baby lung과 연결).</p>
+</blockquote>
+<h3 id="ards-3">1-2. 정의의 변천 <span class="star">★</span> (p.5–9)</h3>
+<table>
+<thead>
+<tr>
+<th>정의</th>
+<th>핵심 기준</th>
+<th>한계·변화</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1967 Ashbaugh (Lancet)</td>
+<td>12명 증례: 빈호흡, 산소에 불응하는 저산소혈증, 유순도↓, 양측 침윤</td>
+<td>최초 기술</td>
+</tr>
+<tr>
+<td>1988 Murray LIS</td>
+<td>CXR·P/F·PEEP·정적 유순도 각 0–4점, <strong>평균 &gt;2.5</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>1994 AECC</td>
+<td>급성, 양측 침윤, <strong>PAWP ≤18 mmHg</strong>, <strong>PEEP과 무관하게</strong> P/F &lt;300 = ALI, &lt;200 = ARDS</td>
+<td>최초 국제 합의. 'acute' 시간 기준 없음, PEEP을 바꾸면 P/F가 변함, 폐동맥 카테터 사용 감소</td>
+</tr>
+<tr>
+<td>2012 Berlin</td>
+<td><strong>1주 이내</strong>, 양측 음영(CXR/CT), 심부전·수액 과부하로 설명 안 됨, <strong>PEEP/CPAP ≥5</strong>에서 P/F Mild 200–300 / Moderate 100–200 / Severe ≤100</td>
+<td>PAWP·ALI 삭제. 한계: <strong>HFNO 환자는 진단 불가</strong>, ABGA 의존, CXR 판독 불일치, 자원 부족 국가 진단율 ~0%</td>
+</tr>
+</tbody>
+</table>
+<blockquote class="warn">
+<p>⚠️ <strong>헷갈림 주의</strong> Murray LIS를 교수는 "평균 3점"처럼 말했지만 슬라이드(시험 기준)는 <strong>평균 &gt;2.5</strong>.</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="ev">
+<p>📝 <strong>보충</strong> Berlin에서는 HFNO 60 L/min·FiO2 0.9를 받아도 삽관 전에는 ARDS가 아니었다 → COVID 이후 HFNO 사용이 늘어 새 정의가 필요해졌다(교수).</p>
+</blockquote>
+<h3 id="ards-4">1-3. 2024 New Global Definition <span class="star">★</span> (p.10–13)</h3>
+<ul>
+<li>위험인자: 폐렴, 폐외 감염(nonpulmonary infection), 외상, 수혈, <strong>화상(burn)</strong>, 흡인, 쇼크 (p.10). <strong>선행 위험인자가 명확하면 심부전·수액 과부하가 같이 있어도 ARDS 진단 가능</strong> (Berlin보다 넓게) (p.11)</li>
+<li>Timing <strong>1주 이내</strong>(Berlin과 같음). 영상 = 양측 침윤을 <strong>CXR, CT 또는 숙련자의 폐초음파(LUS: 양측 B-line, 흉막하 경화)</strong>로 (p.11)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>범주</th>
+<th>산소화 기준</th>
+<th>호흡보조 조건</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>① 비삽관(Non-intubated, <strong>신설</strong>)</td>
+<td>P/F ≤300 또는 <strong>S/F ≤315</strong></td>
+<td><strong>HFNO ≥30 L/min</strong> 또는 NIV/CPAP ≥5 cmH2O. 중증도 구분 없음</td>
+</tr>
+<tr>
+<td>② 삽관(Intubated)</td>
+<td>Mild P/F 200–300 (S/F 235–315) / Moderate 100–200 (S/F 148–235) / Severe ≤100 (S/F ≤148)</td>
+<td><strong>PEEP ≥5</strong>. ABGA가 없으면 S/F로 분류 가능</td>
+</tr>
+<tr>
+<td>③ 자원 제한 환경</td>
+<td><strong>S/F ≤315</strong></td>
+<td><strong>PEEP·산소 유량 조건 없음</strong></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>S/F는 <strong>SpO2 ≤97%일 때만</strong> 유효, 메트헤모글로빈·일산화탄소헤모글로빈혈증 의심 시 산소포화도로 진단하지 않음. 추정 FiO2 = 0.21 + 0.03 × O2 유량(L/min). 측정은 자세·FiO2·유량 변경 후 <strong>30분</strong> 이상 지나서. 환자는 범주 사이를 이동할 수 있다 (p.10)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>사례 (p.13)</th>
+<th>계산</th>
+<th>범주</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>복강 패혈증, 기계환기 FiO2 0.5, PaO2 75</td>
+<td>P/F 150</td>
+<td>삽관 ARDS, Moderate</td>
+</tr>
+<tr>
+<td>COVID 폐렴, <strong>HFNO 40 L/min</strong>, FiO2 0.8, SpO2 91%</td>
+<td>S/F 114</td>
+<td><strong>비삽관 ARDS</strong></td>
+</tr>
+<tr>
+<td>작은 병원, 안면마스크 15 L/min, FiO2 0.6, SpO2 85%, 폐초음파</td>
+<td>S/F 142</td>
+<td><strong>자원 제한 환경 ARDS</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote class="key">
+<p>💡 <strong>암기 팁</strong> P/F 300·200·100 ↔ S/F <strong>315·235·148</strong>("삼일오·이삼오·일사팔"). 비삽관과 자원 제한은 315 한 줄뿐이고 중증도가 없다.</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="warn">
+<p>⚠️ <strong>헷갈림 주의</strong> HFNO <strong>30 L/min</strong> = 비삽관 ARDS의 진단 조건 / <strong>60 L/min</strong> = 교수가 저산소혈증 치료로 시작하는 유량. 자원 제한 환경은 PEEP도 유량도 필요 없다.</p>
+</blockquote>
+<hr>
+<h2 id="ards-5">2. 역학·원인·감별·예방</h2>
+<h3 id="ards-6">2-1. 역학 — LUNG-SAFE (p.15)</h3>
+<ul>
+<li>50개국 459개 ICU 약 3만 명: <strong>ICU 입실 10.4%, 침습적 기계환기 환자의 23.4%(약 1/4)</strong>. 사망률 <strong>40%</strong>(Mild 34.9 / Moderate 40.3 / <strong>Severe 46.1%</strong>)</li>
+<li>COVID: 발생 약 10배, 사망자 약 5배, <strong>COVID ICU 입실 환자의 약 50~80%가 ARDS로 진행</strong>. 사망률 39%로 non-COVID(40%)와 비슷 → 더 치명적이 아니라 환자 수가 늘었다(교수)</li>
+</ul>
+<h3 id="ards-7">2-2. 원인과 위험인자 <span class="star">★</span> (p.16–17)</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>직접(폐성)</th>
+<th>간접(폐외성)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>먼저 다치는 곳</td>
+<td>폐포 <strong>상피</strong></td>
+<td>혈관 <strong>내피</strong>(전신 염증 매개체)</td>
+</tr>
+<tr>
+<td>가장 흔한 원인</td>
+<td><strong>폐렴</strong> 1위, <strong>흡인</strong> 2위</td>
+<td><strong>비폐성 패혈증</strong>(복강·요로 패혈증 등)</td>
+</tr>
+<tr>
+<td>기타</td>
+<td>연기·독성가스 흡입, 폐 타박상, 익수, 전자담배, VILI</td>
+<td>중증 외상·출혈성 쇼크, 급성 췌장염, <strong>TRALI</strong>, 약물 과다, 지방색전증</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>비만 역설(obesity paradox)</strong>: 비만은 발생률↑, 발생 후 사망률은 낮거나 비슷. 교수 해석 = 근육량이 많아 weaning 때 호흡근이 남아 있음 (p.17)</li>
+<li>당뇨: non-COVID에선 무관하거나 위험↓, COVID ARDS에선 예후 불량. 환경 요인(만성 알코올 남용·흡연·미세먼지 장기 노출) → 발생 위험↑ (p.17)</li>
+</ul>
+<h3 id="ards-8">2-3. 감별진단과 ARDS mimics <span class="star">★</span> (p.18)</h3>
+<ul>
+<li>패혈증·폐렴 환자의 <strong>30~60%는 원인 미생물이 끝내 동정되지 않음</strong> → 가역적 원인 찾기(BAL, 자가항체, 실시간 metagenomics)</li>
+</ul>
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/19 00:19:17) ARDS는 배제 진단 성격이 강한 증후군이다 — "중요한 것 중에 하나가 ARDS는 배제 진단적 성격이 강한 신드롬"</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>ARDS mimics 4범주</th>
+<th>예 (노트)</th>
+<th>치료 방향</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>① 심인성(정수압성) 폐부종·수액 과부하</td>
+<td>가장 흔함</td>
+<td><strong>CRRT·furosemide(Lasix)로 수분 제거</strong>(스테로이드 아님, 교수)</td>
+</tr>
+<tr>
+<td>② 자가면역·결합조직질환 관련 ILD(CTD-ILD)</td>
+<td>항-MDA5 피부근염 RP-ILD, ANCA 혈관염 폐포출혈</td>
+<td><strong>면역치료</strong>(교수)</td>
+</tr>
+<tr>
+<td>③ 급성 간질성 폐질환·약물 반응</td>
+<td>급성 호산구성 폐렴, 기질화 폐렴(COP)</td>
+<td><strong>스테로이드에 극적으로 반응</strong>(노트)</td>
+</tr>
+<tr>
+<td>④ 악성 종양</td>
+<td>폐렴형 미만성 선암</td>
+<td>원인별 치료</td>
+</tr>
+</tbody>
+</table>
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/19 00:19:58) 치료는 유지하더라도 진짜 ARDS인지 mimics(심인성 폐부종·CTD-ILD·악성 종양·급성 ILD)인지 반드시 확인한다 — "꼭 생각해야 되는 것이 진짜 ARDS가 맞는지… 꼭 확인을 해야"</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/19 00:20:27) CTD-ILD는 면역치료가 주 치료라 동반 여부를 꼭 확인하고, 심인성 폐부종·수액 과부하면 스테로이드가 아니라 CRRT·furosemide(Lasix)로 물을 뺀다 — "이런 질환이 동반되지 않았는지도 꼭 확인을 해야 됩니다"</p>
+</blockquote>
+<h3 id="ards-9">2-4. 다중 타격 가설과 예방 <span class="star">★</span> (p.19–21)</h3>
+<ul>
+<li>대부분 내원 때 완성된 ARDS가 아니라 <strong>입원 후 수 시간~수일</strong>(노트: 24~72시간)에 걸쳐 진행 (p.19)</li>
+<li>정상 폐 → [1차 타격: 폐렴·패혈증·외상·쇼크 = 내원 전, <strong>비가역</strong>] → 예열된 폐(primed lung) → [2차 타격: 의인성, <strong>예방 가능</strong>] → 완성된 ARDS (p.20)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>피해야 할 2차 타격 (p.21)</th>
+<th>예방 행동</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>① 손상성 기계환기(VILI)</td>
+<td>수술실·응급실 첫 삽관부터 <strong>저일회호흡량 6~8 mL/kg PBW + 적절한 PEEP</strong></td>
+</tr>
+<tr>
+<td>② 수액 과부하</td>
+<td>소생 목표 달성 직후 불필요한 수액 중단, 보존적 수액 관리(약물 p.26: 쇼크·승압제 증가 중엔 이뇨 보류)</td>
+</tr>
+<tr>
+<td>③ P-SILI</td>
+<td>HFNO·NIV 중 호흡 drive·effort가 과도하면 방치하지 말고 <strong>적시 삽관·진정</strong></td>
+</tr>
+<tr>
+<td>④ 무분별한 수혈·흡인</td>
+<td><strong>제한적 수혈 기준</strong>(TRALI 예방), <strong>침상 머리 거상 30~45도 + 구강 간호</strong></td>
+</tr>
+<tr>
+<td>⑤ 감염원 조절 지연</td>
+<td>즉각적인 감염원 제거 + 적절한 항생제</td>
+</tr>
+</tbody>
+</table>
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/19 00:24:12) ARDS가 아니어도 처음 삽관할 때부터 저일회호흡량(PBW 6~8 mL/kg)을 쓰고 PEEP도 필요한 만큼 준다 — "로우 타이달을 하면서 PEEP도 필요한 만큼 적절히 적용하는 것이 중요"</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="key">
+<p>💡 <strong>암기 팁</strong> 1차 타격 = 환자가 가지고 온 것(비가역), 2차 타격 = 의료진이 만드는 것(예방 가능): "큰 VT · 물 · 헐떡임 · 피/흡인 · 늦은 감염원 조절"(표 ①~⑤와 1:1).</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="ev">
+<p>📝 <strong>보충</strong> 교수: 먹고 걸을 수 있는 환자에게 이유 없이 거는 maintenance 수액은 주지 않는다. 적절한 삽관 시점의 정해진 기준은 없으니 "고민될 때가 삽관 시점"이다.</p>
+</blockquote>
+<h3 id="ards-10">2-5. 조기 인지 (p.22)</h3>
+<ul>
+<li>LUNG-SAFE에서 의료진이 ARDS를 <strong>놓친 비율이 높았다</strong>(특히 mild~moderate) → 진단이 늦으면 저VT·복와위도 늦어짐</li>
+<li><strong>삽관 후 첫 1시간</strong>: 키 측정 → PBW 계산 → <strong>VT 6 mL/kg PBW로 시작</strong>, 목표 SpO2 92~95%, <strong>Pplat &lt;30 cmH2O</strong>, 구동압 측정, PEEP 개별화</li>
+</ul>
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/19 00:27:16) 가장 먼저 중요한 것은 환자가 ARDS인지 제대로 판단하는 것이다(늦으면 저VT·복와위를 떠올리지도 못함) — "1번은 환자가 ARDS인지 잘 판단하는 것이 중요하고"</p>
+</blockquote>
+<hr>
+<h2 id="ards-11">3. 병태생리</h2>
+<h3 id="ards-12">3-1. 정상 폐포를 건조하게 유지하는 4기둥 (p.23–24)</h3>
+<ul>
+<li><strong>1형 폐포세포(ATI)</strong> = 가스교환 / <strong>2형 폐포세포(ATII, =II형 폐포상피세포)</strong> = 계면활성제 분비, 이온 수송, 재생(ATI로 분화)</li>
+<li>① 치밀이음부(tight junction)가 누출 차단 ② 당질층(glycocalyx)이 백혈구·혈소판 유착 방지 ③ <strong>ENaC + Na⁺/K⁺-ATPase</strong>가 Na·Cl을 능동 수송해 물을 간질로 퍼냄 ④ 계면활성제가 호기말 허탈 방지 → <strong>ARDS = 4기둥이 동시에 무너짐</strong></li>
+</ul>
+<h3 id="ards-13">3-2. 핵심 병태생리 5가지 <span class="star">★</span> (p.25–29)</h3>
+<table>
+<thead>
+<tr>
+<th>기전</th>
+<th>핵심</th>
+<th>임상 의미</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>① 상피 손상</td>
+<td>TJ 파괴·glycocalyx 탈락 → <strong>손상 상피가 염증의 능동 주체</strong>(호중구 유입 가속) → 괴사 → alveolar flooding, <strong>유리질막(hyaline membrane)</strong></td>
+<td>가스교환 차단</td>
+</tr>
+<tr>
+<td>② 폐포액 제거(AFC) 장애</td>
+<td>사이토카인·ROS·저산소증·고탄산혈증이 ENaC·Na⁺/K⁺-ATPase 억제, ATP 고갈</td>
+<td><strong>AFC 저하 = 기계환기 기간↑·사망률↑</strong></td>
+</tr>
+<tr>
+<td>③ 계면활성제 이상</td>
+<td>양적(ATII 손상으로 생산↓) + 질적(혈장 단백·phospholipase·ROS가 불활성화)</td>
+<td>표면장력↑ → 호기말 허탈·중력 의존성 무기폐 → <strong>atelectrauma</strong> 취약</td>
+</tr>
+<tr>
+<td>④ 내피·glycocalyx 손상</td>
+<td>세포 간 틈, VE-cadherin 파괴, <strong>Ang-2가 Tie2 길항</strong>, glycocalyx 탈락</td>
+<td>투과성 폐부종</td>
+</tr>
+<tr>
+<td>⑤ 염증·면역혈전</td>
+<td>TNF-α·IL-1β·IL-6·IL-8 폭발, 호중구 ROS·NETs / <strong>tissue factor·PAI-1↑ → 미세혈전</strong></td>
+<td><strong>PVR↑, 폐포 사강↑ → 고탄산혈증</strong>, 우심실 부담</td>
+</tr>
+</tbody>
+</table>
+<blockquote class="warn">
+<p>⚠️ <strong>헷갈림 주의</strong> 정수압성 부종(심부전: 장벽은 정상, 압력↑) vs 투과성 부종(ARDS: 장벽이 망가져 정상 좌심방압에서도 샘). ARDS는 <strong>같은 수액량에도 부종이 훨씬 심해진다</strong> → 혈역학이 안정되면 보존적 수액 (p.28)</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="ev">
+<p>📝 <strong>보충</strong> 성인 ARDS에서 외부 계면활성제 투여 시험은 모두 실패했다(삼출액이 즉시 불활성화) → PEEP으로 받치고 복와위로 무게를 분산한다(p.27 노트). 교수는 ARDS가 저산소혈증뿐 아니라 면역혈전 때문에 심한 고탄산혈증도 일으킨다고 반복했다.</p>
+</blockquote>
+<h3 id="ards-14">3-3. 시기별 진행 (p.30–31)</h3>
+<table>
+<thead>
+<tr>
+<th>시기</th>
+<th>시점</th>
+<th>특징</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>삼출기(exudative)</td>
+<td>첫 24~72시간에 시작, ~7일</td>
+<td>부종·유리질막·호중구, shunt·유순도 급감. <strong>PEEP·복와위 모집 반응이 후기보다 훨씬 좋음</strong> <span class="star">★</span></td>
+</tr>
+<tr>
+<td>증식기(proliferative)</td>
+<td>보통 7~14일 이후</td>
+<td>염증 해소, ATII 증식 → ATI 분화, AFC 회복</td>
+</tr>
+<tr>
+<td>섬유화기(fibrotic)</td>
+<td>보통 14일 이후, <strong>단 첫날부터 시작 가능</strong> <span class="star">★</span></td>
+<td>콜라겐 침착 → 유순도 영구↓, 사강↑ → <strong>weaning 실패</strong>, 생존 후 DLCO↓·제한성 장애</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>교수: 3단계를 엄격히 나눠 치료하지는 않는다(<strong>섬유화는 첫날부터 염증과 동시 진행 가능</strong>, 연구로 확인)</li>
+</ul>
+<blockquote class="ev">
+<p>📝 <strong>보충</strong> 발표자 노트: 스테로이드는 초기 삼출기(24~72시간 내, 늦어도 7일 이내)에 써야 효과가 있고, 섬유화기(14일 이후)에 새로 시작하면 효과 없이 신경근병증·감염 위험만 커진다 (p.30–31).</p>
+</blockquote>
+<h3 id="ards-15">3-4. 침상 생리 — Baby lung·shunt·사강 (slide 32–34)</h3>
+<blockquote class="warn">
+<p>⚠️ <strong>헷갈림 주의</strong> 출제 범위 불명확(맨 위 참고) → 세부 기전은 가볍게, <strong>결론(baby lung = 작은 폐, 1차 기전 = shunt)은 외운다</strong>.</p>
+</blockquote>
+<ul>
+<li><strong>Baby lung</strong>: CT에서 등쪽은 경화·무기폐, 배쪽만 환기 → 남은 폐 = 5~6세 아이 크기(성인의 20~30%). baby lung 자체 유순도는 거의 정상 → "딱딱한 폐"가 아니라 "작은 폐" → 저VT·ΔP 제한의 근거</li>
+<li>저산소혈증 1차 기전 = <strong>우→좌 폐내 shunt(V/Q = 0)</strong>(&gt;30%면 FiO2 100%에도 불응), 2차 = <strong>low V/Q + 저산소성 폐혈관수축(HPV) 소실</strong>(혈류가 등쪽 무기폐로 계속 몰려 shunt 악화) (p.33). 고탄산혈증 = <strong>사강↑</strong>(미세혈전, 과팽창, 저VT 때 고정 사강 약 150 mL의 비중↑) → ETCO2로 감시</li>
+</ul>
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/19 00:37:34) Gattinoni의 Baby lung 개념을 알아야 한다 — "베이비 렁이라는 개념이 중요합니다 … 좀 아셔야 되는데"</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/19 00:39:20) ARDS 저산소혈증의 1차 기전은 shunt, 2차는 low V/Q mismatch — "하이폭세미아 기전은 1차적으로 제일 중요한 것은 션트"</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/19 00:41:48) 저VT 환기에서는 고정 사강의 비중이 커지므로 ETCO2·Ventilatory ratio로 감시한다 — "이런 것들은 생각하면서 치료하는 게 중요하고"</p>
+</blockquote>
+<hr>
+<h2 id="ards-16">4. 이질성과 표현형 <span class="star">★</span> (p.35–39)</h2>
+<ul>
+<li>예후를 개선한 건 생리적 지지요법뿐: <strong>저VT(ARMA), 복와위(PROSEVA), 수액(FACTT)</strong> (p.35)</li>
+<li>모든 ARDS를 한 집단으로 묶은 약물 시험(statin, β2-agonist, iNO, surfactant)·PEEP 연구는 대부분 실패 → P/F &lt;150만 모은 <strong>PROSEVA가 복와위 연구 첫 positive</strong></li>
+<li><strong>치료 효과의 이질성(HTE)</strong>: 같은 치료가 한 표현형엔 이득, 다른 표현형엔 해 → 평균 0. 예: <strong>simvastatin(HARP-2)은 전체에선 실패, 과염증형에선 생존↑</strong> (p.36, 38)</li>
+</ul>
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/19 00:42:16) ARDS 환자는 동질적이지 않으며(heterogeneity), 한 집단으로 묶은 연구는 대부분 실패했다 — "중요한 것은 환자들은 동질한 사람들이 아니다, 헤테로지니어티"</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>(p.37)</th>
+<th>과염증형(Hyper-inflammatory)</th>
+<th>저염증형(Hypo-inflammatory)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>비율</td>
+<td><strong>약 30%</strong></td>
+<td>약 70%</td>
+</tr>
+<tr>
+<td>임상</td>
+<td><strong>쇼크 심함, norepinephrine 요구량↑, 대사성 산증</strong></td>
+<td>덜함</td>
+</tr>
+<tr>
+<td>바이오마커</td>
+<td>IL-6·IL-8·TNFR1↑, 중탄산·단백질 C↓</td>
+<td>반대</td>
+</tr>
+<tr>
+<td>결과</td>
+<td><strong>사망률↑</strong>, 인공호흡기 없는 날↓</td>
+<td>사망률↓</td>
+</tr>
+</tbody>
+</table>
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/19 00:44:45) 대표적으로 알아야 할 것은 과염증형(약 30%, 쇼크·승압제·대사성 산증으로 사망↑)과 저염증형 — "대표적으로 알아야 될 것은 하이퍼인플라마토리랑 하이포인플라마토리"</p>
+</blockquote>
+<ul>
+<li>표현형은 <strong>역동적(dynamic heterogeneity)</strong>: 시기·치료에 따라 매일 바뀜(연구에서 25~50%가 바뀜) (p.39)</li>
+<li><strong>Treatable traits 4축</strong>: 원인/미생물(가역 원인·mimics) · 생물학적(hyper vs hypo) · 역학(<strong>high vs low recruitability</strong>) · 혈관(우심실 부전, 높은 사강) (p.39)</li>
+</ul>
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/19 00:46:41) 표현형은 고정되지 않고 치료에 따라 바뀐다 — "역동적으로 환자가 변할 수가 있다는 것을 알아두시는 게 좋고"</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/19 00:46:52) 변화에 맞춰 치료 가능한 특성(treatable traits)을 찾아낸다 — "환자의 치료 가능한 특성을 잘 찾아내는 것이 중요합니다"</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/19 00:46:58) 표현형 분류의 핵심 둘 = ① 생물학적 과염증형 vs 저염증형 ② PEEP에 모집되는(recruitable) 환자인지 — "중요한 것은 … 하이퍼냐 하이포냐 … 리크루터블 환자냐 아니냐"</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="ev">
+<p>📝 <strong>보충</strong> 교수: 과염증형에서 높은 PEEP이 더 효과적이었다(슬라이드는 "반응이 다르다"까지). 노트: rosuvastatin(SAILS)은 표현형으로 나눠도 효과 없음.</p>
+</blockquote>
+<hr>
+<h2 id="ards-17">5. 삽관 전 호흡 보조 <span class="star">★</span> (p.40–45)</h2>
+<h3 id="ards-18">5-1. 득실과 적시 삽관 (p.40)</h3>
+<ul>
+<li>HFNO·NIV·awake prone: 산소화↑·호흡일↓ → 삽관 위험↓</li>
+<li>양날의 검: ① <strong>P-SILI</strong>(강한 흡기 노력 → 흉막압 음압↑ → 실제 폐에 걸리는 압력↑ → 폐손상) ② <strong>삽관 지연 → 사망률↑</strong>. p.43–45 부제가 모두 "Preventing Delayed Intubation"</li>
+</ul>
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/19 00:59:58) HFNO·NIV 실패 때 삽관이 늦어지면 P-SILI로 사망률이 오르므로 삽관 시점을 잘 잡아야 한다 — "인투베이션 하는 시점을 잘 잡는 것이… 하나의 중요한 요소"</p>
+</blockquote>
+<h3 id="ards-19">5-2. HFNO와 awake prone (p.41–42)</h3>
+<ul>
+<li>HFNO: 기도압(PEEP 효과)↑·FiO2 유지 → PaO2↑ = <strong>높은 유량에서 최적</strong> / 사강 세척(CO2 제거)은 낮은 유량에서도 됨</li>
+<li>교수 실무: 저산소혈증엔 <strong>60 L/min으로 시작</strong>(최소 40~60), 이탈 땐 <strong>FiO2를 먼저 낮추고 유량은 유지</strong>. 20~30 L/min은 사강 세척 정도</li>
+<li><strong>Awake prone(APP)</strong>: <strong>하루 8~12시간 이상</strong> → 28일 삽관율 <strong>17% vs 27%</strong>. 여러 세션으로 나눠도 됨</li>
+</ul>
+<h3 id="ards-20">5-3. ROX index (HFNO) (p.43)</h3>
+<ul>
+<li><strong>ROX = (SpO2/FiO2) ÷ RR</strong>, 높을수록 좋음. <strong>≥4.88</strong>이면 기계환기 없이 유지될 가능성↑</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>시점</th>
+<th>삽관 고려</th>
+<th>지원 강화 후 30분 재평가</th>
+<th>계속 관찰</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2시간</td>
+<td>&lt;2.85</td>
+<td>2.85–4.87</td>
+<td>≥4.88</td>
+</tr>
+<tr>
+<td>6시간</td>
+<td>&lt;3.47</td>
+<td>3.47–4.87</td>
+<td>≥4.88</td>
+</tr>
+<tr>
+<td>12시간</td>
+<td>&lt;3.85</td>
+<td>3.85–4.87</td>
+<td>≥4.88</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>중간 구간은 지원을 강화하고 <strong>30분 뒤 ΔROX</strong>를 본다 → <strong>&lt;0.5면 삽관 고려, ≥0.5면 계속 관찰</strong> (p.43 흐름도)</li>
+</ul>
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/19 01:03:39) 힘들게 숨쉬는지·보조호흡근을 쓰는지 눈으로 보는 것도 중요하고, 객관적 지표로 ROX를 쓴다 — "눈대중으로… 보조호흡근 쓰는지 보는 것도 굉장히 중요하지만"</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/19 01:04:27) ROX는 한 시점이 아니라 2·6·12시간 추이로 보고 삽관을 판단한다 — "2시간, 6시간, 12시간… 흘러가는지 보는 것도 하나 중요한 요소"</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="warn">
+<p>⚠️ <strong>헷갈림 주의</strong> 교수는 "4.8"이라고 했지만 슬라이드는 <strong>4.88</strong>. 점수는 판단 보조 도구일 뿐, 떨어지는 추세면 cutoff 아래로 갈 때까지 기다리지 않고 삽관한다(교수).</p>
+</blockquote>
+<h3 id="ards-21">5-4. NIV: HACOR와 Vte (p.44–45)</h3>
+<ul>
+<li><strong>HACOR</strong> = Heart rate, Acidosis(pH), Consciousness(GCS), Oxygenation(P/F), Respiratory rate. <strong>NIV 1시간째 &gt;5점 → NIV 실패 위험↑</strong>(AUC 0.89). 활력징후가 멀쩡해도 P/F 101–125(5점) + RR 31–35(1점) = 6점</li>
+<li><strong>Vte(호기 일회호흡량)</strong>: NIV 첫 4시간 평균 <strong>≥9.5 mL/kg → 실패율 약 75%</strong>(&lt;9.5는 약 20%)</li>
+</ul>
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/19 01:06:04) HACOR(HR·pH·GCS·P/F·RR)는 NIV 1시간째 5점을 넘으면 실패 위험이 높으니 봐야 할 지표로 알아 둔다 — "이런 것들이 중요하다는… 봐야 될 지표들이다라는 걸 알아두시면"</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/19 01:07:05) 낮은 압력보조에도 Vte가 크게(≥9.5 mL/kg) 나오면 NIV를 끌지 말고 빨리 삽관·진정해 호흡근을 쉬게 한다 — "빨리 인투베이션 하고 세데이션… 1번 전략… 잘 확인하는 것이 중요"</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="key">
+<p>💡 <strong>암기 팁</strong> ROX는 높을수록 좋고(≥4.88), HACOR는 낮을수록 좋다(&gt;5 위험). ROX = HFNO용, HACOR·Vte = NIV용.</p>
+</blockquote>
+<hr>
+<h2 id="ards-22">6. 인공호흡 중 폐손상: VILI·P-SILI·구동압</h2>
+<h3 id="ards-23">6-1. VILI 기전 (p.46)</h3>
+<ul>
+<li>연표: Barotrauma(1973) → Volutrauma(1988) → Atelectrauma·Biotrauma(1997) → Ergotrauma(2016)</li>
+<li><strong>4대 기전(슬라이드 빨간 박스)</strong> = 압력손상(barotrauma) · 용적손상(volutrauma) · 무기폐손상(atelectrauma: 반복적 열림·닫힘) · 생물손상(biotrauma: IL-8 등 매개체가 순환으로 → <strong>다장기부전</strong>). Ergotrauma = mechanical power(전달 에너지)에 의한 손상</li>
+</ul>
+<blockquote class="warn">
+<p>⚠️ <strong>헷갈림 주의</strong> 교수는 말로 "baro·volu·atelec·ergo"를 나열하고 bio를 따로 설명했지만, 슬라이드의 4대 기전 박스는 <strong>Baro·Volu·Atelec·Bio</strong>(시험 기준).</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/19 01:08:21) VILI 손상은 폐에 그치지 않고 사이토카인을 거쳐 다장기부전까지 가므로 이 요소들을 조절하며 인공호흡기를 유지한다 — "멀티 올간 failure가 올 수가… 잘 조절하면서 벤틀레이터를 유지하는 게 중요"</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/19 01:16:45) 인공호흡기는 치료 기계가 아니라 원인 치료(예: 항생제)가 들을 때까지 버티게 하는 지지 수단이므로, 좋아지면 빨리 weaning한다 — "빨리 환자가 좋아지면 위닝도 하는 것이 중요하다"</p>
+</blockquote>
+<h3 id="ards-24">6-2. 폐 압력·mechanical power (slide 47–52, 57–59)</h3>
+<blockquote class="warn">
+<p>⚠️ <strong>헷갈림 주의</strong> '생리 출제 안 함'에 가장 가까운 구간(범위 불명확) → 계산은 가볍게, <strong>결론(ΔP 영향이 RR의 4배 → PaCO2를 뺄 때 RR 먼저)은 외운다</strong>.</p>
+</blockquote>
+<ul>
+<li>Pplat = 흡기말 정지 때 압력(과팽창 지표), 저항압 = PIP − Pplat(≥10이면 가래로 인한 튜브 막힘 의심). <strong>경폐압(PL) = Palv − Ppl(≈식도내압)</strong>이 실제 폐를 망가뜨리는 압력</li>
+<li>E 그림: 환자가 세게 들이쉬면 Pplat이 낮아도 PL이 높다(Pplat 10 + 흉막압 −15 → PL 25) / C 그림: 흉벽이 뻣뻣하면(고도비만·복수·흉수) Pplat 30이어도 흉막압 25 → PL 5 → VILI 위험이 낮을 수 있다 = <strong>Pplat 해석의 한계</strong> (p.51 노트)</li>
+<li>흉막압은 식도내압을 재야 아는데 루틴으로 재지 않아 환자의 흡기 노력을 직접 알 수 없다 → drive·effort를 관찰해야 하는 이유(교수)</li>
+<li>Mechanical power = 단위 시간당 폐에 가해지는 에너지(연구용). <strong>Costa 2021</strong>(slide 59): 단일 환기 변수(VT·PEEP·Pplat·ΔP·RR) 중 사망과 유의하게 관련된 것은 <strong>ΔP(OR 1.31)와 RR(OR 1.15)뿐</strong>(총 Power·탄성 동적 성분도 유의). ΔP의 영향이 약 4배([4×ΔP + RR]). 사망 위험은 <strong>RR ≥25회/분, ΔP ≥15 cmH2O</strong>부터 증가</li>
+</ul>
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/19 01:08:37) 인공호흡기를 이해하는 핵심은 압력(Paw, Palv, Pplat, Ppl, 저항압)이다 — "벤틀레이터를 이해할 때 중요한 게 pressure입니다"</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/19 01:15:27) 경폐압은 침상에서 직접 못 재므로 환자의 호흡 drive·effort를 적당한 선에서 유지한다 — "드라이브나 이포트를 어떻게 적당한 선에서 유지하는지가 중요합니다"</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/19 01:23:20) ΔP 1의 사망 영향이 RR 1의 약 4배이므로, PaCO2를 빼려고 분당환기량을 늘릴 때는 ΔP보다 RR을 먼저 올린다 — "RR을 먼저 올리는 게 롱 인저리 측면에서… 더 중요해서"</p>
+</blockquote>
+<h3 id="ards-25">6-3. 해악을 줄이는 2대 전략과 P-SILI <span class="star">★</span> (p.60–63)</h3>
+<table>
+<thead>
+<tr>
+<th>2대 전략 (p.60)</th>
+<th>방법</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>① <strong>mechanical power 최소화</strong></td>
+<td>VT·ΔP·RR↓, NMBA, ECMO</td>
+</tr>
+<tr>
+<td>② <strong>폐 불균질성(inhomogeneity) 최소화</strong></td>
+<td>적절한 PEEP, <strong>복와위</strong></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>P-SILI 악순환</strong>: 폐손상 → 부종 → 호흡 drive↑ → 강한 흡기(식도내압 변동 Pes swing↑, <strong>펜델루프트</strong>: 배쪽 공기가 등쪽으로 → 등쪽 과팽창·부종) → 폐손상 악화. <strong>인공호흡 중에도 생긴다</strong>(assist 모드에서 VT가 10을 넘으면 1~2일 뒤 CXR이 다시 하얘짐, 교수) (p.61–62)</li>
+<li><strong>폐·횡격막 보호 환기(lung and diaphragm protective ventilation)</strong>: 높은 VT·ΔP·부적절한 PEEP(VILI)와 과도한 노력(P-SILI)을 막되, <strong>과도한 진정·보조·NMBA는 횡격막 불용성 위축</strong> → 노력은 너무 낮지도 높지도 않게 (p.63)</li>
+</ul>
+<h3 id="ards-26">6-4. 구동압 목표와 근거 (p.53–56)</h3>
+<ul>
+<li>구동압(ΔP)은 PBW 기준 VT와 달리 <strong>기능적 폐 크기(baby lung)와 유순도까지 반영</strong></li>
+<li>근거: <strong>Amato 2015 NEJM</strong>(9개 RCT, 약 3,500명) — 사망은 PEEP이나 Pplat이 아니라 <strong>ΔP에 따라 변함</strong>. <strong>ΔP &gt;15 cmH2O면 병원 사망↑</strong>(ΔP 7 증가 → 60일 사망 RR 1.41). 수술 환자에서도 ΔP가 오르면 수술 후 폐합병증↑</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Amato 세 시나리오 (p.55 빨간 박스, 교수 01:18:18)</th>
+<th>사망</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A. PEEP 고정 + ΔP↑(Pplat↑)</td>
+<td><strong>↑</strong></td>
+</tr>
+<tr>
+<td>B. ΔP 동일 + PEEP·Pplat 같이↑</td>
+<td><strong>차이 없음</strong> → "높은 Pplat이 항상 위험한 건 아니다" / "높은 PEEP이 항상 보호적인 건 아니다"</td>
+</tr>
+<tr>
+<td>C. Pplat 고정 + PEEP↑(ΔP↓)</td>
+<td><strong>↓</strong></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>위험 기준: <strong>ΔP &gt;15(Amato 노트)·≥15(Costa 노트)</strong> → 15 미만 유지가 실무 목표. 교수: 위험이 12부터 가파르게 오르므로 <strong>약 12 이하면 충분</strong>, 나머지는 RR로 조절</li>
+</ul>
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/19 01:16:51) 구동압(ΔP = Pplat − PEEP)은 침상에서 보는 가장 중요한 압력 중 하나다 — "드라이빙 프레셔는 저희가 보는 것 중에 가장 중요한 프레셔 중에 하나"</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="warn">
+<p>⚠️ <strong>헷갈림 주의</strong> ΔP 기준을 묻는 객관식이면 <strong>15</strong>(노트)를 우선한다(12는 교수의 실무 감각).</p>
+</blockquote>
+<hr>
+<h2 id="ards-27">7. 폐보호 환기: 저일회호흡량과 PEEP <span class="star">★</span></h2>
+<h3 id="ards-28">7-1. 저일회호흡량·Pplat 제한 (p.64–66)</h3>
+<table>
+<thead>
+<tr>
+<th>SSC 2021 (p.64)</th>
+<th>내용</th>
+<th>강도</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>권고 71</td>
+<td>ARDS: <strong>VT 6 mL/kg</strong> &gt; &gt;10 mL/kg</td>
+<td>강한 권고</td>
+</tr>
+<tr>
+<td>권고 72</td>
+<td>ARDS 아닌 패혈증 호흡부전: <strong>6~8 mL/kg</strong> &gt; 4~&lt;6</td>
+<td>약한 권고</td>
+</tr>
+<tr>
+<td>권고 73</td>
+<td>ARDS: <strong>Pplat 상한 30 cmH2O</strong></td>
+<td>강한 권고</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>ARMA(NEJM 2000)</strong> = ARDS에서 <strong>처음으로 사망률 감소를 증명</strong>: VT 12 vs <strong>6 mL/kg PBW</strong>, Pplat ≤50 vs <strong>≤30</strong> → 사망 39.8% vs <strong>31.0%</strong>. 산소화는 오히려 고VT군이 더 좋았다(교수) (p.66)</li>
+</ul>
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/19 01:30:02) ARMA에서 산소화는 고VT군이 좋았지만 사망률은 저VT군이 낮았다 → 산소화 수치보다 예후를 개선하는 저VT를 쓴다 — "옥시지네이션보다는… 로우타이달 볼륨을 적용하는 것이 중요하다"</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="key">
+<p>💡 <strong>암기 팁</strong> "우리는 lab(검사 수치)을 치료하는 게 아니라 환자를 치료한다"(교수 2회 반복). 산소화가 좋아지는 쪽 ≠ 사는 쪽.</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="warn">
+<p>⚠️ <strong>헷갈림 주의</strong> ARDS = <strong>6 mL/kg</strong>(강한 권고), ARDS 아님·2차 타격 예방 = <strong>6~8 mL/kg</strong>, ATS 그림 = 6 mL/kg(범위 4~8) + Pplat ≤30. 모두 실제 체중이 아니라 <strong>PBW(예측체중)</strong> 기준이라 키를 재야 한다.</p>
+</blockquote>
+<h3 id="ards-29">7-2. PEEP과 폐포 모집 (p.67–71) <span class="star">★</span></h3>
+<ul>
+<li><strong>ART trial(JAMA 2017)</strong>: 폐포 모집술(RM, 기도압 50까지 올렸다 내림) + 점감식 PEEP 적정군이 저PEEP군보다 <strong>사망률↑</strong>(HR 1.20). 원인(후속 Letter to the Editor, p.68) = recruitability가 큰 환자는 1/3 이하였고 사망 증가는 주로 recruitability가 거의 없는 환자에서 → <strong>펴질 게 없는 폐에 RM·높은 PEEP</strong> → 저혈압·RV 부담·과팽창. 이후 RM은 거의 안 함</li>
+<li>Gattinoni CT: 저모집성 폐에 높은 PEEP → 폐는 안 펴지고 과팽창·저혈압 / 고모집성 폐 → 등쪽이 열려 산소화↑ (p.70)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>가이드라인 (p.69)</th>
+<th>PEEP 권고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ATS 2024</td>
+<td>중등~중증에서 <strong>RM 없이 높은 PEEP 제안</strong>, <strong>장시간 RM 반대</strong></td>
+</tr>
+<tr>
+<td>SSC (슬라이드 표기 2026)</td>
+<td>중등~중증에서 높은 PEEP 제안, 점증식 PEEP 적정 반대</td>
+</tr>
+<tr>
+<td>ESICM 2023(ARDS 지침)</td>
+<td>높은 vs 낮은 PEEP <strong>권고 없음</strong>(≠ 약물 p.27–28 ESICM 2025 수액 지침 Q10)</td>
+</tr>
+<tr>
+<td>공통 메시지</td>
+<td><strong>"맞는 폐에 맞는 PEEP"(the right PEEP for the right lung)</strong></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>가이드라인의 높은 PEEP = <strong>최소 10 cmH2O 이상</strong>(교수)</li>
+<li>모집 측정: 산소화(간접), 유순도·ΔP(<strong>모집과 과팽창을 구분 못 함</strong>), CT(<strong>침상 적정 불가</strong>, 연구용), 폐초음파(<strong>과팽창을 못 봄</strong>), <strong>EIT = 실시간 부위별 과팽창·허탈, 현재 1차로 사용</strong>(교수) (p.71)</li>
+</ul>
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/19 01:32:49) PEEP은 recruitability를 측정하는 장비·기법(EIT 등)으로 정한다. ATS·SSC는 P/F ≤200에서 높은 PEEP(≥10)을 제안, ESICM은 권고하지 않음 — "리크루터빌리티를 측정할 수 있는 장비나 기법을 사용하여서 정하는 것이 중요하다"</p>
+</blockquote>
+<hr>
+<h2 id="ards-30">8. 복와위(Prone positioning) <span class="star">★</span> (p.72–79)</h2>
+<ul>
+<li>SSC 2021 권고 76: 중등~중증 ARDS에서 <strong>하루 12시간 넘게</strong> 제안. 메타분석: <strong>&gt;12시간 사망↓(RR 0.74), &lt;12시간은 효과 없음</strong> (p.72)</li>
+<li><strong>PROSEVA(2013)</strong>: <strong>P/F &lt;150 + 하루 최소 16시간</strong> → 복와위 연구 중 처음으로 생존율 개선(이전 연구는 3시간 등 시간 기준 없이 해서 실패) (p.78, 교수)</li>
+<li>효과(p.73–77): 앙와위의 배쪽–등쪽 불균질 → <strong>균일화</strong>, 등쪽 모집↑(배쪽은 탈모집되지만 등쪽 용적이 더 커서 전체 모집↑), 무기폐·과팽창 모두↓, <strong>atelectrauma↓</strong>, 사강↓ → <strong>V/Q matching↑</strong></li>
+<li>대상: 중증 ARDS(<strong>P/F &lt;150</strong>), <strong>초기(가능하면 48시간 이내)</strong>, 저VT + NMBA와 함께일 때 결과가 가장 좋음 (p.78)</li>
+<li><strong>절대 금기 = 불안정 척추 골절 하나뿐</strong>. 어제 기관절개·복부 수술·폐이식 등은 상대적 고려사항(베개 등으로 조정, 살리는 게 우선) (교수, p.78)</li>
+<li><strong>APRONET</strong>: 중등증 10.3%, 중증 32.9%만 시행. 안 한 이유 = "저산소증이 충분히 심하지 않다"(전체 <strong>64.3%</strong>, 교수: 1번 원인) → <strong>P/F를 계산하지 않고 FiO2·SpO2만 봄</strong>(교수) (p.79)</li>
+<li>실무표(p.78, 교수는 금기만 설명): 3~5명, 사전 산소화·위 비우기·흡인, 수영 자세(팔·머리 2~4시간마다 변경), 중단 = 앙와위 4시간 뒤 P/F &gt;150(PEEP &lt;10, FiO2 &lt;0.6)</li>
+</ul>
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/19 01:41:12) 복와위는 일찍 할수록 좋고 늦으면 사망률이 오르므로, 적용 대상(중등~중증, P/F 기준)인지 매일 평가한다 — "적절한 대상자인지를 매일매일 평가하는 것이 중요하고"</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="ev">
+<p>📝 <strong>보충</strong> 예(교수): FiO2 0.4, PaO2 60 → SpO2 94%로 괜찮아 보이지만 <strong>P/F = 150</strong> → 복와위를 고려할 상황.</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="warn">
+<p>⚠️ <strong>헷갈림 주의</strong> 시간: SSC 권고 <strong>&gt;12시간/일</strong> vs PROSEVA <strong>≥16시간/일</strong> vs awake prone <strong>8~12시간/일</strong>. 권고 강도: SSC 2021 = 조건부(suggest), ATS 그림 = <strong>강한 찬성(초록)</strong>.</p>
+</blockquote>
+<hr>
+<h2 id="ards-31">9. 신경근차단제(=신경근육차단제, NMBA) (p.80–83)</h2>
+<ul>
+<li>SSC 2021 권고 77: 중등~중증 ARDS에서 <strong>지속 주입보다 간헐 볼루스 제안</strong>(조건부, 근거 중등도) (p.80)</li>
+<li>근거의 대비: 이전 RCT 3개 = <strong>NMBA 지속 주입 &gt; 미사용</strong>(90일 사망↓) → 최근 <strong>ROSE trial</strong>(1,006명) = <strong>48시간 지속 주입 vs 필요 시 볼루스 → 사망률 차이 없음</strong>. 즉 "쓰냐 마냐"가 아니라 "지속이냐 간헐이냐"의 문제(쓰지 말자는 뜻 아님, 교수)</li>
+<li>같은 슬라이드 회색 박스(<strong>약한 권고</strong>, 출처 표기 'Ventilation "COVID-19" guidelines CCM 2021'): <strong>지속적 비동조(=비동시성)·깊은 진정 지속 필요·복와위·지속적으로 높은 Pplat</strong>이면 <strong>지속 주입(CIV) 최대 48시간</strong> — 대부분 환자가 이 예외에 해당(교수). 교수 실무: 초기 ARDS 48시간은 CIV</li>
+<li>대표 부작용 = <strong>ICU 획득 근력약화(ICU-AW, =ICU 획득 쇠약)</strong>: 슬라이드는 NMBA가 늘릴 수 있다고 하고(p.81, 약물 p.23 RR 1.16), 교수는 주 기전이 <strong>부동</strong>이라 deep sedation만으로도 생긴다고 함.</li>
+<li>결정 흐름도(p.81): 환기 조정(VT 6, Pplat ≤30) → 진정(RASS −4~−5) → <strong>P/F ≤150이면 복와위</strong> → 그래도 보호 환기 불가·높은 drive, 또는 <strong>P/F ≤120 → NMBA 권고</strong></li>
+<li>Rapid practice guideline(p.83): <strong>경증 ARDS = NMBA 주입 반대</strong>. 중등~중증 = 얕은 진정으로 보호 환기 가능? → 안 되면 신중한 깊은 진정 + 간헐 NMBA → 그래도 안 되면 <strong>CIV ≤48시간</strong></li>
+<li>실무표(p.82, 교수는 BIS만 언급): cisatracurium(Nimbex; 약물 p.25: Hofmann 제거) 37.5 mg/h, TOF(척골 0/4·안면 2/4), 투여 전 RASS −4~−5·<strong>BIS 40~60</strong>(ICU에선 보험 문제로 어려워 최소한 deep sedation을 확인한 뒤 시작), <strong>P/F &gt;150이면 중단, 48시간 이후엔 최소 12시간마다 필요성 재평가</strong>, 눈 관리·욕창 예방</li>
+</ul>
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/19 01:43:53) deep sedation은 하면서 weakness가 걱정돼 NMBA를 안 쓰는 애매한 치료 대신, 쓸 때는 확실히 쓰고 아니면 light sedation으로 가도록 치료 노선을 분명히 정한다 — "치료 노선을 잘 정해서 치료하는 것이 중요하고"</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="warn">
+<p>⚠️ <strong>헷갈림 주의</strong> 강의 차이가 아니라 <strong>지침 차이</strong>. ATS 2024(= 약물 p.19·23)는 두 강의 모두 중증(P/F ≤100, 약물 p.23은 '발생 48시간 이내'까지) NMBA <strong>조건부 제안·근거 낮음</strong>(p.91 그림도 같음). ARDS 강의는 SSC 2021 권고 77(간헐 볼루스 &gt; 지속 주입), CCM 2021 COVID 가이드(약한 권고, CIV ≤48시간), 흐름도(P/F ≤150 복와위, ≤120 NMBA)를 더했다. 공통 = <strong>최대 48시간</strong>(약물 p.23 「가능하면 최대 48시간」도 p.82처럼 절대 상한 아님). 약물 p.23 깊은/얕은 진정 대조군 = 이전 RCT 3개/ROSE([보충] 해석). 교수는 cisatracurium(Nimbex)이 국내에 없어 vecuronium·rocuronium을 쓴다고 했지만(확인 안 됨), 두 강의 슬라이드 모두 선호 약물은 <strong>cisatracurium</strong>.</p>
+</blockquote>
+<hr>
+<h2 id="ards-32">10. VV-ECMO (p.84–90)</h2>
+<ul>
+<li>SSC 2021 권고 78: 패혈증 중증 ARDS에서 <strong>기존 기계환기가 실패하면, 경험·인프라를 갖춘 센터에서 VV-ECMO 제안</strong>(조건부, 근거 낮음). 메타분석 60일 사망 <strong>34% vs 47%</strong> (p.84)</li>
+<li>경험 센터 = 연간 VV-ECMO <strong>30~50건 이상</strong>(COVID 때 센터별 사망률 차이가 뚜렷) (교수)</li>
+<li>결정 흐름(p.85–87): 적격 기준(산소화) → 금기(<strong>해로운 기계환기에 장기간 노출</strong>, 출혈 위험, 혈관 접근 불가) → 단기 사망 위험·동반질환(기대여명 &lt;5년) → <strong>환자·가족의 선호와 가치</strong> → 다학제 논의·이송 → <strong>심초음파: 심한 좌심실 기능부전이면 VA, 아니면 VV</strong></li>
+<li><strong>LIFEGARDS</strong>: 6개월 생존 61%, <strong>삽관~ECMO 시작 지연 1일마다 사망↑</strong>(OR 1.08), 초기 수액 과부하도 사망↑ (p.88)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>ECMO 관리 (p.89–90)</th>
+<th>수치·원칙</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>혈류</td>
+<td><strong>≥3 L/min</strong>(3~6 L)</td>
+</tr>
+<tr>
+<td>FDO2</td>
+<td><strong>1.0</strong>으로 시작 후 PaO2 보며 낮춤</td>
+</tr>
+<tr>
+<td>Sweep gas</td>
+<td><strong>낮게(1~2 L/min) 시작</strong> → PaCO2 급감 방지</td>
+</tr>
+<tr>
+<td>인공호흡기(lung rest)</td>
+<td><strong>Pplat &lt;25, PEEP ≥10, RR 4~15</strong>(또는 자발호흡), FiO2 최소</td>
+</tr>
+<tr>
+<td>항응고</td>
+<td>비분획 헤파린(UFH), <strong>aPTT 40~60초</strong>(예전 60~80)</td>
+</tr>
+<tr>
+<td>수혈</td>
+<td><strong>Hb &lt;7 g/dL</strong>, 혈소판 <strong>2만</strong>(출혈·시술 시 5만)</td>
+</tr>
+<tr>
+<td>복와위</td>
+<td><strong>ECMO 전에는 적극적으로</strong>, ECMO 중엔 케이스별(PRONECMO에서 이득 없음)</td>
+</tr>
+</tbody>
+</table>
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/19 01:47:01) ECMO 결정에는 산소화 기준·금기·단기 사망 위험·동반질환과 함께 환자·보호자의 평소 치료 의지도 중요하다 — "환자나 보호자들의 치료 의지 이런 것도 에크모 결정하는 데 중요합니다"</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/19 01:47:16) VV-ECMO는 경험 있는 센터에서 해야 하므로 경험 센터가 아니면 전원을 준비한다 — "중요한 것은 익스피리언스 센터가 아니면 전원을 보낼 준비를 해야"</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/19 01:48:19) ECMO는 늦게 걸수록 예후가 나쁘므로(삽관~ECMO 지연 = 사망 예측인자) 조기에 선별해 결정한다 — "조기에 환자를 잘 선별해서 결정하는 것이 중요하고"</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/19 01:48:41) 초기 ECMO 혈류는 최소 3 L/min, 3~6 L로 건다 — "최소한 3리터 플로우… 3에서 6리터 정도는 거는 게 중요하고"</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/19 01:48:59) Sweep gas는 낮게 시작해 조금씩 올리고(PaCO2가 급격히 떨어지면 뇌출혈 위험), FDO2는 1.0에서 시작해 낮춘다 — "조금씩 올려서 목표로 하는 스윕가스를 맞추는 것이 중요하고"</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="exam">
+<p>🎯 <strong>교수 강조</strong> (10/19 01:49:04) ECMO 중 인공호흡기의 핵심은 폐를 쉬게 하는 것(Pplat &lt;25, PEEP ≥10, 호흡수는 최소한) — "중요한 것은 폐를 쉬게 해준다. 벤틸레이터를 과하게 주지 않는다"</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="warn">
+<p>⚠️ <strong>헷갈림 주의</strong> Pplat 목표: 일반 ARDS <strong>≤30</strong> vs ECMO 중 <strong>&lt;25</strong>. 교수는 ECMO 권고가 "2022년 가이드라인부터" 바뀌었다고 했지만 슬라이드는 SSC 2021 권고 78(Carryover) → 슬라이드 기준.</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="ev">
+<p>📝 <strong>보충</strong> 교수는 bridge to recovery vs bridge to transplantation(폐이식 여부)도 ECMO 결정에 고려한다고 덧붙였다. [보충] 메타분석의 RCT 2개는 CESAR와 EOLIA로 알려져 있다(슬라이드에는 연구명이 없음).</p>
+</blockquote>
+<hr>
+<h2 id="ards-33">11. ATS 2024 권고 한눈에 + 스테로이드 <span class="star">★</span> (p.91)</h2>
+<table>
+<thead>
+<tr>
+<th>그림 색</th>
+<th>권고 강도</th>
+<th>중재</th>
+<th>적용 범위</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>빨강 = 하지 마라</strong></td>
+<td>강한 반대</td>
+<td><strong>장시간 폐포 모집술(RM)</strong>(ART에서 나빴음), <strong>고빈도 진동 환기(HFOV)</strong></td>
+<td>전 중증도</td>
+</tr>
+<tr>
+<td>노랑 = 해도 된다</td>
+<td>조건부 찬성</td>
+<td><strong>NMBA, VV-ECMO</strong></td>
+<td>중증(P/F &lt;100)</td>
+</tr>
+<tr>
+<td>노랑</td>
+<td>조건부 찬성</td>
+<td><strong>높은 PEEP</strong></td>
+<td>중등~중증(P/F ≤200)</td>
+</tr>
+<tr>
+<td>노랑</td>
+<td>조건부 찬성</td>
+<td><strong>전신 코르티코스테로이드</strong></td>
+<td>전 중증도</td>
+</tr>
+<tr>
+<td><strong>초록 = 하라</strong></td>
+<td>강한 찬성</td>
+<td><strong>폐보호 환기(VT 6 mL/kg PBW, 범위 4~8 + Pplat ≤30)</strong>, <strong>복와위</strong>(약 P/F ≤150)</td>
+<td>생존율이 입증된 것</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>스테로이드: ATS <strong>"전신 스테로이드 사용 제안"(조건부 권고, 근거 중등도)</strong>. 교수: ARDS·패혈증에서는 주자는 쪽이지만 <strong>얼마나(용량) 줄지는 가이드라인이 정해 주지 않는다</strong></li>
+</ul>
+<blockquote class="key">
+<p>💡 <strong>암기 팁</strong> 초록(하라) = 사망률을 낮춘 둘 "6 mL/kg + 엎드리기". 빨강(하지 마라) = "오래 부풀리기(RM)와 진동(HFOV)".</p>
+</blockquote>
+<!-- -->
+
+<blockquote class="warn">
+<p>⚠️ <strong>헷갈림 주의</strong> 약물 강의(9/14, p.19·21–22)와 같은 ATS 지침: 스테로이드는 두 강의 모두 <strong>조건부 권고·근거 중등도</strong>. 그림의 막대는 <strong>전 중증도</strong>, 투여 시기(초기 삼출기, p.30–31 노트)는 ARDS 강의에만. 약물 강의는 "단일 표준 요법 없음(대한중환자의학회), 고혈당 감시"와 Meduri 2007(methylprednisolone 1 mg/kg/d 1~14일 → 28일까지 감량)을 덧붙였다.</p>
+</blockquote>
+<hr>
+<h2 id="ards-34">12. PICS와 결론 (p.92–93)</h2>
+<ul>
+<li><strong>PICS 3축</strong>: 신체(심한 보행장애, 피로, 근위축) / 인지(기억력 저하, 주의력 결핍) / 정신(우울, 불안, <strong>PTSD</strong>) + <strong>가족의 심리 후유증</strong> → 조기 재활, 섬망 예방, 퇴원 후 다학제 post-ICU 클리닉 (p.92)</li>
+<li>결론(p.93): ① 조기 인지·예방 → ② 병태생리·표현형 → ③ 폐보호 환기(저VT, ΔP 제한, PEEP 개별화, P-SILI 조절) → ④ 보조치료(복와위, NMBA, ECMO, 보존적 수액) → ⑤ 스테로이드·이탈·PICS. <strong>가이드라인 = 뼈대(backbone), 생리 기반 개별화 = 핵심</strong>, 최소 24시간마다 재평가</li>
+</ul>
+<blockquote class="key">
+<p>💡 <strong>암기 팁</strong> PICS = "몸·머리·마음 + 가족".</p>
+</blockquote></section><div class="foot">개인 학습용 2차 정리본입니다. 원 강의자료의 저작권은 각 담당 교수님께 있습니다. 수업 전사는 자동 음성인식 결과를 바탕으로 해 표현이 다를 수 있으니, 의심되면 원 슬라이드를 확인하세요.</div></main></div><script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('.ptab')), secs=[].slice.call(document.querySelectorAll('section.lec'));
+  function show(t){ tabs.forEach(function(b){b.classList.toggle('on',b.dataset.tab===t)});
+    secs.forEach(function(s){s.classList.toggle('tab-hidden', t!=='all' && s.dataset.lec!==t)});
+    try{localStorage.setItem('resp-tab',t)}catch(e){} }
+  tabs.forEach(function(b){b.addEventListener('click',function(){show(b.dataset.tab); window.scrollTo(0,document.querySelector('.parttabs').offsetTop-60)})});
+  document.querySelectorAll('.sidebar a').forEach(function(a){a.addEventListener('click',function(){
+    var cur=document.querySelector('.ptab.on'); if(cur && cur.dataset.tab!=='all' && cur.dataset.tab!==a.dataset.lec) show('all');})});
+  var saved=null; try{saved=localStorage.getItem('resp-tab')}catch(e){}
+  if(saved && document.querySelector('.ptab[data-tab="'+saved+'"]')) show(saved);
+  var q=document.getElementById('q'); if(!q) return; var timer;
+  q.addEventListener('input',function(){clearTimeout(timer); timer=setTimeout(run,180)});
+  q.addEventListener('keydown',function(e){if(e.key==='Enter'){var h=document.querySelector('.hit'); if(h) h.scrollIntoView({block:'center'})}});
+  function run(){
+    document.querySelectorAll('.hit').forEach(function(e){e.classList.remove('hit')});
+    var v=q.value.trim().toLowerCase(); if(v.length<2) return; show('all');
+    var first=null; document.querySelectorAll('section.lec p, section.lec li, section.lec td, section.lec h2, section.lec h3, section.lec blockquote').forEach(function(e){
+      if(e.textContent.toLowerCase().indexOf(v)>=0 && !e.querySelector('.hit')){e.classList.add('hit'); if(!first) first=e;}});
+    if(first) first.scrollIntoView({block:'center'});
+  }
+})();
+</script></body></html>
